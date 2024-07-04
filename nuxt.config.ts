@@ -3,4 +3,5 @@ export default defineNuxtConfig({
   devtools: { enabled: false },
   css: ["~/assets/main.scss"],
   modules: ["@formkit/nuxt", "@pinia/nuxt", "@nuxtjs/i18n"],
+  compatibilityDate: "2024-07-04",
 });
