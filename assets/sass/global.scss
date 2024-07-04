@@ -1,0 +1,31 @@
+.light-colors {
+  color: var(--primary-light);
+}
+
+.primary-color {
+  color: var(--primary);
+}
+
+.border-primary-color {
+  border: 1px solid var(--primary) !important;
+}
+
+.border-secondary-color {
+  border: 1px solid var(--secondary) !important;
+}
+
+.background-color-primary-dark {
+  background-color: var(--primary-dark) !important;
+}
+
+.background-color-primary {
+  background-color: var(--primary) !important;
+}
+
+.background-color-primary-light {
+  background-color: var(--primary-light) !important;
+}
+
+.primary-color-dark {
+  color: var(--primary-dark);
+}
