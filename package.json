@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev",
+    "dev": "nuxt dev --port 3003",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
@@ -14,11 +14,15 @@
     "@formkit/i18n": "^1.6.5",
     "@formkit/nuxt": "^1.6.5",
     "@formkit/vue": "^1.6.5",
+    "@nuxt/image": "^1.7.0",
     "@nuxtjs/i18n": "^8.3.1",
+    "@nuxtjs/seo": "^2.0.0-rc.11",
     "@pinia/nuxt": "^0.5.1",
     "nuxt": "^3.12.2",
-    "pinia": "^2.1.7",
-    "sass": "^1.77.6",
     "vue": "latest"
+  },
+  "devDependencies": {
+    "prettier": "^3.3.2",
+    "sass": "^1.76.0"
   }
 }
