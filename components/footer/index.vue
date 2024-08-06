@@ -30,7 +30,7 @@ const currentYear = ref(new Date().getFullYear())
             <NuxtLink to="/">Contácto</NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/vault">Vault</NuxtLink>
+            <NuxtLink to="/">Vault</NuxtLink>
           </li>
         </ul>
       </div>

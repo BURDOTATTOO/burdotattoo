@@ -13,7 +13,7 @@ import SvgsBillboard from '~/public/svgs/billboard.vue'
 
       <p>Impresionantes diseños para elegir por solo $499.</p>
 
-      <NuxtLink to="/join">
+      <NuxtLink to="/">
         <ButtonsGlowOn text="¡Aprender más!" :active="true" />
       </NuxtLink>
 

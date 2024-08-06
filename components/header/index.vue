@@ -6,14 +6,12 @@ import Menu from './menu/index.vue'
 import SunSvg from '~/components/icons/header/SunSvg.vue'
 import MoonSvg from '~/components/icons/header/MoonSvg.vue'
 import SliderTopNav from '~/components/sliders/top-nav/TopNav.vue'
-import LogInModal from '~/components/modal/log-in/index.vue'
 import ButtonsGlowOn from '~/components/buttons/glow-on/index.vue'
 import LogoSvg from '~/public/svgs/logo.vue'
 
 import HamburgerVerticalSvg from '~/components/icons/header/HamburgerSvg.vue'
 
 const isSliderTopNavOpen = ref<boolean | undefined>(undefined)
-const isLoginModalOpen = ref(false)
 
 const isDarkMode = ref(false)
 
@@ -32,10 +30,6 @@ const handleTheme = () => {
 
 const toggleSliderTopNav = () => {
   isSliderTopNavOpen.value = !isSliderTopNavOpen.value
-}
-
-const toggleLoginModal = () => {
-  isLoginModalOpen.value = !isLoginModalOpen.value
 }
 
 </script>
@@ -57,19 +51,16 @@ const toggleLoginModal = () => {
           <SunSvg v-else @click="handleTheme()" class="icon moon" />
         </div>
 
-        <Menu :toggleModal="toggleLoginModal" class="desktop-only" />
+        <Menu class="desktop-only" />
         <ButtonsGlowOn text="Probar" />
         <HamburgerVerticalSvg @click="toggleSliderTopNav" class="icon hamburger mobile-only " />
 
         <SliderTopNav
           :toggleTopNav="toggleSliderTopNav"
-          :isTopNavOpen="isSliderTopNavOpen"
-          :toggleModal="toggleLoginModal" />
+          :isTopNavOpen="isSliderTopNavOpen" />
       </div>
     </div>
 
   </header>
-
-  <LogInModal :isModalOpen="isLoginModalOpen" :toggleModal="toggleLoginModal" />
 
 </template>

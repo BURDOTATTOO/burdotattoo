@@ -4,10 +4,9 @@ import ExitSvg from '@/components/icons/ExitSvg.vue'
 
 const router = useRouter()
 
-const { toggleTopNav, isTopNavOpen, toggleModal } = defineProps<{
+const { toggleTopNav, isTopNavOpen } = defineProps<{
   toggleTopNav: () => void
   isTopNavOpen: boolean | undefined
-  toggleModal: () => void
 }>()
 
 const handleClick = (url: string) => {
@@ -17,7 +16,6 @@ const handleClick = (url: string) => {
 
 const handleModal = () => {
   toggleTopNav()
-  toggleModal()
 }
 
 </script>
