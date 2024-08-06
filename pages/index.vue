@@ -22,10 +22,14 @@ useSeoMeta({
 
 <template>
   <BillboardImage />
-  <TitleSubtitle title="Nuestros Planes"
-    subtitle="Garantiza la máxima seguridad de tu información con nuestro cifrado de grado militar." />
+  <TitleSubtitle 
+    title="Nuestros Planes"
+    subtitle="Garantizamos un diseño único y sencillo para tu página web." />
+  
   <CardDescription />
-  <TitleSubtitle title="Tranquilidad y confianza en tu seguridad digital."
+
+  <TitleSubtitle
+    title="Tranquilidad y confianza en tu seguridad digital."
     subtitle="Nuestra solución asegura que tus datos estén protegidos en todo momento." />
   <Accordion />
 </template>

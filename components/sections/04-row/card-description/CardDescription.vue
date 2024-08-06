@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import './card-description.scss'
 
-import HouseSvg from '@/components/icons/title-headline/HouseSvg.vue'
-import BusinessSvg from '@/components/icons/title-headline/BusinessSvg.vue'
-import DeveloperSvg from '@/components/icons/title-headline/DeveloperSvg.vue'
-import StudentSvg from '@/components/icons/title-headline/StudentSvg.vue'
+import PresentationSvg from '@/components/icons/plans/PresentationSvg.vue'
+import CloudSvg from '@/components/icons/plans/CloudSvg.vue'
+import ServerSvg from '@/components/icons/plans/ServerSvg.vue'
+import SeoSvg from '~/components/icons/plans/SeoSvg.vue'
 </script>
 
 <template>
@@ -14,21 +14,21 @@ import StudentSvg from '@/components/icons/title-headline/StudentSvg.vue'
     <div class="grid-item">
 
       <div class="grid-image">
-        <HouseSvg class="icon" />
+        <PresentationSvg class="icon" />
       </div>
 
       <div class="grid-container">
         <div class="grid-details">
           <h3 class="title">
-            Familiar
+            SMM – Marketing en redes sociales
           </h3>
           <span class="description">
             $100
           </span>
         </div>
         <div class="location">
-          <p>Económico, perfecto para familias, con una sola contraseña que facilita el acceso
-            para todos, seguridad avanzada que protege tus datos familiares</p>
+          <p>Contrata a nuestro equipo de expertos en marketing en redes sociales y aumenta tus oportunidades de
+            negocio. Dirígete a clientes potenciales en función de grupos demográficos específicos.</p>
         </div>
       </div>
 
@@ -37,21 +37,21 @@ import StudentSvg from '@/components/icons/title-headline/StudentSvg.vue'
     <div class="grid-item">
 
       <div class="grid-image">
-        <BusinessSvg class="icon" />
+        <ServerSvg class="icon" />
       </div>
 
       <div class="grid-container">
         <div class="grid-details">
           <h3 class="title">
-            Empresa
+            Alojamiento web administrado por cPanel
           </h3>
           <span class="description">
             $200
           </span>
         </div>
         <div class="location">
-          <p>Gestión unificada con una contraseña o la opción
-            de categorizarlos por sectores.</p>
+          <p>¡Potente alojamiento de sitios web administrado con cPanel, correos electrónicos ilimitados, 25 GB de
+            espacio en disco, Jet Backup y 500 GB de ancho de banda!</p>
         </div>
       </div>
 
@@ -59,42 +59,20 @@ import StudentSvg from '@/components/icons/title-headline/StudentSvg.vue'
 
     <div class="grid-item">
       <div class="grid-image">
-        <DeveloperSvg class="icon" />
+        <CloudSvg class="icon" />
       </div>
       <div class="grid-container">
         <div class="grid-details">
           <h3 class="title">
-            Desarrollador
+            SEO – Marketing en motores de búsqueda
           </h3>
           <span class="description">
             $80
           </span>
         </div>
         <div class="location">
-          <p>Soluciones a medida con sistemas adaptados a
-            tus necesidades técnicas.</p>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="grid-item">
-
-      <div class="grid-image">
-        <StudentSvg class="icon" />
-      </div>
-      <div class="grid-container">
-        <div class="grid-details">
-          <h3 class="title">
-            Estudiante
-          </h3>
-          <span class="description">
-            $30
-          </span>
-        </div>
-        <div class="location">
-          <p>Nuestro plan estudiantil es económico, ideal para presupuestos estudiantiles.
-          </p>
+          <p>Haga que su sitio web aparezca en los principales motores de búsqueda con nuestro servicio de optimización
+            de motores de búsqueda y marketing de motores de búsqueda.</p>
         </div>
       </div>
 

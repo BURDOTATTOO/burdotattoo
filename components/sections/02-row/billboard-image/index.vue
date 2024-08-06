@@ -1,7 +1,6 @@
 <script lang="ts" setup>
 import './billboard.scss'
 import ButtonsGlowOn from '~/components/buttons/glow-on/index.vue'
-import SlidingText from '~/components/sliding-text/index.vue'
 import SvgsBillboard from '~/public/svgs/billboard.vue'
 </script>
 
