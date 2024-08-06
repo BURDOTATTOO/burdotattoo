@@ -14,9 +14,12 @@
     padding: 10px 20px;
     background-color: var(--background-base);
     border-radius: 40px;
+    box-shadow: var(--shadow-base);
+
     .left {
       display: flex;
       align-items: center;
+      backdrop-filter: blur(5px);
 
       .logo-container {
         display: flex;

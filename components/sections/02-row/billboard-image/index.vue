@@ -2,29 +2,25 @@
 import './billboard.scss'
 import ButtonsGlowOn from '~/components/buttons/glow-on/index.vue'
 import SlidingText from '~/components/sliding-text/index.vue'
+import SvgsBillboard from '~/public/svgs/billboard.vue'
 </script>
 
 <template>
   <section class="billboard-image-container">
 
-    <div class="billboard">
-      <SlidingText class="title" />
+    <div class="left">
+      <p>¡Consigue una página web profesional con Hosting
+        <h3 class="animate-charcter">GRATIS</h3>  tu primer año!</p>
 
       <NuxtLink to="/join">
-        <ButtonsGlowOn class="btn" text="¡Regístrate hoy!" :active="true" />
+        <ButtonsGlowOn class="btn" text="¡Aprender más!" :active="true" />
       </NuxtLink>
 
     </div>
 
-    <NuxtPicture
-      src="/images/sections/02-row/billboard/billboard.jpeg"
-      alt="Man looking at phone and tablet"
-      format="jpeg"
-      sizes="100vw xs:300px sm:500px"
-      width="300"
-      height="260"
-    />
-
+    <div class="right">
+      <SvgsBillboard />
+    </div>
 
   </section>
 </template>
