@@ -4,7 +4,7 @@ import './card-description.scss'
 import PresentationSvg from '@/components/icons/plans/PresentationSvg.vue'
 import CloudSvg from '@/components/icons/plans/CloudSvg.vue'
 import ServerSvg from '@/components/icons/plans/ServerSvg.vue'
-import SeoSvg from '~/components/icons/plans/SeoSvg.vue'
+
 </script>
 
 <template>
