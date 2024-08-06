@@ -9,11 +9,13 @@ import SvgsBillboard from '~/public/svgs/billboard.vue'
   <section class="billboard-image-container">
 
     <div class="left">
-      <p>¡Consigue una página web profesional con Hosting
-        <h3 class="animate-charcter">GRATIS</h3>  tu primer año!</p>
+      <h1>¡Consigue una página web profesional con Hosting
+        <span class="animate-text">GRATIS</span> tu primer año!</h1>
+
+      <p>Impresionantes diseños para elegir por solo $499.</p>
 
       <NuxtLink to="/join">
-        <ButtonsGlowOn class="btn" text="¡Aprender más!" :active="true" />
+        <ButtonsGlowOn text="¡Aprender más!" :active="true" />
       </NuxtLink>
 
     </div>
