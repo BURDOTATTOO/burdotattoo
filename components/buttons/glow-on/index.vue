@@ -11,7 +11,7 @@ const { text } = defineProps<GlowOnProps>()
 </script>
 
 <template>
-  <button :class="['glow-on', active ? 'active' : '']" type="button" @click="$router.push('/join')">
+  <button :class="['glow-on', active ? 'active' : '']" type="button">
     <span>{{ text }}</span>
   </button>
 </template>

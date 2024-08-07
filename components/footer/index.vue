@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 import './footer.scss'
+import LogoSvg from '~/public/svgs/logo.vue'
 
 const currentYear = ref(new Date().getFullYear())
 </script>
@@ -11,10 +12,7 @@ const currentYear = ref(new Date().getFullYear())
     <div class="footer-content">
 
       <div class="footer-section">
-        <img src="/images/logos/logo.png" alt="logo" class="logo" />
-        <p>
-          Asergura tu contraseña y administra tus contraseñas con facilidad.
-        </p>
+        <LogoSvg />
       </div>
 
       <div class="footer-section">
@@ -46,7 +44,7 @@ const currentYear = ref(new Date().getFullYear())
     </div>
 
     <div class="footer-bottom">
-      <p>&copy; {{ currentYear }} MiPassword. Todos los derechos reservados.</p>
+      <p>&copy; {{ currentYear }} Vanguardia.tech. Todos los derechos reservados.</p>
     </div>
   </footer>
 </template>

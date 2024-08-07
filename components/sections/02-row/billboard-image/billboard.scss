@@ -13,6 +13,7 @@
     justify-content: space-evenly;
     height: 100%;
     gap: 16px;
+
     h1 {
       font-size: 2.5rem;
       color: var(--heading);
@@ -21,6 +22,16 @@
 
     p {
       font-size: 1.5rem;
+    }
+
+    .learn-more {
+      width: 200px;
+      margin-top: 20px;
+      
+      @media (max-width: 756px) {
+        margin: 20px auto;
+      }
+
     }
 
     .animate-text{
@@ -51,12 +62,10 @@
     }
   }
 
-  .right {
     svg {
       height: auto;
       width: auto;
     }
-  }
 
     @media (max-width: 756px) {
     grid-template-columns: 1fr;

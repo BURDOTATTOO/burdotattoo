@@ -7,20 +7,17 @@ export default defineFormKitConfig({
       ...es,
       validation: {
         required: () => "requerido.",
-        email: (node) => {
-          if (node.name == "email-sign-in") {
-            return "Debe ser un email válido."
+        name: () => "Debe ser un nombre válido.",
+        email: () => "Debe ser un email válido.",
+        phone: () => "Debe ser un teléfono válido.",
+        matches: (node: { name: string }) => {
+          switch (node.name) {
+            case "phone":
+              return "Debe ser un teléfono válido."
+            default:
+              return "Invalid type."
           }
-          return "Email inválido."
         },
-        // matches: (node: { name: string }) => {
-        //   switch (node.name) {
-        //     case "email":
-        //       return "error email"
-        //     default:
-        //       return "Invalid type."
-        //   }
-        // },
       },
     },
   },
