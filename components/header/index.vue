@@ -10,11 +10,9 @@ import ButtonsGlowOn from '~/components/buttons/glow-on/index.vue'
 import Logo from '~/public/logo.vue'
 
 
-
 import HamburgerVerticalSvg from '~/components/icons/header/HamburgerSvg.vue'
 
 const isSliderTopNavOpen = ref<boolean | undefined>(undefined)
-
 const isDarkMode = ref(false)
 
 onMounted(() => {
