@@ -3,7 +3,7 @@ import BillboardImage from '~/components/sections/02-row/billboard-image/index.v
 import TitleSubtitle from '~/components/sections/01-row/title-subtitle/TitleSubtitle.vue'
 import CardDescription from '~/components/sections/04-row/card-description/CardDescription.vue'
 import Accordion from '~/components/sections/01-row/accordion/index.vue'
-
+import HighlightText from '~/components/sections/03-row/highlight-text/index.vue'
 useSeoMeta({
   title: 'Recuerda Solo Una Contraseña. ¡Regístrate hoy y olvídate de la gestión de múltiples contraseñas!',
   ogTitle: 'Recuerda Solo Una Contraseña. ¡Regístrate hoy y olvídate de la gestión de múltiples contraseñas!',
@@ -28,8 +28,5 @@ useSeoMeta({
   
   <CardDescription />
 
-  <TitleSubtitle
-    title="Tranquilidad y confianza en tu seguridad digital."
-    subtitle="Nuestra solución asegura que tus datos estén protegidos en todo momento." />
-  <Accordion />
+  <HighlightText />
 </template>
