@@ -109,6 +109,10 @@
                 color: var(--gray-base);
               }
             }
+
+            textarea {
+              resize: none;
+            }
           }
         }
   

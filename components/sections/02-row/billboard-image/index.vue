@@ -7,7 +7,6 @@ import MoreInfoModal from '~/components/modal/more-info/index.vue'
 const modal = ref(false)
 
 const toggleModal = () => {
-  console.log('toggleModal')
   modal.value = !modal.value
 }
 

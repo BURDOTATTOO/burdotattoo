@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 import './footer.scss'
-import LogoSvg from '~/public/svgs/logo.vue'
+import LogoSvg from '~/public/logo.vue'
 
 const currentYear = ref(new Date().getFullYear())
 </script>

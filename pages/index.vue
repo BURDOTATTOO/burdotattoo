@@ -5,15 +5,15 @@ import CardDescription from '~/components/sections/04-row/card-description/CardD
 import Accordion from '~/components/sections/01-row/accordion/index.vue'
 import HighlightText from '~/components/sections/03-row/highlight-text/index.vue'
 useSeoMeta({
-  title: 'Recuerda Solo Una Contraseña. ¡Regístrate hoy y olvídate de la gestión de múltiples contraseñas!',
-  ogTitle: 'Recuerda Solo Una Contraseña. ¡Regístrate hoy y olvídate de la gestión de múltiples contraseñas!',
-  description: 'Garantiza la máxima seguridad de tu información con nuestro cifrado de grado militar.',
-  ogDescription: 'Garantiza la máxima seguridad de tu información con nuestro cifrado de grado militar.',
-  ogImage: '/images/sections/02-row/title-headline/image-one.webp',
+  title: '¡Consigue una página web profesional con Hosting GRATIS tu primer año!',
+  ogTitle: '¡Consigue una página web profesional con Hosting GRATIS tu primer año!',
+  description: 'Impresionantes diseños para elegir por solo $500,000.',
+  ogDescription: 'Impresionantes diseños para elegir por solo $500,000.',
+  ogImage: '/.webp',
   ogLocale: 'en_Es',
-  twitterTitle: 'Recuerda Solo Una Contraseña. ¡Regístrate hoy y olvídate de la gestión de múltiples contraseñas!',
-  twitterCard: 'summary_large_image',
-  twitterDescription: 'Garantiza la máxima seguridad de tu información con nuestro cifrado de grado militar.',
+  twitterTitle: '¡Consigue una página web profesional con Hosting GRATIS tu primer año!',
+  twitterCard: 'summary_large_image',//default
+  twitterDescription: 'Impresionantes diseños para elegir por solo $500,000.',
   twitterLabel1: 'Time to read',
   twitterData1: '2 minutes',
 })

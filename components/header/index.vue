@@ -7,7 +7,9 @@ import SunSvg from '~/components/icons/header/SunSvg.vue'
 import MoonSvg from '~/components/icons/header/MoonSvg.vue'
 import SliderTopNav from '~/components/sliders/top-nav/TopNav.vue'
 import ButtonsGlowOn from '~/components/buttons/glow-on/index.vue'
-import LogoSvg from '~/public/svgs/logo.vue'
+import Logo from '~/public/logo.vue'
+
+
 
 import HamburgerVerticalSvg from '~/components/icons/header/HamburgerSvg.vue'
 
@@ -40,7 +42,7 @@ const toggleSliderTopNav = () => {
     <div class="header">
       <div class="left">
         <NuxtLink to="/" class="logo-container">
-          <LogoSvg />
+          <Logo />
         </NuxtLink>
       </div>
 
