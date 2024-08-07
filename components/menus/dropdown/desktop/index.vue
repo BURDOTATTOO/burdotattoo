@@ -7,10 +7,10 @@ import HelpSvg from "~/components/icons/menu/HelpSvg.vue"
 import LogoutSvg from "~/components/icons/menu/LogoutSvg.vue"
 import MessageSvg from "~/components/icons/menu/MessagesSvg.vue"
 import AdsSvg from "~/components/icons/menu/AdsSvg.vue"
-import HeartSvg from "@/components/icons/HeartSvg.vue"
-import CircleLoader from '@/components/loading/circle-icon/CircleLoader.vue'
+import HeartSvg from "~/components/icons/HeartSvg.vue"
+import ArrowDownSvg from "~/components/icons/ArrowDownSvg.vue"
 
-const showDropdown = ref(false)
+const showDropdown = ref<boolean | null>(null)
 const logged = ref(false)
 const loadingProfile = ref(false)
 
@@ -33,11 +33,13 @@ const handleLogin = () => {
 </script>
 
 <template>
-  <NotificationSlider v-if="logged" />
-  <CircleLoader v-if="loadingProfile" class="profile-loader" />
-  <ProfileSvg v-else class="icon user-icon" @click="toggleDropdown" />
+  <div class="menu-list" @click="toggleDropdown">
+    <h3>Servicios</h3>
+    <ArrowDownSvg :class="['icon user-icon', showDropdown ? 'rotate-opposite' : 'rotate']" />
+  </div>
 
-  <div class="user-menu-outer" v-if="showDropdown">
+  
+  <nav class="user-menu-outer" v-if="showDropdown">
     <ul class="menu-dropdown">
 
       <li href="#" v-if="!logged" class="menu-dropdown-item">
@@ -81,7 +83,7 @@ const handleLogin = () => {
       </li>
 
     </ul>
-  </div>
+  </nav>
 
   <div @click="toggleDropdown" :class="{ 'menu-dropdown-bg': showDropdown }"></div>
 </template>
