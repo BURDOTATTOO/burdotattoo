@@ -46,14 +46,17 @@ const toggleSliderTopNav = () => {
 
       <div class="right">
 
-        <div class="dark-mode-icons">
-          <MoonSvg v-if="!isDarkMode" @click="handleTheme()" class="icon sun" />
-          <SunSvg v-else @click="handleTheme()" class="icon moon" />
+        <div class="dark-mode-icons" @click="handleTheme()" >
+          <MoonSvg v-if="!isDarkMode" class="icon sun" />
+          <SunSvg v-else class="icon moon" />
         </div>
 
         <DropdownMenu />
         <ButtonsGlowOn text="Contacto" class="contact-button" />
-        <HamburgerVerticalSvg @click="toggleSliderTopNav" class="icon hamburger mobile-only " />
+        
+        <div class="hamburger-menu mobile-only" @click="toggleSliderTopNav">
+          <HamburgerVerticalSvg class="icon" />
+        </div>
 
         <SliderTopNav
           :toggleTopNav="toggleSliderTopNav"

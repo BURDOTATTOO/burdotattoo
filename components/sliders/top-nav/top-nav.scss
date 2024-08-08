@@ -7,8 +7,9 @@
   flex-direction: column;
   height: 100%;
   will-change: transform;
-  background-color: var(--background-soft);
-
+  background-color: var(--background);
+  border-right: 1px solid var(--background-opposite-soft);
+  
   &.top-slide-in {
     animation: topSlideIn 0.5s forwards;
     z-index: 100;
@@ -24,14 +25,8 @@
     padding-left: 18px;
     font-size: 24px;
 
-    .title {
+    .logo-container {
       margin-top: 48px;
-      color: var(--heading);
-    }
-
-    .title-strong {
-      color: var(--heading);
-      font-weight: bold;
     }
 
     .animation-exit {
@@ -78,7 +73,15 @@
         }
 
         &:hover {
-          background-color: var(--secondary);
+          background-color: var(--background-base);
+        }
+
+        svg {
+          margin-right: 1rem;
+        }
+        
+        .comment-icon {
+          height: 26px;
         }
       }
     }

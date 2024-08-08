@@ -56,6 +56,9 @@
       
       .dark-mode-icons {
         display: flex;
+        margin-right: .4rem;
+        padding: 20px 0;
+        cursor: pointer;
 
         .sun,
         .moon {
@@ -65,10 +68,26 @@
             margin: 0 10px;
           }
         }
+        @media (max-width: 768px) {
+          margin-right: 0;
+        }
+      }
+
+      .hamburger-menu {
+        padding: 10px 10px 10px 0;
+        cursor: pointer;
+
+        @media (max-width: 768px) {
+          display: flex;
+        }
       }
 
       .contact-button {
         margin-left: 1rem;
+
+        @media (max-width: 768px) {
+          margin-left: .2rem;
+        }
       }
 
     }
