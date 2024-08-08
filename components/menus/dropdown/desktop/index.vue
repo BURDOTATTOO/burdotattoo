@@ -2,26 +2,33 @@
 import { ref } from 'vue'
 
 import './menu.scss'
-import ProfileSvg from "~/components/icons/menu/ProfileSvg.vue"
-import HelpSvg from "~/components/icons/menu/HelpSvg.vue"
-import LogoutSvg from "~/components/icons/menu/LogoutSvg.vue"
-import MessageSvg from "~/components/icons/menu/MessagesSvg.vue"
-import AdsSvg from "~/components/icons/menu/AdsSvg.vue"
+import SearchSvg from "~/components/icons/menu/SearchSvg.vue"
+import CommentSvg from "~/components/icons/menu/CommentSvg.vue"
+import GraphicDesignSvg from "~/components/icons/menu/GraphicDesign.vue"
+import ServerSvg from "~/components/icons/menu/ServerSvg.vue"
 import HeartSvg from "~/components/icons/HeartSvg.vue"
 import ArrowDownSvg from "~/components/icons/ArrowDownSvg.vue"
+import WebDesignSvg from "~/components/icons/menu/WebDesignSvg.vue"
 
-const showDropdown = ref<boolean | null>(null)
+const showServices = ref<boolean | null>(null)
+const showSupport = ref<boolean | null>(null)
 const logged = ref(false)
 const loadingProfile = ref(false)
 
 const toggleDropdown = () => {
-  showDropdown.value = !showDropdown.value
+  showServices.value = !showServices.value
+  showSupport.value = false
+}
+
+const toggleSupport = () => {
+  showSupport.value = !showSupport.value
+  showServices.value = false
 }
 
 const handleLogin = () => {
   console.log('Login')
-  showDropdown.value = false
-  
+  showServices.value = false
+
   loadingProfile.value = true
   setTimeout(() => {
     loadingProfile.value = false
@@ -33,57 +40,95 @@ const handleLogin = () => {
 </script>
 
 <template>
-  <div class="menu-list" @click="toggleDropdown">
-    <h3>Servicios</h3>
-    <ArrowDownSvg :class="['icon user-icon', showDropdown ? 'rotate-opposite' : 'rotate']" />
-  </div>
 
-  
-  <nav class="user-menu-outer" v-if="showDropdown">
-    <ul class="menu-dropdown">
+  <nav class="menu">
+    <ul class="items">
 
-      <li href="#" v-if="!logged" class="menu-dropdown-item">
-        <ProfileSvg class="icon" />
-        <p>Crear Perfil</p>
+      <li class="item" @click="toggleDropdown">
+        <h3>Servicios</h3>
+        <ArrowDownSvg :class="['icon user-icon', showServices ? 'rotate-opposite' : 'rotate']" />
+
+        <ul class="sub-items" v-if="showServices">
+          <li href="#" class="sub-item">
+            <WebDesignSvg class="icon" />
+            <p>Diseño web</p>
+          </li>
+
+          <li href="#" class="sub-item">
+            <GraphicDesignSvg class="icon" />
+            <p>Diseño de gráfico</p>
+          </li>
+
+          <li href="#" class="sub-item">
+            <ServerSvg class="icon" />
+            <p>Alojamiento web</p>
+          </li>
+
+          <li href="#" class="sub-item">
+            <SearchSvg class="icon" />
+            <p>Marketing de motores de búsqueda</p>
+          </li>
+
+          <li href="#" class="sub-item">
+            <CommentSvg class="icon comment-icon" />
+            <p>Marketing de medios sociales</p>
+          </li>
+        </ul>
+
       </li>
 
-      <li href="#" v-if="logged" class="menu-dropdown-item">
-        <ProfileSvg class="icon" />
-        <p>Perfil</p>
-      </li>
+      <li class="item" @click="toggleSupport">
+        <h3>Soporte</h3>
+        <ArrowDownSvg :class="['icon user-icon', showSupport ? 'rotate-opposite' : 'rotate']" />
 
-      <li href="#" v-if="logged" class="menu-dropdown-item">
-        <AdsSvg class="icon" />
-        <p>Publicaciones</p>
-      </li>
+        <ul class="sub-items" v-if="showSupport">
+          <li href="#" v-if="!logged" class="sub-item">
+            <ProfileSvg class="icon" />
+            <p>Crear Perfil</p>
+          </li>
 
-      <li href="#" v-if="logged" class="menu-dropdown-item">
-        <MessageSvg class="icon" />
-        <p>Mensajes</p>
-      </li>
+          <li href="#" v-if="logged" class="sub-item">
+            <ProfileSvg class="icon" />
+            <p>Perfil</p>
+          </li>
 
-      <li href="#" v-if="logged" class="menu-dropdown-item">
-        <HeartSvg class="icon" />
-        <p>Favoritos</p>
-      </li>
+          <li href="#" v-if="logged" class="sub-item">
+            <AdsSvg class="icon" />
+            <p>Publicaciones</p>
+          </li>
 
-      <li href="#" class="menu-dropdown-item">
-        <HelpSvg class="icon" />
-        <p>Centro de ayuda</p>
-      </li>
+          <li href="#" v-if="logged" class="sub-item">
+            <MessageSvg class="icon" />
+            <p>Mensajes</p>
+          </li>
 
-      <li @click="handleLogin" v-if="!logged" class="menu-dropdown-item">
-        <LogoutSvg class="icon" />
-        <p>Entrar</p>
-      </li>
+          <li href="#" v-if="logged" class="sub-item">
+            <HeartSvg class="icon" />
+            <p>Favoritos</p>
+          </li>
 
-      <li @click="handleLogin" v-if="logged" class="menu-dropdown-item">
-        <LogoutSvg class="icon" />
-        <p>Salir</p>
+          <li href="#" class="sub-item">
+            <HelpSvg class="icon" />
+            <p>Centro de ayuda</p>
+          </li>
+
+          <li @click="handleLogin" v-if="!logged" class="sub-item">
+            <LogoutSvg class="icon" />
+            <p>Entrar</p>
+          </li>
+
+          <li @click="handleLogin" v-if="logged" class="sub-item">
+            <LogoutSvg class="icon" />
+            <p>Salir</p>
+          </li>
+        </ul>
+
       </li>
 
     </ul>
   </nav>
 
-  <div @click="toggleDropdown" :class="{ 'menu-dropdown-bg': showDropdown }"></div>
+
+  <div @click="toggleDropdown" :class="{ 'menu-dropdown-bg': showServices }"></div>
+  <div @click="toggleSupport" :class="{ 'menu-dropdown-bg': showSupport }"></div>
 </template>

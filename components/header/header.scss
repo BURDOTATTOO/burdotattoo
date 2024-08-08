@@ -56,14 +56,19 @@
       
       .dark-mode-icons {
         display: flex;
+
         .sun,
         .moon {
-          margin-right: 10px;
-
+          margin-right: 16px;
+          
           @media (max-width: 768px) {
             margin: 0 10px;
           }
         }
+      }
+
+      .contact-button {
+        margin-left: 1rem;
       }
 
     }
