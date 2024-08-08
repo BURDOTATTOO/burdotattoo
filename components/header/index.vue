@@ -51,7 +51,7 @@ const toggleSliderTopNav = () => {
           <SunSvg v-else @click="handleTheme()" class="icon moon" />
         </div>
 
-        <DropdownMenu class="desktop-only" />
+        <DropdownMenu />
         <ButtonsGlowOn text="Contacto" class="contact-button" />
         <HamburgerVerticalSvg @click="toggleSliderTopNav" class="icon hamburger mobile-only " />
 

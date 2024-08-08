@@ -6,9 +6,11 @@ import SearchSvg from "~/components/icons/menu/SearchSvg.vue"
 import CommentSvg from "~/components/icons/menu/CommentSvg.vue"
 import GraphicDesignSvg from "~/components/icons/menu/GraphicDesign.vue"
 import ServerSvg from "~/components/icons/menu/ServerSvg.vue"
-import HeartSvg from "~/components/icons/HeartSvg.vue"
+import SupportSvg from "~/components/icons/menu/SupportSvg.vue"
 import ArrowDownSvg from "~/components/icons/ArrowDownSvg.vue"
 import WebDesignSvg from "~/components/icons/menu/WebDesignSvg.vue"
+import SuggestionsSvg from "~/components/icons/menu/SuggestionsSvg.vue"
+import AnnouncementsSvg from '~/components/icons/menu/AnnouncementsSvg.vue'
 
 const showServices = ref<boolean | null>(null)
 const showSupport = ref<boolean | null>(null)
@@ -41,7 +43,7 @@ const handleLogin = () => {
 
 <template>
 
-  <nav class="menu">
+  <nav class="menu desktop-only">
     <ul class="items">
 
       <li class="item" @click="toggleDropdown">
@@ -82,45 +84,21 @@ const handleLogin = () => {
         <ArrowDownSvg :class="['icon user-icon', showSupport ? 'rotate-opposite' : 'rotate']" />
 
         <ul class="sub-items" v-if="showSupport">
-          <li href="#" v-if="!logged" class="sub-item">
-            <ProfileSvg class="icon" />
-            <p>Crear Perfil</p>
-          </li>
-
-          <li href="#" v-if="logged" class="sub-item">
-            <ProfileSvg class="icon" />
-            <p>Perfil</p>
-          </li>
-
-          <li href="#" v-if="logged" class="sub-item">
-            <AdsSvg class="icon" />
-            <p>Publicaciones</p>
-          </li>
-
-          <li href="#" v-if="logged" class="sub-item">
-            <MessageSvg class="icon" />
-            <p>Mensajes</p>
-          </li>
-
-          <li href="#" v-if="logged" class="sub-item">
-            <HeartSvg class="icon" />
-            <p>Favoritos</p>
+          <li href="#"  class="sub-item">
+            <SupportSvg class="icon" />
+            <p>Contacta con soporte</p>
           </li>
 
           <li href="#" class="sub-item">
-            <HelpSvg class="icon" />
-            <p>Centro de ayuda</p>
+            <SuggestionsSvg class="icon" />
+            <p>Anuncios</p>
           </li>
 
-          <li @click="handleLogin" v-if="!logged" class="sub-item">
-            <LogoutSvg class="icon" />
-            <p>Entrar</p>
+          <li href="#"  class="sub-item">
+            <AnnouncementsSvg class="icon" />
+            <p>Sugerencias</p>
           </li>
 
-          <li @click="handleLogin" v-if="logged" class="sub-item">
-            <LogoutSvg class="icon" />
-            <p>Salir</p>
-          </li>
         </ul>
 
       </li>
