@@ -13,16 +13,21 @@
       color: var(--heading);
       padding: 0;
       position: relative;
+      stroke: var(--heading);
 
       &:hover {
         color: var(--primary);
+
+        .arrow-icon {
+          stroke: var(--primary);
+        }
       }
 
       h3 {
         font-size: 1.2rem;
       }
     
-      .user-icon {
+      .arrow-icon {
         margin-left: 8px;
         width: 1.1rem;
       }

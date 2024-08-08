@@ -22,6 +22,8 @@ const { toggleTopNav, isTopNavOpen } = defineProps<{
   isTopNavOpen: boolean | undefined
 }>()
 
+console.log(isTopNavOpen)
+
 const handleClick = (url: string) => {
   router.push(url)
   toggleTopNav()
@@ -36,12 +38,12 @@ const handleModal = () => {
 <template>
 
   <section
-    :class="['top-nav-container', isTopNavOpen ? 'top-slide-in' : '', isTopNavOpen === false ? 'top-slide-out' : '']">
-
+    :class="[isTopNavOpen === undefined ? 'display-none' : 'top-nav-container',  isTopNavOpen ? 'top-slide-in' : '', isTopNavOpen === false ? 'top-slide-out' : '']">
+    
     <div class="top-nav-header">
 
       <NuxtLink to="/" class="logo-container">
-          <Logo />
+        <Logo />
       </NuxtLink>
 
       <div @click="toggleTopNav" class="animation-exit">

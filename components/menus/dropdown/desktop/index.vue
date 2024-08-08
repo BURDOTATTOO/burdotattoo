@@ -48,7 +48,7 @@ const handleLogin = () => {
 
       <li class="item" @click="toggleDropdown">
         <h3>Servicios</h3>
-        <ArrowDownSvg :class="['icon user-icon', showServices ? 'rotate-opposite' : 'rotate']" />
+        <ArrowDownSvg :class="['icon arrow-icon', showServices ? 'rotate-opposite' : 'rotate']" />
 
         <ul class="sub-items" v-if="showServices">
           <li href="#" class="sub-item">
@@ -81,7 +81,7 @@ const handleLogin = () => {
 
       <li class="item" @click="toggleSupport">
         <h3>Soporte</h3>
-        <ArrowDownSvg :class="['icon user-icon', showSupport ? 'rotate-opposite' : 'rotate']" />
+        <ArrowDownSvg :class="['icon arrow-icon', showSupport ? 'rotate-opposite' : 'rotate']" />
 
         <ul class="sub-items" v-if="showSupport">
           <li href="#"  class="sub-item">
