@@ -2,7 +2,6 @@
 import './header.scss'
 import { ref } from 'vue'
 import { setDarkMode } from '~/utils/utils'
-import Menu from '~/components/menus/desktop/index.vue'
 import DropdownMenu from '~/components/menus/dropdown/desktop/index.vue'
 import SunSvg from '~/components/icons/header/SunSvg.vue'
 import MoonSvg from '~/components/icons/header/MoonSvg.vue'

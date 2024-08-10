@@ -50,11 +50,11 @@ const handleLogin = () => {
         <h3>Servicios</h3>
         <ArrowDownSvg :class="['icon arrow-icon', showServices ? 'rotate-opposite' : 'rotate']" />
 
-        <ul class="sub-items" v-if="showServices">
-          <li href="#" class="sub-item">
+        <ul class="sub-items" v-if="showServices"> 
+          <NuxtLink to="/web-design" class="sub-item">
             <WebDesignSvg class="icon" />
             <p>Diseño web</p>
-          </li>
+          </NuxtLink>
 
           <li href="#" class="sub-item">
             <GraphicDesignSvg class="icon" />
@@ -84,7 +84,7 @@ const handleLogin = () => {
         <ArrowDownSvg :class="['icon arrow-icon', showSupport ? 'rotate-opposite' : 'rotate']" />
 
         <ul class="sub-items" v-if="showSupport">
-          <li href="#"  class="sub-item">
+          <li href="#" class="sub-item">
             <SupportSvg class="icon" />
             <p>Contacta con soporte</p>
           </li>
@@ -94,7 +94,7 @@ const handleLogin = () => {
             <p>Anuncios</p>
           </li>
 
-          <li href="#"  class="sub-item">
+          <li href="#" class="sub-item">
             <AnnouncementsSvg class="icon" />
             <p>Sugerencias</p>
           </li>
