@@ -38,7 +38,7 @@ const { toggleTopNav, isTopNavOpen } = defineProps<{
 
       <nav>
         <ul class="list">
-          <NuxtLink to="/" class="item" @click="toggleTopNav()">
+          <NuxtLink to="/diseno-web" class="item" @click="toggleTopNav()">
             <WebDesignSvg class="icon" />
             <p>Diseño web</p>
           </NuxtLink>

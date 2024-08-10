@@ -3,7 +3,7 @@
   text-align: center;
   margin: 50px 0 20px;
 
-  .footer-content {
+  .content {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -11,7 +11,7 @@
     max-width: var(--max-width);
     margin: 0 auto;
 
-    .footer-section {
+    .item {
       flex: 1;
       margin: 10px;
 
@@ -46,6 +46,9 @@
       svg {
         height: 100%;
         width: 150px;
+        @media (max-width: 900px) {
+          width: 48px;
+        }
       }
     }
   }

@@ -9,13 +9,13 @@ const currentYear = ref(new Date().getFullYear())
 <template>
   <footer class="footer-container">
 
-    <div class="footer-content">
+    <div class="content">
 
-      <div class="footer-section">
+      <div class="item">
         <LogoSvg />
       </div>
 
-      <div class="footer-section">
+      <div class="item">
         <h4>Links rápidos</h4>
         <ul>
           <li>
@@ -33,7 +33,7 @@ const currentYear = ref(new Date().getFullYear())
         </ul>
       </div>
 
-      <div class="footer-section">
+      <div class="item">
         <h4>Síguenos</h4>
         <ul class="social-links">
           <li><a href="https://facebook.com" target="_blank">Facebook</a></li>

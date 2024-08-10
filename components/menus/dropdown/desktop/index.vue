@@ -51,7 +51,7 @@ const handleLogin = () => {
         <ArrowDownSvg :class="['icon arrow-icon', showServices ? 'rotate-opposite' : 'rotate']" />
 
         <ul class="sub-items" v-if="showServices"> 
-          <NuxtLink to="/web-design" class="sub-item">
+          <NuxtLink to="/diseno-web" class="sub-item">
             <WebDesignSvg class="icon" />
             <p>Diseño web</p>
           </NuxtLink>

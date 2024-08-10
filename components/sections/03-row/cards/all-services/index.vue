@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import './card-description.scss'
+import './all-services.scss'
 
 import PresentationSvg from '@/components/icons/plans/PresentationSvg.vue'
 import CloudSvg from '@/components/icons/plans/CloudSvg.vue'
