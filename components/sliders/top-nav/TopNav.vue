@@ -7,31 +7,14 @@ import CommentSvg from "~/components/icons/menu/CommentSvg.vue"
 import GraphicDesignSvg from "~/components/icons/menu/GraphicDesign.vue"
 import ServerSvg from "~/components/icons/menu/ServerSvg.vue"
 import SupportSvg from "~/components/icons/menu/SupportSvg.vue"
-import ArrowDownSvg from "~/components/icons/ArrowDownSvg.vue"
 import WebDesignSvg from "~/components/icons/menu/WebDesignSvg.vue"
 import SuggestionsSvg from "~/components/icons/menu/SuggestionsSvg.vue"
 import AnnouncementsSvg from '~/components/icons/menu/AnnouncementsSvg.vue'
-
-
-
-
-const router = useRouter()
 
 const { toggleTopNav, isTopNavOpen } = defineProps<{
   toggleTopNav: () => void
   isTopNavOpen: boolean | undefined
 }>()
-
-console.log(isTopNavOpen)
-
-const handleClick = (url: string) => {
-  router.push(url)
-  toggleTopNav()
-}
-
-const handleModal = () => {
-  toggleTopNav()
-}
 
 </script>
 
@@ -55,38 +38,38 @@ const handleModal = () => {
 
       <nav>
         <ul class="list">
-          <li href="#" class="item">
+          <NuxtLink to="/" class="item" @click="toggleTopNav()">
             <WebDesignSvg class="icon" />
             <p>Diseño web</p>
-          </li>
-          <li class="item" @click="handleClick('about')">
+          </NuxtLink>
+          <NuxtLink to="/diseno" class="item" @click="toggleTopNav()">
             <GraphicDesignSvg class="icon" />
             <p>Diseño gráfico</p>
-          </li>
-          <li class="item" @click="handleClick('services')">
+          </NuxtLink>
+          <NuxtLink to="/alojamiento" class="item" @click="toggleTopNav()">
             <ServerSvg class="icon" />
             <p>Alostamiento web</p>
-          </li>
-          <li class="item" @click="handleClick('contact')">
+          </NuxtLink>
+          <NuxtLink to="/marketing" class="item" @click="toggleTopNav()">
             <SearchSvg class="icon" />
             Marketing de motores de búsqueda
-          </li>
-          <li class="item" @click="handleClick('contact')">
+          </NuxtLink>
+          <NuxtLink to="/" class="item" @click="toggleTopNav()">
             <CommentSvg class="icon comment-icon" />
             Marketing de medios sociales
-          </li>
-          <li class="item" @click="handleClick('contact')">
+          </NuxtLink>
+          <NuxtLink to="/" class="item" @click="toggleTopNav()">
             <SupportSvg class="icon" />
             Contacta con soporte
-          </li>
-          <li class="item" @click="handleClick('contact')">
+          </NuxtLink>
+          <NuxtLink to="/" class="item" @click="toggleTopNav()">
             <SuggestionsSvg class="icon" />
             Sugerencias
-          </li>
-          <li class="item" @click="handleClick('contact')">
+          </NuxtLink>
+          <NuxtLink to="/" class="item" @click="toggleTopNav()">
             <AnnouncementsSvg class="icon" />
             Anuncios
-          </li>
+          </NuxtLink>
         </ul>
       </nav>
 

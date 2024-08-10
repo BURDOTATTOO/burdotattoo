@@ -2,8 +2,8 @@
 import BillboardImage from '~/components/sections/02-row/billboard-image/index.vue'
 import TitleSubtitle from '~/components/sections/01-row/title-subtitle/TitleSubtitle.vue'
 import CardDescription from '~/components/sections/04-row/card-description/CardDescription.vue'
-import Accordion from '~/components/sections/01-row/accordion/index.vue'
 import HighlightText from '~/components/sections/03-row/highlight-text/index.vue'
+
 useSeoMeta({
   title: '¡Consigue una página web profesional con Hosting GRATIS tu primer año!',
   ogTitle: '¡Consigue una página web profesional con Hosting GRATIS tu primer año!',
