@@ -2,8 +2,8 @@
 import './top-nav.scss'
 import Logo from '~/public/logo.vue'
 import ExitSvg from '@/components/icons/ExitSvg.vue'
-import SearchSvg from "~/components/icons/menu/SearchSvg.vue"
-import CommentSvg from "~/components/icons/menu/CommentSvg.vue"
+import SearchSvg from "~/components/icons/menu/SeoSvg.vue"
+import MarketingSvg from "~/components/icons/menu/MarketingSvg.vue"
 import GraphicDesignSvg from "~/components/icons/menu/GraphicDesign.vue"
 import ServerSvg from "~/components/icons/menu/ServerSvg.vue"
 import SupportSvg from "~/components/icons/menu/SupportSvg.vue"

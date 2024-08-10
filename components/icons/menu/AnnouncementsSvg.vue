@@ -1,50 +1,14 @@
 <template>
 
-	<svg width="32px" height="32px" viewBox="0 0 120 120" id="Layer_1" version="1.1" xml:space="preserve"
-		xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 
-		<g>
-			<g>
-				<ellipse cx="18.6" cy="64.9" rx="6.6" ry="6.6"
-					transform="matrix(0.7071 -0.7071 0.7071 0.7071 -40.471 32.1518)" />
-
-				<ellipse cx="101.4" cy="64.9" rx="6.6" ry="6.6"
-					transform="matrix(0.9732 -0.2298 0.2298 0.9732 -12.2044 25.0397)" />
-			</g>
-
-			<g>
-				<path fill="var(--primary)"
-					d="M96.4,52.8h-5.6C90.8,35.8,77,22,60,22c-17,0-30.8,13.8-30.8,30.8h-5.6c0-20.1,16.3-36.4,36.4-36.4    S96.4,32.7,96.4,52.8z" />
-			</g>
-
-			<g>
-				<path fill="var(--primary)"
-					d="M69.3,101.4c-2.4,0-4-0.1-4.2-0.1l0.2-2.2c0.2,0,22.9,1.7,25.6-7.7c3-10.4,1.5-21.4,1.5-21.5l2.2-0.3    C94.7,70,96.2,81.1,93,92C90.5,100.3,76.5,101.4,69.3,101.4z" />
-			</g>
-
-			<path fill="var(--primary)"
-				d="M70.3,103.6H60.2c-0.9,0-1.6-0.7-1.6-1.6v-4c0-0.9,0.7-1.6,1.6-1.6h10.1c0.9,0,1.6,0.7,1.6,1.6v4   C71.9,102.9,71.2,103.6,70.3,103.6z" />
-
-			<path fill="var(--heading)"
-				d="M77.1,72.6H60l-12.4,7.4c-0.5,0.3-1.1-0.2-1-0.7l1.8-6.7h-5.5c-1.5,0-2.8-1.3-2.8-2.8V48.4   c0-1.5,1.3-2.8,2.8-2.8h34.1c1.5,0,2.8,1.3,2.8,2.8v21.5C79.9,71.4,78.6,72.6,77.1,72.6z" />
-			<g>
-				<path fill="var(--primary)" d="M60,57c-1.2,0-2.1,1-2.1,2.1s1,2.1,2.1,2.1c1.2,0,2.1-1,2.1-2.1S61.2,57,60,57z" />
-				<path fill="var(--primary)" d="M51.4,57c-1.2,0-2.1,1-2.1,2.1s1,2.1,2.1,2.1c1.2,0,2.1-1,2.1-2.1S52.6,57,51.4,57z" />
-				<path fill="var(--primary)" d="M68.6,57c-1.2,0-2.1,1-2.1,2.1s1,2.1,2.1,2.1c1.2,0,2.1-1,2.1-2.1S69.8,57,68.6,57z" />
-
-			</g>
-
-			<g>
-
-				<path fill="var(--primary)"
-					d="M29.6,50.9h-8.8c-2.7,0-4.9,2.2-4.9,4.9v19.6c0,2.7,2.2,4.9,4.9,4.9h8.8c1.9,0,3.4-1.5,3.4-3.4V54.2    C32.9,52.4,31.4,50.9,29.6,50.9z" />
-
-				<path fill="var(--primary)"
-					d="M99.2,50.9h-8.8c-1.9,0-3.4,1.5-3.4,3.4v22.6c0,1.9,1.5,3.4,3.4,3.4h8.8c2.7,0,4.9-2.2,4.9-4.9V55.7    C104.1,53,101.9,50.9,99.2,50.9z" />
-
-			</g>
-
-		</g>
-
-	</svg>
+<svg width="28px" height="28px" viewBox="-0.21 0 32.871 32.871" xmlns="http://www.w3.org/2000/svg">
+  <g id="announcement" transform="translate(-779.053 -112.499)">
+    <path id="Rectangle_16" data-name="Rectangle 16" d="M5,0H9.947a0,0,0,0,1,0,0V10a0,0,0,0,1,0,0H5A5,5,0,0,1,0,5V5A5,5,0,0,1,5,0Z" transform="translate(780.053 120.499)" fill="var(--heading)" stroke="var(--heading)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path data-name="Path 43" d="M804,137.446,790,130.5v-10l14-7Z" fill="var(--primary)" stroke="var(--heading)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <line data-name="Line 52" x2="8" y2="13.501" transform="translate(786 130.499)" fill="none" stroke="var(--heading)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <line data-name="Line 53" x2="4" transform="translate(807.053 125.499)" fill="none" stroke="var(--heading)" stroke-miterlimit="10" stroke-width="2"/>
+    <line data-name="Line 54" y1="2" x2="4" transform="translate(807.053 119.499)" fill="none" stroke="var(--heading)" stroke-miterlimit="10" stroke-width="2"/>
+    <line data-name="Line 55" x2="4" y2="2" transform="translate(807.053 129.499)" fill="none" stroke="var(--heading)" stroke-miterlimit="10" stroke-width="2"/>
+  </g>
+</svg>
 </template>

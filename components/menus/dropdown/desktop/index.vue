@@ -2,8 +2,8 @@
 import { ref } from 'vue'
 
 import './menu.scss'
-import SearchSvg from "~/components/icons/menu/SearchSvg.vue"
-import CommentSvg from "~/components/icons/menu/CommentSvg.vue"
+import SeoSvg from "~/components/icons/menu/SeoSvg.vue"
+import MarketingSvg from "~/components/icons/menu/MarketingSvg.vue"
 import GraphicDesignSvg from "~/components/icons/menu/GraphicDesign.vue"
 import ServerSvg from "~/components/icons/menu/ServerSvg.vue"
 import SupportSvg from "~/components/icons/menu/SupportSvg.vue"
@@ -67,12 +67,12 @@ const handleLogin = () => {
           </li>
 
           <li href="#" class="sub-item">
-            <SearchSvg class="icon" />
+            <SeoSvg class="icon" />
             <p>Marketing de motores de búsqueda</p>
           </li>
 
           <li href="#" class="sub-item">
-            <CommentSvg class="icon comment-icon" />
+            <MarketingSvg class="icon comment-icon" />
             <p>Marketing de medios sociales</p>
           </li>
         </ul>
@@ -90,12 +90,12 @@ const handleLogin = () => {
           </li>
 
           <li href="#" class="sub-item">
-            <SuggestionsSvg class="icon" />
+            <AnnouncementsSvg class="icon" />
             <p>Anuncios</p>
           </li>
 
           <li href="#" class="sub-item">
-            <AnnouncementsSvg class="icon" />
+            <SuggestionsSvg class="icon" />
             <p>Sugerencias</p>
           </li>
 

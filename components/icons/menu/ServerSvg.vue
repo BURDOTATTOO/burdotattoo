@@ -1,6 +1,6 @@
 <template>
 
-<svg height="24px" width="24px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+<svg height="28px" width="28px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
 	 viewBox="0 0 512 512" xml:space="preserve">
 <path id="path-2" d="M410.127,338.635H102.33C45.865,338.691,0.048,292.954,0,236.498c-0.04-45.761,30.326-85.974,74.357-98.455
 	c0-0.849,0-1.689,0-2.538C74.349,64.398,131.991,6.749,203.098,6.741c50.604,0,96.517,29.637,117.348,75.75
