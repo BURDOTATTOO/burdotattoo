@@ -2,7 +2,7 @@
 import './top-nav.scss'
 import Logo from '~/public/logo.vue'
 import ExitSvg from '@/components/icons/ExitSvg.vue'
-import SearchSvg from "~/components/icons/menu/SeoSvg.vue"
+import SeoSvg from "~/components/icons/menu/SeoSvg.vue"
 import MarketingSvg from "~/components/icons/menu/MarketingSvg.vue"
 import GraphicDesignSvg from "~/components/icons/menu/GraphicDesign.vue"
 import ServerSvg from "~/components/icons/menu/ServerSvg.vue"
@@ -51,11 +51,11 @@ const { toggleTopNav, isTopNavOpen } = defineProps<{
             <p>Alostamiento web</p>
           </NuxtLink>
           <NuxtLink to="/marketing" class="item" @click="toggleTopNav()">
-            <SearchSvg class="icon" />
+            <SeoSvg class="icon" />
             Marketing de motores de búsqueda
           </NuxtLink>
           <NuxtLink to="/" class="item" @click="toggleTopNav()">
-            <CommentSvg class="icon comment-icon" />
+            <MarketingSvg class="icon comment-icon" />
             Marketing de medios sociales
           </NuxtLink>
           <NuxtLink to="/" class="item" @click="toggleTopNav()">

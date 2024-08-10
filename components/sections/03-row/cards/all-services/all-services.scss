@@ -1,4 +1,4 @@
-.card-description-container {
+.card-services-container {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   margin: 40px auto 0;
@@ -19,26 +19,26 @@
     grid-template-columns: 1fr;
   }
 
-  .grid-item {
+  .item {
     display: flex;
     flex-direction: column;
     background-color: var(--background);
     position: relative;
     box-shadow: var(--shadow-card);
 
-    .grid-image {
+    .image {
       display: flex;
       margin: 0 auto;
       padding-top: 20px;
       max-width: 100px;
     }
 
-    .grid-container {
+    .details {
       display: flex;
       flex-direction: column;
       padding: 20px;
 
-      .grid-details {
+      .text {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -53,14 +53,14 @@
           text-align: center;
         }
 
-        .description {
+        .price {
           font-size: 1.5rem;
           font-weight: 700;
           color: var(--heading);
         }
       }
 
-      .location {
+      .description {
         display: flex;
         flex-direction: row;
         align-items: center;
