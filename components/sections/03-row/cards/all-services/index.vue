@@ -4,7 +4,7 @@ import './all-services.scss'
 import PresentationSvg from '@/components/icons/plans/PresentationSvg.vue'
 import CloudSvg from '@/components/icons/plans/CloudSvg.vue'
 import ServerSvg from '@/components/icons/plans/ServerSvg.vue'
-
+import ButtonGlobal from '@/components/buttons/glow-on/index.vue'
 </script>
 
 <template>
@@ -18,6 +18,7 @@ import ServerSvg from '@/components/icons/plans/ServerSvg.vue'
       </div>
 
       <div class="details">
+
         <div class="text">
           <h3 class="title">
             Marketing en redes sociales
@@ -26,10 +27,15 @@ import ServerSvg from '@/components/icons/plans/ServerSvg.vue'
             $599,999
           </span>
         </div>
+
         <div class="description">
           <p>Contrata a nuestro equipo de expertos en marketing en redes sociales y aumenta tus oportunidades de
-            negocio. Dirígete a clientes potenciales en función de grupos demográficos específicos.</p>
+            negocio. Dirígete a clientes potenciales en función de grupos demográficos específicos.
+          </p>
+
+          <ButtonGlobal text="Leer más" link="/diseno-web" />
         </div>
+
       </div>
 
     </div>
@@ -41,6 +47,7 @@ import ServerSvg from '@/components/icons/plans/ServerSvg.vue'
       </div>
 
       <div class="details">
+
         <div class="text">
           <h3 class="title">
             Alojamiento web administrado por cPanel
@@ -49,9 +56,13 @@ import ServerSvg from '@/components/icons/plans/ServerSvg.vue'
             $60,000
           </span>
         </div>
+        
         <div class="description">
           <p>¡Potente alojamiento de sitios web administrado con cPanel, correos electrónicos ilimitados, 25 GB de
-            espacio en disco, Jet Backup y 500 GB de ancho de banda!</p>
+            espacio en disco, Jet Backup y 500 GB de ancho de banda!
+          </p>
+
+          <ButtonGlobal text="Leer más" link="/diseno-web" />
         </div>
       </div>
 
@@ -64,6 +75,7 @@ import ServerSvg from '@/components/icons/plans/ServerSvg.vue'
       </div>
 
       <div class="details">
+
         <div class="text">
           <h3 class="title">
             SEO – Marketing en motores de búsqueda
@@ -72,9 +84,13 @@ import ServerSvg from '@/components/icons/plans/ServerSvg.vue'
             $1,000,000
           </span>
         </div>
+
         <div class="description">
           <p>Haga que su sitio web aparezca en los principales motores de búsqueda con nuestro servicio de optimización
-            de motores de búsqueda y marketing de motores de búsqueda.</p>
+            de motores de búsqueda y marketing de motores de búsqueda.
+          </p>
+
+          <ButtonGlobal text="Leer más" link="/diseno-web" />
         </div>
       </div>
 
