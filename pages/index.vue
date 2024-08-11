@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import BillboardImage from '~/components/sections/02-row/billboard-image/index.vue'
 import TitleSubtitle from '~/components/sections/01-row/title-subtitle/TitleSubtitle.vue'
-import Cards from '~/components/sections/03-row/cards/all-services/index.vue'
+import Cards from '~/components/sections/03-row/cards/services/index.vue'
 import HighlightText from '~/components/sections/03-row/highlight-text/index.vue'
 
 useSeoMeta({
@@ -22,7 +22,8 @@ useSeoMeta({
 
 <template>
   <BillboardImage />
-  <TitleSubtitle 
+  <TitleSubtitle
+    marginTop
     title="Nuestros Planes"
     subtitle="Garantizamos un diseño único y sencillo para tu página web." />
   

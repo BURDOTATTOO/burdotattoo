@@ -42,19 +42,19 @@ const { toggleTopNav, isTopNavOpen } = defineProps<{
             <WebDesignSvg class="icon" />
             <p>Diseño web</p>
           </NuxtLink>
-          <NuxtLink to="/diseno" class="item" @click="toggleTopNav()">
+          <NuxtLink to="/" class="item" @click="toggleTopNav()">
             <GraphicDesignSvg class="icon" />
             <p>Diseño gráfico</p>
           </NuxtLink>
-          <NuxtLink to="/alojamiento" class="item" @click="toggleTopNav()">
+          <NuxtLink to="/" class="item" @click="toggleTopNav()">
             <ServerSvg class="icon" />
             <p>Alostamiento web</p>
           </NuxtLink>
-          <NuxtLink to="/marketing" class="item" @click="toggleTopNav()">
+          <NuxtLink to="/marketing-online" class="item" @click="toggleTopNav()">
             <SeoSvg class="icon" />
             Marketing de motores de búsqueda
           </NuxtLink>
-          <NuxtLink to="/" class="item" @click="toggleTopNav()">
+          <NuxtLink to="/marketing-en-redes-sociales" class="item" @click="toggleTopNav()">
             <MarketingSvg class="icon comment-icon" />
             Marketing de medios sociales
           </NuxtLink>

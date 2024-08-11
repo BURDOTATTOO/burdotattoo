@@ -56,25 +56,25 @@ const handleLogin = () => {
             <p>Diseño web</p>
           </NuxtLink>
 
-          <li href="#" class="sub-item">
+          <NuxtLink to="#" class="sub-item">
             <GraphicDesignSvg class="icon" />
             <p>Diseño de gráfico</p>
-          </li>
+          </NuxtLink>
 
-          <li href="#" class="sub-item">
+          <NuxtLink to="#" class="sub-item">
             <ServerSvg class="icon" />
             <p>Alojamiento web</p>
-          </li>
+          </NuxtLink>
 
-          <li href="#" class="sub-item">
+          <NuxtLink to="/marketing-online" class="sub-item">
             <SeoSvg class="icon" />
             <p>Marketing de motores de búsqueda</p>
-          </li>
+          </NuxtLink>
 
-          <li href="#" class="sub-item">
+          <NuxtLink to="/marketing-en-redes-sociales" class="sub-item">
             <MarketingSvg class="icon comment-icon" />
             <p>Marketing de medios sociales</p>
-          </li>
+          </NuxtLink>
         </ul>
 
       </li>
@@ -84,20 +84,20 @@ const handleLogin = () => {
         <ArrowDownSvg :class="['icon arrow-icon', showSupport ? 'rotate-opposite' : 'rotate']" />
 
         <ul class="sub-items" v-if="showSupport">
-          <li href="#" class="sub-item">
+          <NuxtLink to="#" class="sub-item">
             <SupportSvg class="icon" />
             <p>Contacta con soporte</p>
-          </li>
+          </NuxtLink>
 
-          <li href="#" class="sub-item">
+          <NuxtLink to="#" class="sub-item">
             <AnnouncementsSvg class="icon" />
             <p>Anuncios</p>
-          </li>
+          </NuxtLink>
 
-          <li href="#" class="sub-item">
+          <NuxtLink to="#" class="sub-item">
             <SuggestionsSvg class="icon" />
             <p>Sugerencias</p>
-          </li>
+          </NuxtLink>
 
         </ul>
 

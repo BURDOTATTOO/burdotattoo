@@ -4,7 +4,7 @@
   gap: 20px;
   color: var(--heading);
   padding: 0 20px;
-  margin-top: 80px;
+  margin-top: 40px;
   text-align: center;
 
   .title {
@@ -26,7 +26,8 @@
     font-weight: 300;
     font-size: 1.2rem;
     color: var(--text);
-
+    max-width: var(--tablet-width);
+    
     @media (max-width: 756px) {
       line-height: 1.6rem;
       padding-top: 16px;
