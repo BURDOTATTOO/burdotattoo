@@ -4,6 +4,7 @@ import TitleSubtitle from '~/components/sections/01-row/title-subtitle/TitleSubt
 import Cards from '~/components/sections/03-row/cards/services/index.vue'
 import HighlightText from '~/components/sections/03-row/highlight-text/index.vue'
 
+
 useSeoMeta({
   title: '¡Consigue una página web profesional con Hosting GRATIS tu primer año!',
   ogTitle: '¡Consigue una página web profesional con Hosting GRATIS tu primer año!',

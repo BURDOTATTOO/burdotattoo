@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import ImageText from '~/components/sections/02-row/image-text/indext.vue'
 import TitleSubtitle from '~/components/sections/01-row/title-subtitle/TitleSubtitle.vue'
-import Cards from '~/components/sections/03-row/cards/web-design/index.vue'
+import WebDesignCards from '~/components/sections/03-row/cards/web-design-color/index.vue'
 
 useSeoMeta({
   title: 'Servicio experto en diseño web.',
@@ -23,6 +23,6 @@ useSeoMeta({
   <TitleSubtitle 
     title="Nuestras promociones populares de diseño web"
     subtitle="¡Obtenga un sitio web con todas las funciones que aumente sus ingresos y expanda su negocio!" />
-  
-  <Cards />
+
+  <WebDesignCards />
 </template>
