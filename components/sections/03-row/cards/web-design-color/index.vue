@@ -10,18 +10,23 @@ import PromoSvg from '~/components/icons/PromoSvg.vue'
 
 <template>
 
-  <section class="card-marketing-container">
+  <section class="card-web-design-container">
 
     <div class="item">
 
       <div class="heading">
 
         <h3 class="title">
-          Promoción de páginas web
+          Esencial
         </h3>
-        <span class="subtitle">
+
+        <h4 class="subtitle">
+          Promoción de páginas web
+        </h4>
+
+        <p class="price">
           $599.999
-        </span>
+        </p>
 
       </div>
 
@@ -48,12 +53,16 @@ import PromoSvg from '~/components/icons/PromoSvg.vue'
     <div class="item">
 
       <div class="heading">
+
         <h3 class="title">
-          Sitio web de 5 páginas
+          Web Pro
         </h3>
-        <span class="subtitle">
+        <h4 class="subtitle">
+          Sitio web de 5 páginas
+        </h4>
+        <p class="price">
           $999.999
-        </span>
+        </p>
       </div>
 
       <div class="details">
@@ -81,11 +90,15 @@ import PromoSvg from '~/components/icons/PromoSvg.vue'
 
       <div class="heading">
         <h3 class="title">
-          Promoción de tienda online
+          Premium
         </h3>
-        <span class="subtitle">
+        <h4 class="subtitle">
+          Promoción de tienda online
+        </h4>
+
+        <p class="price">
           $3,999.999
-        </span>
+        </p>
       </div>
 
       <div class="details">

@@ -21,6 +21,7 @@ useSeoMeta({
   <ImageText />
 
   <TitleSubtitle 
+    marginTop
     title="Nuestras promociones populares de diseño web"
     subtitle="¡Obtenga un sitio web con todas las funciones que aumente sus ingresos y expanda su negocio!" />
 

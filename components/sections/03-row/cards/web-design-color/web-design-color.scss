@@ -1,4 +1,4 @@
-.card-marketing-container {
+.card-web-design-container {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   margin: 40px auto 0;
@@ -41,15 +41,22 @@
         font-weight: 600;
         line-height: 1rem;
         letter-spacing: 1px;
-        padding: 0 .6rem;
+        padding: .5rem .6rem;
       }
 
       .subtitle {
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+        line-height: 1.8rem;
+        padding: .5rem .6rem;
+      }
+
+      .price {
         font-size: 1.5rem;
         font-weight: 700;
         letter-spacing: 1px;
         line-height: 1.8rem;
-        padding: 1rem .6rem;
+        padding: 0 .6rem;
       }
     }
 
