@@ -3,7 +3,7 @@ import './title-subtitle.scss'
 
 interface TitleSubtitleProps {
   title: string
-  subtitle: string
+  subtitle?: string
   marginTop?: boolean
 }
 

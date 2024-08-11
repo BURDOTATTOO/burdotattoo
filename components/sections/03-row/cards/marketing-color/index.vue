@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import './marketing.scss'
+import './marketing-color.scss'
 
-import ButtonGlow from '~/components/buttons/glow-on/index.vue'
 import ShareSvg from '~/components/icons/plans/AdsSvg.vue'
 import PremiumSvg from '~/components/icons/PremiumSvg.vue'
 import ProSvg from '~/components/icons/ProSvg.vue'
+import RegularButton from '~/components/buttons/regular/index.vue'
 </script>
 
 <template>
@@ -19,7 +19,7 @@ import ProSvg from '~/components/icons/ProSvg.vue'
           Esencial
         </h3>
         <span class="subtitle">
-          $499.999
+          $599.999
         </span>
 
       </div>
@@ -46,7 +46,7 @@ import ProSvg from '~/components/icons/ProSvg.vue'
       </div>
 
       <div class="cta">
-        <ButtonGlow text="Solicitar" />
+        <RegularButton text="Solicitar" />
       </div>
 
     </div>
@@ -58,7 +58,7 @@ import ProSvg from '~/components/icons/ProSvg.vue'
           Pro
         </h3>
         <span class="subtitle">
-          $699.999
+          $899.999
         </span>
       </div>
 
@@ -84,7 +84,7 @@ import ProSvg from '~/components/icons/ProSvg.vue'
       </div>
 
       <div class="cta">
-        <ButtonGlow text="Solicitar" />
+        <RegularButton text="Solicitar" />
       </div>
 
     </div>
@@ -96,7 +96,7 @@ import ProSvg from '~/components/icons/ProSvg.vue'
           Premium
         </h3>
         <span class="subtitle">
-          $928.999
+          $1,199.999
         </span>
       </div>
 
@@ -122,7 +122,7 @@ import ProSvg from '~/components/icons/ProSvg.vue'
       </div>
 
       <div class="cta">
-        <ButtonGlow text="Solicitar" />
+        <RegularButton text="Solicitar" />
       </div>
 
     </div>

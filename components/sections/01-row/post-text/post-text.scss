@@ -1,0 +1,42 @@
+.post-text-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  color: var(--heading);
+  padding: 0 20px;
+  margin-top: 40px;
+  text-align: center;
+
+  article {
+    max-width: var(--mobile-width);
+  }
+
+  .title {
+    font-size: 1.5rem;
+    color: var(--heading);
+    line-height: 2.2rem;
+  }
+
+  .extra-top-space {
+    padding-top: 40px;
+  }
+
+  .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: var(--text);
+    max-width: var(--tablet-width);
+    padding-top: 24px;
+    text-align: start;
+    p {
+      padding-top: 24px;
+    }
+    @media (max-width: 756px) {
+      line-height: 1.6rem;
+      padding-top: 16px;
+    }
+  }
+}

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import './marketing-two.scss'
+import './marketing-social.scss'
 
 import BrowserSvg from '~/components/icons/BrowserSvg.vue'
 import StatisticsUpSvg from '~/components/icons/StatisticsUpSvg.vue'

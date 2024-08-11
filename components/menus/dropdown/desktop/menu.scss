@@ -8,19 +8,13 @@
 
     .item {
       display: flex;
-      align-items: end;
       cursor: pointer;
       color: var(--heading);
       position: relative;
       stroke: var(--heading);
-
-      &:hover {
-        color: var(--primary);
-
-        .arrow-icon {
-          stroke: var(--primary);
-        }
-      }
+      line-height: 1rem;
+      justify-content: center;
+      align-items: center;
 
       h3 {
         font-size: 1.2rem;

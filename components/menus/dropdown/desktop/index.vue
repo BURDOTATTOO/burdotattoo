@@ -106,5 +106,5 @@ const hideSupport = () => {
 
 
   <div @click="hideDropdown" :class="{ 'menu-dropdown-bg': services || support }"></div>
-  <div @click="showSupport" :class="{ 'menu-dropdown-bg': support }"></div>
+  <div @click="hideSupport" :class="{ 'menu-dropdown-bg': support }"></div>
 </template>

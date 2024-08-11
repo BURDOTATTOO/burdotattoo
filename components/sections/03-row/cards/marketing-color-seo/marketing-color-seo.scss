@@ -70,7 +70,6 @@
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: center;
-        font-size: 1rem;
         margin-top: 1.2rem;
         
         button {
@@ -81,7 +80,8 @@
           padding: .5rem;
           border-radius: .3rem;
           color: var(--black);
-          font-weight: bold;
+          font-weight: 600;
+          font-size: .9rem;
 
           span {
             text-decoration: underline;
