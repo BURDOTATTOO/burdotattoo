@@ -34,5 +34,4 @@ useSeoMeta({
   <MarketingAgreement />
 
 
-
 </template>

@@ -45,7 +45,7 @@ import PromoSvg from '~/components/icons/PromoSvg.vue'
       </div>
 
       <div class="cta">
-        <RegularButton text="Solicitar" />
+        <RegularButton text="Leer más" />
       </div>
 
     </div>
@@ -81,7 +81,7 @@ import PromoSvg from '~/components/icons/PromoSvg.vue'
       </div>
 
       <div class="cta">
-        <RegularButton text="Solicitar" />
+        <RegularButton text="Leer más" />
       </div>
 
     </div>
@@ -97,7 +97,7 @@ import PromoSvg from '~/components/icons/PromoSvg.vue'
         </h4>
 
         <p class="price">
-          $3,999.999
+          $4,999.999
         </p>
       </div>
 
@@ -110,14 +110,14 @@ import PromoSvg from '~/components/icons/PromoSvg.vue'
         <div class="description">
 
           <p>
-            ¡Obtenga un impresionante sitio web de agente inmobiliario de 10 páginas y alojamiento GRATIS durante su primer año!
+            ¡Obtén un sitio web de comercio electrónico con 5 páginas y alojamiento GRATIS tu primer año!
           </p>
         </div>
 
       </div>
 
       <div class="cta">
-        <RegularButton text="Solicitar" />
+        <RegularButton text="Leer más" />
       </div>
 
     </div>
