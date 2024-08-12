@@ -5,9 +5,9 @@ import TextParagraph from '~/components/sections/02-row/diseno-grafico/text-para
 import TextImage from '~/components/sections/02-row/diseno-grafico/image-text/index.vue'
 
 useSeoMeta({
-  title: 'Servicio de diseño gráfico en Colombia: profesional y asequible.',
-  ogTitle: 'Servicio de diseño gráfico en Colombia: profesional y asequible.',
-  description: 'Nuestros expertos diseñadores gráficos ofrecen el mejor servicio de diseño gráfico en Colombia para ayudarle a destacar entre la multitud. ¡Cóntactenos hoy!',
+  title: 'Servicio de Diseño Gráfico en Colombia: Profesional y Asequible.',
+  ogTitle: 'Servicio de Diseño gráfico en Colombia: Profesional y Asequible.',
+  description: 'Nuestros Expertos en Diseño Gráfico ofrecen el mejor servicio en Colombia para ayudarle a destacar entre la multitud. ¡Cóntactenos hoy!',
   ogDescription: 'Nuestros expertos diseñadores gráficos ofrecen el mejor servicio de diseño gráfico en Colombia para ayudarle a destacar entre la multitud. ¡Cóntactenos hoy!',
   ogImage: '/.webp',
   ogLocale: 'en_Es',

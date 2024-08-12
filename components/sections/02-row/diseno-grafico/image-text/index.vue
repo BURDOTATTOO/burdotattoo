@@ -4,7 +4,7 @@ import './image-text.scss'
 </script>
 
 <template>
-  <article class="image-text">
+  <article class="image-text1">
 
     <div class="image">
       <div>
