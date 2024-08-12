@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import ImageText from '~/components/sections/02-row/image-text/indext.vue'
-import TitleSubtitle from '~/components/sections/01-row/title-subtitle/TitleSubtitle.vue'
-import WebDesignCards from '~/components/sections/03-row/cards/web-design-color/index.vue'
-import BillboardGraphicDesign from '~/components/sections/02-row/billboard-graphic-design/index.vue'
+import Billboard from '~/components/sections/02-row/billboard-graphic-design/index.vue'
+import HighlightText from '~/components/sections/02-row/highlight-text/indext.vue'
+import TextImage from '~/components/sections/02-row/text-image/indext.vue'
+import ServicesList from '~/components/sections/01-row/services-list/index.vue'
 
 useSeoMeta({
   title: 'Servicio de diseño gráfico en Colombia: profesional y con excelentes precios.',
@@ -19,12 +19,16 @@ useSeoMeta({
 </script>
 
 <template>
-  <BillboardGraphicDesign />
+  <Billboard />
 
-  <TitleSubtitle 
-    marginTop
-    title="Nuestras promociones populares de diseño web"
-    subtitle="¡Obtenga un sitio web con todas las funciones que aumente sus ingresos y expanda su negocio!" />
+  <ServicesList 
+    title="Servicios" 
+    subtitle="Estos son algunos de los servicios de diseño gráfico que ofrece Vanguardia."
+    marginTop />
 
-  <WebDesignCards />
+  <HighlightText />
+  <TextImage />
+
+
+
 </template>
