@@ -1,17 +1,16 @@
-.services-list-container {
+.services-list {
   display: flex;
   justify-content: center;
-  color: var(--heading);
   padding: 0 20px;
   margin-top: 80px;
   text-align: center;
 
-  article {
+  section {
     max-width: var(--mobile-width);
   }
 
   .title {
-    h1 {
+    h2 {
       font-size: 2rem;
       color: var(--heading);
       line-height: 2.2rem;

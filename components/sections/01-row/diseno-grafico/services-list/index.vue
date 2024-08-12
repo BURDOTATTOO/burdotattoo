@@ -5,11 +5,11 @@ import CheckSvg from '~/components/icons/CheckSvg.vue'
 </script>
 
 <template>
-  <section class="services-list-container">
-    <article>
+  <article class="services-list">
+    <section>
 
       <div class="title">
-        <h1>Servicios</h1>
+        <h2>Servicios</h2>
         <p>Estos son algunos de los servicios de diseño gráfico que ofrece Vanguardia.</p>
       </div>
 
@@ -70,6 +70,6 @@ import CheckSvg from '~/components/icons/CheckSvg.vue'
           </div>
         </ul>
       </div>
-    </article>
-  </section>
+    </section>
+  </article>
 </template>

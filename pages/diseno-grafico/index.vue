@@ -5,26 +5,24 @@ import TextParagraph from '~/components/sections/02-row/diseno-grafico/text-para
 import TextImage from '~/components/sections/02-row/diseno-grafico/image-text/index.vue'
 
 useSeoMeta({
-  title: 'Servicio de diseño gráfico en Colombia: profesional y con excelentes precios.',
-  ogTitle: 'Servicio de diseño gráfico en Colombia: profesional y con excelentes precios.',
-  description: 'Nuestros expertos diseñadores gráficos ofrecen el mejor servicio de diseño gráfico en Colombia para ayudarle a destacar entre la multitud. ¡Llámenos hoy!',
-  ogDescription: 'Nuestros expertos diseñadores gráficos ofrecen el mejor servicio de diseño gráfico en Colombia para ayudarle a destacar entre la multitud. ¡Llámenos hoy!',
+  title: 'Servicio de diseño gráfico en Colombia: profesional y asequible.',
+  ogTitle: 'Servicio de diseño gráfico en Colombia: profesional y asequible.',
+  description: 'Nuestros expertos diseñadores gráficos ofrecen el mejor servicio de diseño gráfico en Colombia para ayudarle a destacar entre la multitud. ¡Cóntactenos hoy!',
+  ogDescription: 'Nuestros expertos diseñadores gráficos ofrecen el mejor servicio de diseño gráfico en Colombia para ayudarle a destacar entre la multitud. ¡Cóntactenos hoy!',
   ogImage: '/.webp',
   ogLocale: 'en_Es',
-  twitterTitle: 'Servicio de diseño gráfico en Colombia: profesional y con excelentes precios.',
+  twitterTitle: 'Servicio de diseño gráfico en Colombia: profesional y asequible.',
   twitterCard: 'summary_large_image',//default
-  twitterDescription: 'Nuestros expertos diseñadores gráficos ofrecen el mejor servicio de diseño gráfico en Colombia para ayudarle a destacar entre la multitud. ¡Llámenos hoy!',
+  twitterDescription: 'Nuestros expertos diseñadores gráficos ofrecen el mejor servicio de diseño gráfico en Colombia para ayudarle a destacar entre la multitud. ¡Cóntactenos hoy!',
 })
 
 </script>
 
 <template>
-  <Billboard />
-
-  <Services />
-
-  <TextParagraph />
-
-  <TextImage />
-
+  <main>
+    <Billboard />
+    <Services />
+    <TextParagraph />
+    <TextImage />
+  </main>
 </template>

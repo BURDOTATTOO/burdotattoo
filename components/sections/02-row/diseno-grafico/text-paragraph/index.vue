@@ -1,15 +1,15 @@
 <script setup lang="ts">
-import './highlight-text.scss'
+import './text-paragraph.scss'
 
 </script>
 
 <template>
-  <section class="highlight-text">
+  <article class="text-paragraph">
 
-    <div class="highlight">
-      <h1>
+    <div class="left">
+      <p>
         Haciendo cosas <span>hermosas</span>
-      </h1>
+      </p>
       <h2>
         Diseñadores gráficos expertos listos para trabajar para usted.
       </h2>
@@ -26,5 +26,5 @@ import './highlight-text.scss'
         definir su mercado objetivo y lo ayudaremos a conectarse con él de la manera más asequible y efectiva posible
       </p>
     </div>
-  </section>
+  </article>
 </template>

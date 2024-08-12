@@ -1,11 +1,11 @@
 <script lang="ts" setup>
-import './graphic-design.scss'
+import './billboard.scss'
 import AnimatedColorfulText from '~/components/atoms/animated-colorful-text/index.vue'
 
 </script>
 
 <template>
-  <section class="billboard-diseno-grafico">
+  <section class="billboard">
 
     <div class="left">
       <div>
@@ -21,13 +21,13 @@ import AnimatedColorfulText from '~/components/atoms/animated-colorful-text/inde
     </div>
 
     <div class="right">
-      <h1>Soluciones Creativas de Diseño
-        <AnimatedColorfulText>Gráfico</AnimatedColorfulText>
-      </h1>
-
-      <p>Un servicio de diseño gráfico de alta calidad y precios competitivos significa que podemos respaldar o
-        convertirnos en su equipo de marketing.
+      <p>Desbloquea tu Identidad
+        <AnimatedColorfulText>Visual</AnimatedColorfulText>
       </p>
+
+      <h1>
+        Ofrecemos un servicio de diseño gráfico de alta calidad a precios competitivos, lo que nos permite apoyar o integrarnos como parte de su equipo de marketing.
+      </h1>
     </div>
 
   </section>
