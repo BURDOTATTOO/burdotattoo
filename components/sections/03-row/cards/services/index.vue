@@ -4,7 +4,7 @@ import './services.scss'
 import PresentationSvg from '~/components/icons/plans/PresentationSvg.vue'
 import CloudSvg from '~/components/icons/plans/CloudSvg.vue'
 import ServerSvg from '~/components/icons/plans/ServerSvg.vue'
-import ButtonGlobal from '~/components/buttons/glow-on/index.vue'
+import ButtonGlobal from '~/components/atoms/buttons/glow-on/index.vue'
 </script>
 
 <template>

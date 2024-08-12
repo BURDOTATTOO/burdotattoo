@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import ImageText from '~/components/sections/02-row/diseno-web-text-image/index.vue'
+// import ImageText from '~/components/sections/02-row/diseno-web-text-image/index.vue'
 import TitleSubtitle from '~/components/sections/01-row/title-subtitle/TitleSubtitle.vue'
 import WebDesignCards from '~/components/sections/03-row/cards/web-design-color/index.vue'
 
@@ -18,7 +18,7 @@ useSeoMeta({
 </script>
 
 <template>
-  <ImageText />
+  <!-- <ImageText /> -->
 
   <TitleSubtitle 
     marginTop

@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import './more-info.scss'
 import { ref } from 'vue'
-import Loading from '~/components/loading/dual-spinner/index.vue'
+import Loading from '~/components/atoms/loading/dual-spinner/index.vue'
 
 const { isModalOpen, toggleModal } = defineProps<{
   isModalOpen: boolean

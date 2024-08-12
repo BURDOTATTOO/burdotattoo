@@ -4,7 +4,7 @@ import './marketing-color-seo.scss'
 import PremiumSvg from '~/components/icons/PremiumSvg.vue'
 import ProSvg from '~/components/icons/ProSvg.vue'
 import DevelopSvg from '~/components/icons/DevelopSvg.vue'
-import RegularButton from '~/components/buttons/regular/index.vue'
+import RegularButton from '~/components/atoms/buttons/default/index.vue'
 </script>
 
 <template>

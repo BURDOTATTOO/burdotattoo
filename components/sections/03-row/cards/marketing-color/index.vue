@@ -4,7 +4,7 @@ import './marketing-color.scss'
 import PromoSvg from '~/components/icons/PromoSvg.vue'
 import PremiumSvg from '~/components/icons/PremiumSvg.vue'
 import ProSvg from '~/components/icons/ProSvg.vue'
-import RegularButton from '~/components/buttons/regular/index.vue'
+import RegularButton from '~/components/atoms/buttons/default/index.vue'
 </script>
 
 <template>

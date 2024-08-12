@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import Header from '~/components/header/index.vue'
 import Footer from '~/components/footer/index.vue'
-import Loading from '~/components/loading/dual-spinner/index.vue'
+import Loading from '~/components/atoms/loading/dual-spinner/index.vue'
 
 const loading = ref(true)
 

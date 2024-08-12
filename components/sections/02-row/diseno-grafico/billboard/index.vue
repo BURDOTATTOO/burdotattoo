@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import './graphic-design.scss'
+import AnimatedColorfulText from '~/components/atoms/animated-colorful-text/index.vue'
 
 </script>
 
@@ -14,14 +15,14 @@ import './graphic-design.scss'
           width="500"
           height="320" 
           format="webp" 
-          alt="" 
+          alt="imagen soluciones creativas de diseño gráfico" 
         />
       </div>
     </div>
 
     <div class="right">
-      <h1>Servicio de Diseño
-        <span class="animate-text">Gráfico</span>
+      <h1>Soluciones Creativas de Diseño
+        <AnimatedColorfulText>Gráfico</AnimatedColorfulText>
       </h1>
 
       <p>Un servicio de diseño gráfico de alta calidad y precios competitivos significa que podemos respaldar o
