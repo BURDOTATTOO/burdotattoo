@@ -2,23 +2,15 @@
 import './services-list.scss'
 import CheckSvg from '~/components/icons/CheckSvg.vue'
 
-interface TitleSubtitleProps {
-  title: string
-  subtitle?: string
-  marginTop?: boolean
-}
-
-const { title, subtitle, marginTop } = defineProps<TitleSubtitleProps>()
-
 </script>
 
 <template>
   <section class="services-list-container">
-    <article :class="{ 'extra-top-space': marginTop }">
+    <article>
 
       <div class="title">
-        <h1>{{ title }}</h1>
-        <p>{{ subtitle }}</p>
+        <h1>Servicios</h1>
+        <p>Estos son algunos de los servicios de diseño gráfico que ofrece Vanguardia.</p>
       </div>
 
       <div class="details">

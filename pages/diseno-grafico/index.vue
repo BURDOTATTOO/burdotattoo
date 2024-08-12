@@ -21,10 +21,7 @@ useSeoMeta({
 <template>
   <Billboard />
 
-  <Services 
-    title="Servicios" 
-    subtitle="Estos son algunos de los servicios de diseño gráfico que ofrece Vanguardia."
-    marginTop />
+  <Services />
 
   <TextParagraph />
 

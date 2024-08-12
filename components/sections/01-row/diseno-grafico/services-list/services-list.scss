@@ -3,7 +3,7 @@
   justify-content: center;
   color: var(--heading);
   padding: 0 20px;
-  margin-top: 40px;
+  margin-top: 80px;
   text-align: center;
 
   article {
@@ -23,42 +23,29 @@
     }
   }
 
-  .extra-top-space {
-    padding-top: 40px;
-  }
-
   .details {
-    font-weight: 300;
-    font-size: 1.2rem;
-    color: var(--text);
-    padding-top: 24px;
+    padding-top: 1.5rem;
     text-align: start;
 
     .items {
       display: flex;
       gap: 32px;
       padding: 0;
-      margin: 0;
       list-style-type: none;
 
       li {
         display: flex;
         align-items: center;
-        height: 2.5rem;
+        padding: .3rem 0;
 
         svg {
-          height: 24px;
-          width: 24px;
+          max-width: 24px;
         }
-      }
 
-      p {
-        padding-left: .8rem;
-        font-size: 1.2rem;
-        line-height: 1.7rem;
-        
-        @media (max-width: 756px) {
-          line-height: 1rem;
+        p {
+          padding-left: .8rem;
+          font-size: 1.2rem;
+          line-height: 1.7rem;
         }
       }
 
@@ -67,5 +54,9 @@
         gap: 0;
       }
     }
+  }
+
+  @media (max-width: 1024px) {
+    margin-top: 40px;
   }
 }
