@@ -19,7 +19,6 @@ const itemClicked = () => {
   setTimeout(() => {
     isClicked.value = false;
   }, 100);
-
 }
 
 </script>
@@ -39,7 +38,7 @@ const itemClicked = () => {
             <p>Diseño web</p>
           </NuxtLink>
 
-          <NuxtLink to="/" class="sub-item">
+          <NuxtLink to="/diseno-grafico" class="sub-item">
             <GraphicDesignSvg class="icon" />
             <p>Diseño de gráfico</p>
           </NuxtLink>
