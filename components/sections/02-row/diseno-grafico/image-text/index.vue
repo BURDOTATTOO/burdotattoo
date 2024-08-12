@@ -6,6 +6,17 @@ import './text-image.scss'
 <template>
   <section class="text-image">
 
+    <div class="text">
+      <div>
+        <NuxtPicture 
+          src="/diseno-grafico-2.webp" 
+          sizes="100vw xs:300px sm:400px"
+          format="webp" 
+          alt="" 
+        />
+      </div>
+    </div>
+
     <div class="highlight">
       <h1>
         Identidad <span>corporativa</span>
@@ -17,16 +28,6 @@ import './text-image.scss'
         o a renovar una imagen corporativa “cansada” u obsoleta.
       </h2>
     </div>
-
-    <div class="text">
-      <div>
-        <NuxtPicture 
-          src="/diseno-grafico-2.webp" 
-          sizes="100vw xs:300px sm:400px"
-          format="webp" 
-          alt="" 
-        />
-      </div>
-    </div>
+    
   </section>
 </template>

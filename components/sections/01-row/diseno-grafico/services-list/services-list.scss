@@ -41,8 +41,19 @@
       margin: 0;
       list-style-type: none;
 
+      li {
+        display: flex;
+        align-items: center;
+        height: 2.5rem;
+
+        svg {
+          height: 24px;
+          width: 24px;
+        }
+      }
+
       p {
-        padding-top: 1.2rem;
+        padding-left: .8rem;
         font-size: 1.2rem;
         line-height: 1.7rem;
         

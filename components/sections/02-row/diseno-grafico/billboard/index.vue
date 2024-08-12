@@ -1,10 +1,10 @@
 <script lang="ts" setup>
-import './billboard.scss'
+import './graphic-design.scss'
 
 </script>
 
 <template>
-  <section class="billboard-diseno-grafico-container">
+  <section class="billboard-diseno-grafico">
 
     <div class="left">
       <div>
@@ -25,7 +25,8 @@ import './billboard.scss'
       </h1>
 
       <p>Un servicio de diseño gráfico de alta calidad y precios competitivos significa que podemos respaldar o
-        convertirnos en su equipo de marketing.</p>
+        convertirnos en su equipo de marketing.
+      </p>
     </div>
 
   </section>
