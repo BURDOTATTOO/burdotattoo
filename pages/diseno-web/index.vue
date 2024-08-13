@@ -19,12 +19,13 @@ useSeoMeta({
 </script>
 
 <template>
-  <ImageText />
 
+  <ImageText />
   <Title
     marginTop
     title="Nuestras promociones populares de diseño web"
     description="¡Obtenga un sitio web con todas las funciones que aumente sus ingresos y expanda su negocio!" />
 
   <Cards />
+  
 </template>

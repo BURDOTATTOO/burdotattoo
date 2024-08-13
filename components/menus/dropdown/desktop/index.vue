@@ -48,7 +48,7 @@ const itemClicked = () => {
             <p>Alojamiento web</p>
           </NuxtLink>
 
-          <NuxtLink to="/marketing-online" class="sub-item">
+          <NuxtLink to="/marketing-en-motores-de-busqueda" class="sub-item">
             <SeoSvg class="icon" />
             <p>Marketing de motores de búsqueda</p>
           </NuxtLink>

@@ -3,7 +3,7 @@ import './inicio-service-card.scss'
 
 import PremiumSvg from '~/components/icons/PremiumSvg.vue'
 import ProSvg from '~/components/icons/ProSvg.vue'
-import RegularButton from '~/components/atoms/buttons/default/index.vue'
+import Button from '~/components/atoms/buttons/default/index.vue'
 import PromoSvg from '~/components/icons/PromoSvg.vue'
 
 </script>
@@ -25,7 +25,7 @@ import PromoSvg from '~/components/icons/PromoSvg.vue'
         </p>
 
         <p class="price">
-          $599.999
+          $399.999
         </p>
 
       </div>
@@ -45,7 +45,7 @@ import PromoSvg from '~/components/icons/PromoSvg.vue'
       </div>
 
       <div class="cta">
-        <RegularButton text="Leer más" />
+        <Button text="Leer más" link="marketing-en-redes-sociales" />
       </div>
 
     </div>
@@ -61,7 +61,7 @@ import PromoSvg from '~/components/icons/PromoSvg.vue'
           Alojamiento web administrado por cPanel
         </p>
         <p class="price">
-          $59.999
+          $49.999
         </p>
       </div>
 
@@ -81,7 +81,7 @@ import PromoSvg from '~/components/icons/PromoSvg.vue'
       </div>
 
       <div class="cta">
-        <RegularButton text="Leer más" />
+        <Button text="Leer más" link="alojamiento-web" />
       </div>
 
     </div>
@@ -117,7 +117,7 @@ import PromoSvg from '~/components/icons/PromoSvg.vue'
       </div>
 
       <div class="cta">
-        <RegularButton text="Leer más" />
+        <Button text="Leer más" link="marketing-en-motores-de-busqueda" />
       </div>
 
     </div>

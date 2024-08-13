@@ -54,7 +54,7 @@ const { toggleTopNav, isTopNavOpen } = defineProps<{
             <p>Alostamiento web</p>
           </NuxtLink>
 
-          <NuxtLink to="/marketing-online" class="item" @click="toggleTopNav()">
+          <NuxtLink to="/marketing-en-motores-de-busqueda" class="item" @click="toggleTopNav()">
             <SeoSvg class="icon" />
             Marketing de motores de búsqueda
           </NuxtLink>

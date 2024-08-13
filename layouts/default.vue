@@ -8,8 +8,8 @@ const loading = ref(true)
 onMounted(() => {
   if (typeof window !== 'undefined') {
     const theme = localStorage.getItem('theme')
-    
-    if(theme === null) {
+
+    if (theme === null) {
       localStorage.setItem('theme', 'dark')
       document.documentElement.setAttribute("data-color-scheme", "dark")
       loading.value = false
@@ -18,13 +18,12 @@ onMounted(() => {
       loading.value = false
     }
   }
-})  
+})
 
 </script>
 
 <template>
   <Loading v-if="loading" />
-
   <div v-else>
     <Header />
     <NuxtPage />
