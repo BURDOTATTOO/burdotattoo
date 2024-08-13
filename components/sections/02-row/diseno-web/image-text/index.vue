@@ -4,7 +4,7 @@ import './image-text.scss'
 </script>
 
 <template>
-  <section class="image-text">
+  <article class="diseno-web-image-text ">
 
     <NuxtPicture
       class="desktop-only"
@@ -14,13 +14,13 @@ import './image-text.scss'
       alt="Mi Password logo" />
 
     <div class="text">
-      <div class="text-content">
+      <div class="content">
         <h1>
           Servicio experto en diseño web.
         </h1>
-        <h3>
+        <h2>
           Déjanos crear el sitio web de tus sueños
-        </h3>
+        </h2>
         <p>
           Vanguardia es una empresa Colombiana líder en diseño y desarrollo que ofrece soluciones web para
           pequeñas empresas, empresas corporativas y necesidades individuales. Vanguardia le puede crear un
@@ -38,5 +38,5 @@ import './image-text.scss'
         </p>
       </div>
     </div>
-  </section>
+  </article>
 </template>

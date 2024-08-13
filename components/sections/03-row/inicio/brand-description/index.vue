@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import './brand-description.scss'
+import './inicio-brand-description.scss'
 
 </script>
 

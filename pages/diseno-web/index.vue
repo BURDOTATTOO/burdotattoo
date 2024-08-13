@@ -1,18 +1,18 @@
 <script setup lang="ts">
 import ImageText from '~/components/sections/02-row/diseno-web/image-text/index.vue'
 import Title from '~/components/atoms/title-description/index.vue'
-import WebDesignCards from '~/components/sections/03-row/cards/web-design-color/index.vue'
+import Cards from '~/components/sections/03-row/diseno-web/service-card/index.vue'
 
 useSeoMeta({
-  title: 'Servicio experto en Diseño Web.',
-  ogTitle: 'Servicio experto en Diseño web.',
-  description: 'Transforma tu presencia digital con Vanguardia, líderes en desarrollo en Colombia.',
-  ogDescription: 'Transforma tu presencia digital con Vanguardia, líderes en desarrollo en Colombia.',
+  title: 'Expertos en Diseño Web - Servicio Profesional - Vanguardia',
+  ogTitle: 'Expertos en Diseño Web - Servicio Profesional - Vanguardia',
+  description: 'Impulsa tu presencia digital con Vanguardia, los líderes en desarrollo web y digital en Colombia.',
+  ogDescription: 'Impulsa tu presencia digital con Vanguardia, los líderes en desarrollo web y digital en Colombia.',
   ogImage: '/.webp',
   ogLocale: 'en_Es',
-  twitterTitle: 'Servicio experto en Diseño web.',
+  twitterTitle: 'Expertos en Diseño Web - Servicio Profesional - Vanguardia',
   twitterCard: 'summary_large_image',//default
-  twitterDescription: 'Transforma tu presencia digital con Vanguardia, líderes en desarrollo en Colombia.',
+  twitterDescription: 'Impulsa tu presencia digital con Vanguardia, los líderes en desarrollo web y digital en Colombia.',
 })
 
 </script>
@@ -25,5 +25,5 @@ useSeoMeta({
     title="Nuestras promociones populares de diseño web"
     description="¡Obtenga un sitio web con todas las funciones que aumente sus ingresos y expanda su negocio!" />
 
-  <WebDesignCards />
+  <Cards />
 </template>

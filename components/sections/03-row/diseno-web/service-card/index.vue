@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import './web-design-color.scss'
+import './diseno-web-service-card.scss'
 
 import PremiumSvg from '~/components/icons/PremiumSvg.vue'
 import ProSvg from '~/components/icons/ProSvg.vue'
@@ -10,7 +10,7 @@ import PromoSvg from '~/components/icons/PromoSvg.vue'
 
 <template>
 
-  <section class="card-web-design-container">
+  <section class="diseno-web-cards">
 
     <div class="item">
 

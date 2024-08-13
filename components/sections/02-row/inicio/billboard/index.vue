@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import './billboard.scss'
+import './inicio-billboard.scss'
 import ButtonsGlowOn from '~/components/atoms/buttons/glow-on/index.vue'
 import SvgsBillboard from '~/public/svgs/billboard.vue'
 import MoreInfoModal from '~/components/modal/more-info/index.vue'
