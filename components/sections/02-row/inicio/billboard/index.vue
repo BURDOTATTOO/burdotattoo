@@ -19,7 +19,7 @@ const toggleModal = () => {
       <h1>¡Obtén una página web profesional con Hosting
         <span class="animate-text">GRATIS</span> durante el primer año!
       </h1>
-      <p>Elige entre una variedad de diseños impresionantes por solo $499,999.</p>
+      <p>Elige entre una variedad de diseños modernos por solo $499,999.</p>
       <ButtonsGlowOn class="learn-more" text="¡Aprender más!" :active="true" @click="toggleModal" />
     </div>
 

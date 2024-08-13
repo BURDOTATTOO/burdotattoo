@@ -1,7 +1,8 @@
 <script setup lang="ts">
-import ImageText from '~/components/sections/02-row/diseno-web/image-text/index.vue'
 import Title from '~/components/atoms/title-description/index.vue'
 import Cards from '~/components/sections/03-row/diseno-web/service-card/index.vue'
+import ImageText from '~/components/sections/02-row/diseno-web/image-text/index.vue'
+
 
 useSeoMeta({
   title: 'Expertos en Diseño Web - Servicio Profesional - Vanguardia',
