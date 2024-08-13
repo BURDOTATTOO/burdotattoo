@@ -16,11 +16,10 @@ const toggleModal = () => {
   <section class="billboard-image-container">
 
     <div class="left">
-      <h1>¡Consigue una página web profesional con Hosting
-        <span class="animate-text">GRATIS</span> tu primer año!
+      <h1>¡Obtén una página web profesional con Hosting
+        <span class="animate-text">GRATIS</span> durante el primer año!
       </h1>
-
-      <p>Impresionantes diseños para elegir por solo $499.</p>
+      <p>Elige entre una variedad de diseños impresionantes por solo $499,999.</p>
       <ButtonsGlowOn class="learn-more" text="¡Aprender más!" :active="true" @click="toggleModal" />
     </div>
 

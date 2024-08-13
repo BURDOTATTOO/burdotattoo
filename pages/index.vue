@@ -1,20 +1,19 @@
 <script setup lang="ts">
 import BillboardImage from '~/components/sections/02-row/billboard-image/index.vue'
 import TitleSubtitle from '~/components/sections/01-row/title-subtitle/TitleSubtitle.vue'
-import Cards from '~/components/sections/03-row/cards/services/index.vue'
-import HighlightText from '~/components/sections/03-row/highlight-text/index.vue'
-
+import HighlightText from '~/components/sections/03-row/inicio/highlight-text/index.vue'
+import Cards from '~/components/sections/03-row/inicio/service-card/index.vue'
 
 useSeoMeta({
-  title: '¡Consigue una página web profesional con Hosting GRATIS tu primer año!',
-  ogTitle: '¡Consigue una página web profesional con Hosting GRATIS tu primer año!',
-  description: 'Impresionantes diseños para elegir por solo $500,000.',
-  ogDescription: 'Impresionantes diseños para elegir por solo $500,000.',
+  title: 'Página Web Profesional - Hosting Gratis - Vanguardia',
+  ogTitle: 'Página Web Profesional - Hosting Gratis - Vanguardia',
+  description: '¡Páginas web profesional con Hosting GRATIS tu primer año!',
+  ogDescription: '¡Consigue una página web profesional con Hosting GRATIS tu primer año!',
   ogImage: '/.webp',
   ogLocale: 'en_Es',
-  twitterTitle: '¡Consigue una página web profesional con Hosting GRATIS tu primer año!',
-  twitterCard: 'summary_large_image',//default
-  twitterDescription: 'Impresionantes diseños para elegir por solo $500,000.',
+  twitterTitle:'Página Web Profesional - Hosting Gratis - Vanguardia',
+  twitterCard: 'summary_large_image',
+  twitterDescription: '¡Consigue una página web profesional con Hosting GRATIS tu primer año!',
   twitterLabel1: 'Time to read',
   twitterData1: '2 minutes',
 })
@@ -23,6 +22,7 @@ useSeoMeta({
 
 <template>
   <BillboardImage />
+
   <TitleSubtitle
     marginTop
     title="Nuestros Planes"
@@ -31,4 +31,6 @@ useSeoMeta({
   <Cards />
 
   <HighlightText />
+
+
 </template>
