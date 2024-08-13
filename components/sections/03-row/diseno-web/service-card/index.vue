@@ -10,7 +10,7 @@ import PromoSvg from '~/components/icons/PromoSvg.vue'
 
 <template>
 
-  <section class="diseno-web-cards">
+  <section class="diseno-web-service-cards">
 
     <div class="item">
 

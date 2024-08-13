@@ -10,10 +10,8 @@
   .title {
     font-size: 2rem;
     color: var(--heading);
-
-    @media (max-width: 756px) {
-      line-height: 2.6rem;
-    }
+    line-height: 3.1rem;
+    padding-bottom: .5rem;
   }
 
   .extra-top-space {

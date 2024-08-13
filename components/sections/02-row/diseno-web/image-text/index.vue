@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import './image-text.scss'
+import './diseno-web-image-text.scss'
 
 </script>
 
