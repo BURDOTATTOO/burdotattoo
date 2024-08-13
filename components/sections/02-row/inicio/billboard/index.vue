@@ -13,7 +13,7 @@ const toggleModal = () => {
 </script>
 
 <template>
-  <section class="billboard-image-container">
+  <section class="inicio-billboard">
 
     <div class="left">
       <h1>¡Obtén una página web profesional con Hosting

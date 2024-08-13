@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import ImageText from '~/components/sections/02-row/diseno-web/image-text/index.vue'
-import TitleSubtitle from '~/components/sections/01-row/title-subtitle/TitleSubtitle.vue'
+import Title from '~/components/atoms/title-description/index.vue'
 import WebDesignCards from '~/components/sections/03-row/cards/web-design-color/index.vue'
 
 useSeoMeta({
@@ -20,10 +20,10 @@ useSeoMeta({
 <template>
   <ImageText />
 
-  <TitleSubtitle 
+  <Title
     marginTop
     title="Nuestras promociones populares de diseño web"
-    subtitle="¡Obtenga un sitio web con todas las funciones que aumente sus ingresos y expanda su negocio!" />
+    description="¡Obtenga un sitio web con todas las funciones que aumente sus ingresos y expanda su negocio!" />
 
   <WebDesignCards />
 </template>

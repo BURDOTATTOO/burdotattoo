@@ -3,11 +3,11 @@ import './title-subtitle.scss'
 
 interface TitleSubtitleProps {
   title: string
-  subtitle?: string
+  description?: string
   marginTop?: boolean
 }
 
-const { title, subtitle } = defineProps<TitleSubtitleProps>()
+const { title, description } = defineProps<TitleSubtitleProps>()
 
 </script>
 
@@ -19,8 +19,8 @@ const { title, subtitle } = defineProps<TitleSubtitleProps>()
         <h2>{{ title }}</h2>
       </div>
 
-      <div class="subtitle">
-        <p>{{ subtitle }}</p>
+      <div class="description">
+        <p>{{ description }}</p>
       </div>
 
     </article>

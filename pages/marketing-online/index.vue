@@ -1,6 +1,6 @@
 <script setup lang="ts">
 
-import TitleSubtitle from '~/components/sections/01-row/title-subtitle/TitleSubtitle.vue'
+import Title from '~/components/atoms/title-description/index.vue'
 import PostText from '~/components/sections/01-row/post-text/index.vue'
 import CardMarketingSeo from '~/components/sections/03-row/cards/marketing-seo/index.vue'
 import CardMarketingColorSeo from '~/components/sections/03-row/cards/marketing-color-seo/index.vue'
@@ -21,9 +21,9 @@ useSeoMeta({
 
 <template>
 
-  <TitleSubtitle 
+  <Title
     title="¿Tu sitio web está bien posicionado en Google?"
-    subtitle="Haz que tu página web aparezca en los principales motores de búsqueda con nuestro servicio integral de optimización y marketing online." 
+    description="Haz que tu página web aparezca en los principales motores de búsqueda con nuestro servicio integral de optimización y marketing online." 
   />
 
   <CardMarketingSeo />
@@ -36,8 +36,9 @@ useSeoMeta({
     textThree="En un entorno digital competitivo, contar con servicios de SEO efectivos es fundamental para que las empresas establezcan su presencia digital y alcancen a su audiencia objetivo de manera eficiente."
   />
 
-  <TitleSubtitle
+  <Title
     title="Nuestros planes de SEO"
+    description="Diseñados para maximizar tu presencia digital y alcanzar tus objetivos comerciales con precisión y eficacia."
   />
 
   <CardMarketingColorSeo />

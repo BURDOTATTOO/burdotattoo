@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import './highlight-text.scss'
+import './brand-description.scss'
 
 </script>
 
 <template>
-  <article class="inicio-highlight-text">
+  <article class="inicio-brand-description">
     <section class="items">
       <div class="item">
         <p class="title">Fundada en 2016</p>

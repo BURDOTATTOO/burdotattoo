@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import TitleSubtitle from '~/components/sections/01-row/title-subtitle/TitleSubtitle.vue'
+import Title from '~/components/atoms/title-description/index.vue'
 import CardMarketingSocial from '~/components/sections/03-row/cards/marketing-social/index.vue'
 import CardMarketingColor from '~/components/sections/03-row/cards/marketing-color/index.vue'
 
@@ -21,13 +21,15 @@ useSeoMeta({
 
 <template>
 
-  <TitleSubtitle title="Soluciones de marketing en redes sociales"
-    subtitle="El equipo profesional de marketing en redes sociales se encargará de diversas funciones esenciales para impulsar tu marca en el entorno digital. Estas funciones incluyen:" />
+  <Title
+    title="Soluciones de marketing en redes sociales"
+    description="El equipo profesional de marketing en redes sociales se encargará de diversas funciones esenciales para impulsar tu marca en el entorno digital. Estas funciones incluyen:" />
 
   <CardMarketingSocial />
 
-  <TitleSubtitle marginTop title="Nuestros planes de marketing en redes sociales"
-    subtitle="Diseñados para maximizar tu presencia digital y alcanzar tus objetivos comerciales con precisión y eficacia." />
+  <Title
+    title="Nuestros planes de marketing en redes sociales"
+    description="Diseñados para maximizar tu presencia digital y alcanzar tus objetivos comerciales con precisión y eficacia." />
 
   <CardMarketingColor />
 
