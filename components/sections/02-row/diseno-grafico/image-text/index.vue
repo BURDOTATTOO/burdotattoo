@@ -4,12 +4,12 @@ import './image-text.scss'
 </script>
 
 <template>
-  <article class="image-text1">
+  <article class="diseno-grafico-image-text">
 
     <div class="image">
       <div>
         <NuxtPicture 
-          src="/diseno-grafico-2.webp" 
+          src="/images/sections/02-row/image-text-2/diseno-grafico.webp" 
           sizes="100vw xs:300px sm:400px"
           format="webp" 
           alt="Imagen de identidad corporativa de diseño gráfico" 

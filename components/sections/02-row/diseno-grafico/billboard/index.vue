@@ -10,7 +10,7 @@ import AnimatedColorfulText from '~/components/atoms/animated-colorful-text/inde
     <div class="left">
       <div>
         <NuxtPicture 
-          src="/diseno-grafico.webp" 
+          src="/images/sections/02-row/billboard/diseno-grafico.webp" 
           sizes="100vw xs:360px sm:500px"
           width="500"
           height="320" 

@@ -11,7 +11,6 @@ export default defineNuxtConfig({
   '@nuxtjs/i18n',
   '@nuxt/image'
 ],
-
 i18n: {
   locales: [
     { code: 'es', iso:'es-CO', file: 'es-CO.js'},

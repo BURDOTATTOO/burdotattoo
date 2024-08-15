@@ -10,9 +10,9 @@ useSeoMeta({
   description: 'Impulsa tu presencia digital con Vanguardia, los líderes en desarrollo web y digital en Colombia.',
   ogDescription: 'Impulsa tu presencia digital con Vanguardia, los líderes en desarrollo web y digital en Colombia.',
   ogImage: '/.webp',
-  ogLocale: 'en_Es',
+  ogLocale: 'es_CO',
   twitterTitle: 'Expertos en Diseño Web - Servicio Profesional - Vanguardia',
-  twitterCard: 'summary_large_image',//default
+  twitterCard: 'summary_large_image',
   twitterDescription: 'Impulsa tu presencia digital con Vanguardia, los líderes en desarrollo web y digital en Colombia.',
 })
 
@@ -27,5 +27,5 @@ useSeoMeta({
     description="¡Obtenga un sitio web con todas las funciones que aumente sus ingresos y expanda su negocio!" />
 
   <Cards />
-  
+
 </template>
