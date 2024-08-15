@@ -1,19 +1,19 @@
 <script setup lang="ts">
-import './diseno-web-image-text.scss'
+import './diseno-grafico-billboard.scss'
 
 </script>
 
 <template>
-  <article class="diseno-web-image-text ">
+  <article class="diseno-web-billboard">
 
     <NuxtPicture
       class="desktop-only"
       src="/images/sections/02-row/image-text/services.jpg" 
       sizes="100vw sm:300px md:500px" 
       format="webp"
-      alt="Mi Password logo" />
+      alt="Imagen de diseño web portfolio" />
 
-    <div class="text">
+    <section class="text">
       <div class="content">
         <h1>
           Servicio experto en diseño web.
@@ -37,6 +37,6 @@ import './diseno-web-image-text.scss'
           objetivos.
         </p>
       </div>
-    </div>
+    </section>
   </article>
 </template>
