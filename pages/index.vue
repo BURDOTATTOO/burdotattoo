@@ -26,8 +26,8 @@ useSeoMeta({
   <Title
     marginTop
     title="Nuestros Planes"
-    description="Garantizamos un diseño único y sencillo para tu página web." />
-  
+    description="Agencia Colombiana de marketing que ofrece soluciones efectivas y personalizadas a empresas de cualquier tamaño." />
+
   <Cards />
 
   <BrandDescription />

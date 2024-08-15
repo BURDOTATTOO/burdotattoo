@@ -9,8 +9,8 @@ import './inicio-brand-description.scss'
       <div class="item">
         <p class="title">Fundada en 2016</p>
 
-        <h2>Agencia de marketing Colombiana que ofrece soluciones de marketing efectivas y específicas, personalizadas y
-          adaptadas a empresas de <span>cualquier tamaño.</span></h2>
+        <h2>Agencia Colombiana de marketing que ofrece soluciones efectivas y personalizadas 
+          a empresas de <span>cualquier tamaño.</span></h2>
 
       </div>
       <div class="item">
