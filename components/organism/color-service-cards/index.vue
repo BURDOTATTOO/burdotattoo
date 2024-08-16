@@ -2,17 +2,17 @@
 import './color-service-cards.scss'
 import Button from '~/components/atoms/buttons/default/index.vue'
 
-type CardsProps = {
-  data: Array<Record<string, string | Component> & { cta: string, link: string }>
+type CardProps = {
+  data: Array<Record<string, string | Component> & { cta: string, link?: string, toggleEvent?: () => void }>
 }
 
-const { data } = defineProps<CardsProps>()
+const { data } = defineProps<CardProps>()
 
 </script>
 
 <template>
 
-  <article class="inicio-service-card">
+  <article class="color-service-cards">
 
     <section class="item" v-for="(item, index) in data" :key="index">
 
@@ -41,7 +41,7 @@ const { data } = defineProps<CardsProps>()
 
       </div>
 
-      <Button class="cta" :text="item.cta" :link="item.link" />
+      <Button class="cta" :text="item.cta" :link="item.link" @click="item.toggleEvent" />
 
     </section>
 

@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import Title from '~/components/atoms/title-description/index.vue'
 import Cards from '~/components/organism/color-service-cards/index.vue'
+import MoreInfoModal from '~/components/modal/more-info/index.vue'
 import Billboard from '~/components/sections/02-row/diseno-web/billboard/index.vue'
+
 import PremiumSvg from '~/components/icons/PremiumSvg.vue'
 import ProSvg from '~/components/icons/ProSvg.vue'
 import PromoSvg from '~/components/icons/PromoSvg.vue'
@@ -18,6 +20,12 @@ useSeoMeta({
   twitterDescription: 'Impulsa tu presencia digital con Vanguardia, los líderes en desarrollo web y digital en Colombia.',
 })
 
+const modal = ref(false)
+
+const toggleModal = () => {
+  modal.value = !modal.value
+}
+
 const cardData = [
   {
     title: 'Esencial',
@@ -26,7 +34,7 @@ const cardData = [
     image: PromoSvg,
     description: '¡Obtén un sitio web impresionante y alojamiento GRATIS durante tu primer año!',
     cta: 'Leer más',
-    link: '/diseno-web/promocion-de-paginas-web'
+    toggleEvent: toggleModal
   },
   {
     title: 'Web Pro',
@@ -35,7 +43,9 @@ const cardData = [
     image: ProSvg,
     description: '¡Obtén un sitio web de comercio electrónico con 5 páginas y alojamiento GRATIS tu primer año!',
     cta: 'Leer más',
-    link: '/diseno-web/sitio-web-de-5-paginas'
+    toggleEvent: () => {
+      console.log('toggleEvent 2')
+    }
   },
   {
     title: 'Premium',
@@ -44,7 +54,9 @@ const cardData = [
     image: PremiumSvg,
     description: '¡Obtén un sitio web de comercio electrónico con 5 páginas y alojamiento GRATIS tu primer año!',
     cta: 'Leer más',
-    link: '/diseno-web/sitio-web-de-5-paginas'
+    toggleEvent: () => {
+      console.log('toggleEvent 3')
+    }
   },
 ]
 
@@ -60,5 +72,7 @@ const cardData = [
     description="¡Obtenga un sitio web con todas las funciones que aumente sus ingresos y expanda su negocio!" />
 
   <Cards :data="cardData" />
+
+  <MoreInfoModal v-if="modal" :isModalOpen="modal" :toggleModal="toggleModal" />
 
 </template>
