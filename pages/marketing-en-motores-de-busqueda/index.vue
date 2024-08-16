@@ -1,9 +1,9 @@
 <script setup lang="ts">
 
 import Title from '~/components/atoms/title-description/index.vue'
-import PostText from '~/components/sections/01-row/post-text/index.vue'
-import CardMarketingSeo from '~/components/sections/03-row/cards/marketing-seo/index.vue'
-import CardMarketingColorSeo from '~/components/sections/03-row/cards/marketing-color-seo/index.vue'
+import PostText from '~/components/sections/seo/post-text/index.vue'
+import CardMarketingSeo from '~/components/sections/seo/marketing-seo/index.vue'
+import CardMarketingColorSeo from '~/components/sections/marketing/marketing-color-seo/index.vue'
 
 useSeoMeta({
   title: 'Mejora tu presencia en línea con nuestro servicio de marketing en redes sociales.',

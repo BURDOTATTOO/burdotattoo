@@ -1,20 +1,21 @@
 <script setup lang="ts">
-import Billboard from '~/components/sections/02-row/diseno-grafico/billboard/index.vue'
-import Services from '~/components/sections/01-row/diseno-grafico/services-list/index.vue'
-import TextParagraph from '~/components/sections/02-row/diseno-grafico/text-paragraph/index.vue'
-import TextImage from '~/components/sections/02-row/diseno-grafico/image-text/index.vue'
+import Billboard from '~/components/sections/diseno-grafico/billboard/index.vue'
+import Services from '~/components/sections/diseno-grafico/services-list/index.vue'
+import TextParagraph from '~/components/sections/diseno-grafico/text-paragraph/index.vue'
+import TextImage from '~/components/sections/diseno-grafico/image-text/index.vue'
 
 useSeoMeta({
-  title: 'Servicio de Diseño Gráfico en Colombia: Profesional y Asequible.',
-  ogTitle: 'Servicio de Diseño gráfico en Colombia: Profesional y Asequible.',
-  description: 'Nuestros Expertos en Diseño Gráfico ofrecen el mejor servicio en Colombia para ayudarle a destacar entre la multitud. ¡Cóntactenos hoy!',
-  ogDescription: 'Nuestros expertos diseñadores gráficos ofrecen el mejor servicio de diseño gráfico en Colombia para ayudarle a destacar entre la multitud. ¡Cóntactenos hoy!',
-  ogImage: '/.webp',
-  ogLocale: 'en_Es',
-  twitterTitle: 'Servicio de diseño gráfico en Colombia: profesional y asequible.',
-  twitterCard: 'summary_large_image',//default
-  twitterDescription: 'Nuestros expertos diseñadores gráficos ofrecen el mejor servicio de diseño gráfico en Colombia para ayudarle a destacar entre la multitud. ¡Cóntactenos hoy!',
+  title: 'Diseño Gráfico Profesional en Colombia - Identidad Corporativa y Más',
+  ogTitle: 'Diseño Gráfico Profesional en Colombia - Identidad Corporativa y Más',
+  description: 'Mejora la identidad corporativa de tu negocio con nuestro diseño gráfico profesional en Colombia. Desde logotipos hasta publicidad, nuestro equipo asegura una primera impresión impactante y un diseño efectivo.',
+  ogDescription: 'Destaca con nuestro diseño gráfico profesional en Colombia. Creamos identidades corporativas únicas y efectivas que mejoran la apariencia y comunicación de tu negocio. ¡Contáctanos para transformar tu imagen!',
+  ogImage: '/meta/diseno-grafico-profesional.webp',
+  ogLocale: 'es_CO',
+  twitterTitle: 'Diseño Gráfico Profesional en Colombia - Identidad Corporativa y Más',
+  twitterCard: 'summary_large_image',
+  twitterDescription: 'Transforma tu identidad corporativa con nuestro diseño gráfico profesional en Colombia. Creamos logotipos y materiales publicitarios que comunican eficazmente tus ofertas y destacan entre la competencia.',
 })
+
 
 </script>
 

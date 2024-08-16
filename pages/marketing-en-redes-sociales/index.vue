@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import Title from '~/components/atoms/title-description/index.vue'
-import CardMarketingSocial from '~/components/sections/03-row/cards/marketing-social/index.vue'
-import CardMarketingColor from '~/components/sections/03-row/cards/marketing-color/index.vue'
+import CardMarketingSocial from '~/components/sections/marketing/marketing-social/index.vue'
+import CardMarketingColor from '~/components/sections/marketing/marketing-color/index.vue'
 
-import MarketingAgreement from '~/components/sections/01-row/marketing-agreement/index.vue'
+import MarketingAgreement from '~/components/sections/marketing/marketing-agreement/index.vue'
 
 useSeoMeta({
   title: 'Mejora tu presencia en línea con nuestro servicio de marketing en redes sociales.',

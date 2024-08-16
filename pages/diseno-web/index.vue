@@ -2,7 +2,7 @@
 import Title from '~/components/atoms/title-description/index.vue'
 import Cards from '~/components/organism/color-service-cards/index.vue'
 import MoreInfoModal from '~/components/modal/more-info/index.vue'
-import Billboard from '~/components/sections/02-row/diseno-web/billboard/index.vue'
+import Billboard from '~/components/sections/diseno-web/billboard/index.vue'
 
 import PremiumSvg from '~/components/icons/PremiumSvg.vue'
 import ProSvg from '~/components/icons/ProSvg.vue'

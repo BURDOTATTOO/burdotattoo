@@ -1,27 +1,28 @@
 <script setup lang="ts">
-import Billboard from '~/components/sections/02-row/inicio/billboard/index.vue'
+import Billboard from '~/components/sections/inicio/billboard/index.vue'
 import Title from '~/components/atoms/title-description/index.vue'
-import BrandDescription from '~/components/sections/03-row/inicio/brand-description/index.vue'
+import BrandDescription from '~/components/sections/inicio/brand-description/index.vue'
 import Cards from '~/components/organism/color-service-cards/index.vue'
 import PremiumSvg from '~/components/icons/PremiumSvg.vue'
 import ProSvg from '~/components/icons/ProSvg.vue'
 import PromoSvg from '~/components/icons/PromoSvg.vue'
 
-useSeoMeta({
-  title: 'Página Web Profesional en Colombia - Hosting Gratis el Primer Año - Vanguardia',
-  ogTitle: 'Página Web Profesional en Colombia - Hosting Gratis el Primer Año - Vanguardia',
-  description: 'Crea tu página web profesional con Vanguardia. Disfruta de hosting gratis el primer año y destaca con un diseño web único.',
-  ogDescription: 'Consigue una página web profesional con Vanguardia. Hosting gratis el primer año y soporte técnico.',
-  ogImage: '/meta/pagina-web-profesional.webp',
-  ogLocale: 'es_CO',
-  twitterTitle:'Página Web Profesional en Colombia - Hosting Gratis el Primer Año - Vanguardia',
-  twitterCard: 'summary_large_image',
-  twitterDescription: 'Crea tu página web profesional con Vanguardia. Disfruta de hosting gratis el primer año y destaca con un diseño web único.',
-  twitterLabel1: 'Time to read',
-  twitterData1: '2 minutes',
-})
 
-const CardData = [
+useSeoMeta({
+  title: 'Servicios Web Profesionales en Colombia - Vanguardia',
+  ogTitle: 'Servicios Web Profesionales en Colombia - Vanguardia',
+  description: 'Descubre los servicios profesionales de Vanguardia: marketing en redes sociales, alojamiento web administrado y optimización SEO. Obtén hosting gratis el primer año con un diseño web único.',
+  ogDescription: 'Vanguardia ofrece servicios clave como marketing en redes sociales, alojamiento web administrado y optimización SEO. Disfruta de hosting gratis el primer año con un diseño web excepcional.',
+  ogImage: '/meta/inicio-web-profesional.webp',
+  ogLocale: 'es_CO',
+  twitterTitle: 'Servicios Web Profesionales en Colombia - Vanguardia',
+  twitterCard: 'summary_large_image',
+  twitterDescription: 'Explora los servicios de Vanguardia: marketing en redes sociales, alojamiento web administrado y optimización SEO. Aprovecha el hosting gratis el primer año y un diseño web único.',
+  twitterLabel1: 'Tiempo de lectura',
+  twitterData1: '2 minutos',
+});
+
+const cardData = [
   {
     title: 'Esencial',
     subtitle: 'Marketing en redes sociales',
@@ -64,7 +65,7 @@ const CardData = [
     title="Nuestros Planes"
     description="Agencia Colombiana de marketing que ofrece soluciones efectivas y personalizadas a empresas de cualquier tamaño." />
 
-  <Cards :data="CardData" />
+  <Cards :data="cardData" />
 
   <BrandDescription />
 
