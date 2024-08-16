@@ -20,7 +20,13 @@ const toggleModal = () => {
         <span class="animate-text">GRATIS</span> durante el primer año!
       </h1>
       <p>Elige entre una variedad de diseños modernos por solo $500,000.</p>
-      <ButtonsGlowOn class="learn-more" text="¡Aprender más!" :active="true" @click="toggleModal" />
+      
+      <ButtonsGlowOn
+        class="learn-more"
+        text="¡Aprender más!" 
+        :active="true" 
+        @click="toggleModal" 
+      />
     </div>
 
     <SvgsBillboard />

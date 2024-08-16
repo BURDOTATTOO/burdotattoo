@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import './color-service-cards.scss'
+import './service-cards-color.scss'
 import Button from '~/components/atoms/buttons/default/index.vue'
 
 type CardProps = {

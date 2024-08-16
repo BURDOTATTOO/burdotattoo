@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import Title from '~/components/atoms/title-description/index.vue'
-import Cards from '~/components/organism/color-service-cards/index.vue'
+import Cards from '~/components/organisms/service-cards-color/index.vue'
 import MoreInfoModal from '~/components/modal/more-info/index.vue'
 import Billboard from '~/components/sections/diseno-web/billboard/index.vue'
 
