@@ -18,7 +18,7 @@ const { title, text, textTwo, textThree, marginTop } = defineProps<TitleSubtitle
     <article :class="{ 'extra-top-space': marginTop }">
 
       <div class="title">
-        <h3>{{ title }}</h3>
+        <h2>{{ title }}</h2>
       </div>
 
       <div class="details">

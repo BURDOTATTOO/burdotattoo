@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import './title-description.scss'
+import './subtitle-description.scss'
 
 interface TitleSubtitleProps {
   title: string
@@ -16,7 +16,7 @@ const { title, description } = defineProps<TitleSubtitleProps>()
     <section :class="{ 'extra-top-space': marginTop }">
 
       <div class="title">
-        <h1>{{ title }}</h1>
+        <h2>{{ title }}</h2>
       </div>
 
       <div class="description">

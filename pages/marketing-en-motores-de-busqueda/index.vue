@@ -2,26 +2,28 @@
 
 import Title from '~/components/atoms/title-description/index.vue'
 import PostText from '~/components/sections/seo/post-text/index.vue'
+import SubTitle from '~/components/atoms/subtitle-description/index.vue'
 import CardMarketingSeo from '~/components/sections/seo/marketing-seo/index.vue'
 import CardMarketingColorSeo from '~/components/sections/marketing/marketing-color-seo/index.vue'
 
 useSeoMeta({
-  title: 'Mejora tu presencia en línea con nuestro servicio de marketing en redes sociales.',
-  ogTitle: 'Mejora tu presencia en línea con nuestro servicio de marketing en redes sociales.',
-  description: 'Incrementa tu visibilidad en línea y alcanza a más clientes con nuestro servicio de marketing en redes sociales.',
-  ogDescription: 'Incrementa tu visibilidad en línea y alcanza a más clientes con nuestro servicio de marketing en redes sociales.',
-  ogImage: '/.webp',
-  ogLocale: 'en_Es',
-  twitterTitle: 'Mejora tu presencia en línea con nuestro servicio de marketing en redes sociales.',
-  twitterCard: 'summary_large_image',//default
-  twitterDescription: 'Incrementa tu visibilidad en línea y alcanza a más clientes con nuestro servicio de marketing en redes sociales.',
-})
+  title: 'Mejora el Rendimiento y Visibilidad de tu Sitio Web con SEO - Vanguardia',
+  ogTitle: 'Optimización SEO en Colombia - Aumenta tu Visibilidad y Rendimiento Web',
+  description: 'Nuestros servicios de SEO en Colombia optimizan tu sitio web para mejorar su rendimiento y visibilidad en los motores de búsqueda. Atrae tráfico orgánico y maximiza las conversiones con estrategias SEO efectivas.',
+  ogDescription: 'Destaca en los resultados de búsqueda con nuestros servicios de optimización SEO en Colombia. Mejoramos tu visibilidad online, incrementamos el tráfico orgánico y ayudamos a tu negocio a alcanzar su audiencia objetivo.',
+  ogImage: '/meta/seo-optimizacion-colombia.webp',
+  ogLocale: 'es_CO',
+  twitterTitle: 'Mejora tu Presencia Online con Servicios de SEO en Colombia - Vanguardia',
+  twitterCard: 'summary_large_image',
+  twitterDescription: 'Potencia tu sitio web con nuestro SEO en Colombia. Aumenta la visibilidad local y general, atrae tráfico dirigido y optimiza el rendimiento de tu negocio online.',
+});
 
 </script>
 
 <template>
 
   <Title
+    marginTop
     title="¿Tu sitio web está bien posicionado en Google?"
     description="Haz que tu página web aparezca en los principales motores de búsqueda con nuestro servicio integral de optimización y marketing online." 
   />
@@ -31,12 +33,13 @@ useSeoMeta({
   <PostText
     marginTop
     title="¿Cómo Mejorar el rendimiento de tu sitio web y hacerlo más atractivo para los motores de búsqueda?"
-    text="Los servicios de optimización en motores de búsqueda (SEO) son estrategias esenciales para mejorar la visibilidad y el posicionamiento de un sitio web en las páginas de resultados de los buscadores (SERPs). A través de la optimización técnica, el refinamiento de contenido y la creación estratégica de enlaces, el SEO busca incrementar el tráfico orgánico y fortalecer la presencia online de tu sitio web." 
+    text="La optimización en motores de búsqueda (SEO) es fundamental para mejorar la visibilidad y el posicionamiento de tu sitio web en las páginas de resultados de los buscadores (SERPs). Mediante técnicas avanzadas de optimización técnica, refinamiento de contenido y creación estratégica de enlaces, el SEO no solo aumenta el tráfico orgánico, sino que también fortalece la presencia online de tu negocio." 
     textTwo="Nuestros expertos en SEO analizan los algoritmos de los motores de búsqueda y los patrones de comportamiento de los usuarios para optimizar los sitios web, alineándolos con palabras clave relevantes y consultas de los usuarios. Esto permite atraer tráfico dirigido y maximizar las tasas de conversión. Los servicios de SEO incluyen optimización on-page, que abarca la investigación de palabras clave, la optimización de metaetiquetas y la mejora del contenido, así como optimización off-page, que incluye la construcción de enlaces y la integración con redes sociales."
     textThree="En un entorno digital competitivo, contar con servicios de SEO efectivos es fundamental para que las empresas establezcan su presencia digital y alcancen a su audiencia objetivo de manera eficiente."
   />
 
-  <Title
+  <SubTitle
+    marginTop
     title="Nuestros planes de SEO"
     description="Diseñados para maximizar tu presencia digital y alcanzar tus objetivos comerciales con precisión y eficacia."
   />
