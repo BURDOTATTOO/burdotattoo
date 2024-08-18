@@ -9,7 +9,7 @@ import './image-text.scss'
     <div class="image">
       <div>
         <NuxtPicture 
-          src="/images/sections/02-row/image-text-2/diseno-grafico.webp" 
+          src="/images/diseno-grafico.webp" 
           sizes="100vw xs:300px sm:400px"
           format="webp" 
           alt="Imagen de identidad corporativa de diseño gráfico" 

@@ -2,7 +2,7 @@
 import Title from '~/components/atoms/title-description/index.vue'
 import SubTitle from '~/components/atoms/subtitle-description/index.vue'
 import IconCards from '~/components/organisms/icon-cards/index.vue'
-import MarketingAgreement from '~/components/sections/marketing/marketing-agreement/index.vue'
+import MarketingAgreement from '~/components/atoms/marketing-agreement/index.vue'
 import ServicesCards from '~/components/organisms/service-cards-1/index.vue'
 //icons
 import BrowserSvg from '~/components/icons/BrowserSvg.vue'
@@ -151,7 +151,9 @@ const servicesCards = [
 
   <IconCards :data="iconCards" />
 
-  <SubTitle marginTop title="Nuestros planes de marketing en redes sociales"
+  <SubTitle
+    marginTop
+    title="Nuestros planes de marketing en redes sociales"
     description="Diseñados para maximizar tu presencia digital y alcanzar tus objetivos comerciales con precisión y eficacia." />
 
   <ServicesCards :data="servicesCards" />

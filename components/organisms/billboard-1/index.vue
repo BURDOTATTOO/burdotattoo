@@ -8,7 +8,7 @@ import './billboard-1.scss'
 
     <NuxtPicture
       class="desktop-only"
-      src="/images/sections/02-row/image-text/services.jpg" 
+      src="/images/services.jpg" 
       sizes="100vw sm:300px md:500px" 
       format="webp"
       alt="Imagen de diseño web portfolio" />
