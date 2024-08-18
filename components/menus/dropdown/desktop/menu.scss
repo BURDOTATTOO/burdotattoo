@@ -15,6 +15,17 @@
       line-height: 2.2rem;
       justify-content: center;
       align-items: center;
+
+      &:hover {
+        .arrow-icon {
+          transform: rotate(90deg);
+        }
+
+        .sub-items {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
       
       .title {
         font-size: 1.2rem;
@@ -23,6 +34,7 @@
       .arrow-icon {
         margin-left: 8px;
         width: 1.1rem;
+        transition: transform 0.3s ease;
       }
   
       .sub-items { 
@@ -46,7 +58,7 @@
         visibility: hidden;
         
         .sub-item {
-          a {
+          .link {
             display: flex;
             justify-content: flex-start;
             z-index: 1000;
@@ -82,30 +94,10 @@
             }
           }
         }
-        
-        .comment-icon {
-          height: 26px;
-        }
-      }
-
-      &:hover .sub-items {
-        opacity: 1;
-        visibility: visible;
       }
 
       .sub-items.clicked {
         display: none;
-      }
-    }
-
-    .item {
-      .arrow-icon {
-        transition: transform 0.3s ease;
-      }
-      &:hover {
-        .arrow-icon {
-          transform: rotate(90deg);
-        }
       }
     }
   }

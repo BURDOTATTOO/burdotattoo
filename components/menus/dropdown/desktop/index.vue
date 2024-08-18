@@ -23,25 +23,25 @@ const itemClicked = () => {
 const servicesLinks = [
   {
     title: 'Diseño web',
-    to: '/diseno-web',
+    link: '/diseno-web',
     icon: WebDesignSvg,
-    iconAlt: 'Diseño web'
+    iconAlt: 'Diseño web',
   },
   {
     title: 'Diseño gráfico',
-    to: '/diseno-grafico',
+    link: '/diseno-grafico',
     icon: GraphicDesignSvg,
     iconAlt: 'Diseño gráfico'
   },
   {
     title: 'Marketing de motores de búsqueda',
-    to: '/marketing-en-motores-de-busqueda',
+    link: '/marketing-en-motores-de-busqueda',
     icon: SeoSvg,
     iconAlt: 'Marketing de motores de búsqueda'
   },
   {
     title: 'Marketing de medios sociales',
-    to: '/marketing-en-redes-sociales',
+    link: '/marketing-en-redes-sociales',
     icon: MarketingSvg,
     iconAlt: 'Marketing en redes sociales'
   }
@@ -50,19 +50,19 @@ const servicesLinks = [
 const supportLinks = [
   {
     title: 'Contacta con soporte',
-    to: '/',
+    link: '/',
     icon: SupportSvg,
     iconAlt: 'Contacta con soporte'
   },
   {
     title: 'Anuncios',
-    to: '/',
+    link: '/',
     icon: AnnouncementsSvg,
     iconAlt: 'Anuncios'
   },
   {
     title: 'Sugerencias',
-    to: '/',
+    link: '/',
     icon: SuggestionsSvg,
     iconAlt: 'Sugerencias'
   }
@@ -79,11 +79,11 @@ const supportLinks = [
         <h3 class="title">Servicios</h3>
         <ArrowDownSvg class="icon arrow-icon" />
 
-        <ul :class="['sub-items', { 'clicked': isClicked }]" @click="itemClicked">
-          <li v-for="(link, index) in servicesLinks" :to="link.to" :key="index" class="sub-item">
-            <NuxtLink>
-              <component :is="link.icon" class="icon" :alt="link.iconAlt" />
-              <p>{{ link.title }}</p>
+        <ul :class="['sub-items', { 'clicked': isClicked }]">
+          <li v-for="(item, index) in servicesLinks" :key="index" class="sub-item" @click="itemClicked">
+            <NuxtLink class="link" :to="item.link">
+              <component :is="item.icon" class="icon" :alt="item.iconAlt" />
+              <p>{{ item.title }}</p>
             </NuxtLink>
           </li>
         </ul>
@@ -94,10 +94,10 @@ const supportLinks = [
         <ArrowDownSvg class="icon arrow-icon" />
 
         <ul :class="['sub-items', { 'clicked': isClicked }]" @click="itemClicked">
-          <li v-for="(link, index) in supportLinks" :to="link.to" :key="index" class="sub-item">
-            <NuxtLink>
-              <component :is="link.icon" class="icon" :alt="link.iconAlt" />
-              <p>{{ link.title }}</p>
+          <li v-for="(item, index) in supportLinks" :key="index" class="sub-item">
+            <NuxtLink class="link" :to="item.link">
+              <component :is="item.icon" class="icon" :alt="item.iconAlt" />
+              <p>{{ item.title }}</p>
             </NuxtLink>
           </li>
         </ul>
