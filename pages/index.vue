@@ -29,7 +29,7 @@ const serviceCards = [
     subtitle: 'Marketing en redes sociales',
     price: '$399.999',
     icon: PromoSvg,
-    imageAlt: 'Imagen del servicio de marketing en redes sociales',
+    iconAlt: 'Imagen del servicio de marketing en redes sociales',
     description: 'Contrata a nuestro equipo de expertos en marketing en redes sociales y aumenta tus oportunidades de negocio. Dirígete a clientes potenciales en función de grupos demográficos específicos.',
     cta: 'Leer más',
     link: 'marketing-en-redes-sociales'
@@ -39,7 +39,7 @@ const serviceCards = [
     subtitle: 'Alojamiento web administrado - cPanel',
     price: '$49.999',
     icon: ProSvg,
-    imageAlt: 'Imagen del servicio de alojamiento web administrado - cPanel',
+    iconAlt: 'Imagen del servicio de alojamiento web administrado - cPanel',
     description: '¡Potente alojamiento de sitios web administrado con cPanel, correos electrónicos ilimitados, 25 GB de espacio en disco, Jet Backup y 500 GB de ancho de banda!',
     cta: 'Leer más',
     link: 'alojamiento-web-administrado-cpanel'
@@ -49,7 +49,7 @@ const serviceCards = [
     subtitle: 'Marketing en motores de búsqueda',
     price: '$999.999',
     icon: PremiumSvg,
-    imageAlt: 'Imagen del servicio de marketing en motores de búsqueda',
+    iconAlt: 'Imagen del servicio de marketing en motores de búsqueda',
     description: 'Haga que su sitio web aparezca en los principales motores de búsqueda con nuestro servicio de optimización de motores de búsqueda y marketing de motores de búsqueda.',
     cta: 'Leer más',
     link: 'marketing-en-motores-de-busqueda'

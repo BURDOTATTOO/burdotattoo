@@ -32,10 +32,11 @@ const cardData = [
     title: 'Esencial',
     subtitle: 'Promoción de páginas web',
     price: '$599.999',
-    image: PromoSvg,
+    icon: PromoSvg,
+    iconAlt: 'Imagen del servicio de promoción de páginas web',
     description: '¡Obtén un sitio web impresionante y alojamiento GRATIS durante tu primer año!',
     cta: 'Leer más',
-    toggleEvent: toggleModal
+    onClick: toggleModal
   },
   {
     title: 'Web Pro',
@@ -44,7 +45,7 @@ const cardData = [
     image: ProSvg,
     description: '¡Obtén un sitio web de comercio electrónico con 5 páginas y alojamiento GRATIS tu primer año!',
     cta: 'Leer más',
-    toggleEvent: () => {
+    onClick: () => {
       console.log('toggleEvent 2')
     }
   },
@@ -55,7 +56,7 @@ const cardData = [
     image: PremiumSvg,
     description: '¡Obtén un sitio web de comercio electrónico con 5 páginas y alojamiento GRATIS tu primer año!',
     cta: 'Leer más',
-    toggleEvent: () => {
+    onClick: () => {
       console.log('toggleEvent 3')
     }
   },

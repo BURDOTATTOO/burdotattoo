@@ -51,9 +51,6 @@ const { data } = defineProps<ServiceCardsProps>()
 
       </div>
 
-      <div class="cta">
-        <Button :text="item.cta" />
-      </div>
 
       <Button class="cta" :text="item.cta" :link="item.link" @click="item.onClick" />
 
