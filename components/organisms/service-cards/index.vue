@@ -10,7 +10,7 @@ type ServiceCardsProps = {
     icon: Component
     iconAlt: string
     description: string
-    cta: string
+    buttonText: string
     link?: string
     onClick?: () => void
   }[]
@@ -51,7 +51,7 @@ const { data } = defineProps<ServiceCardsProps>()
         </p>
       </div>
 
-      <Button class="cta" :text="item.cta" :link="item.link" @click="item.onClick" />
+      <Button class="buttonText" :text="item.buttonText" :link="item.link" @click="item.onClick" />
 
     </section>
 

@@ -2,12 +2,12 @@
 import './billboard.scss'
 import ButtonsGlowOn from '~/components/atoms/buttons/glow-on/index.vue'
 import ModalMoreInfo from '~/components/organisms/modal-more-info/index.vue'
-import SvgsBillboard from '~/public/svgs/billboard.vue'
+import SvgsBillboard from '~/components/icons/web-dev.vue'
 
-const modal = ref(false)
+const isModalOpen = ref(false)
 
 const toggleModal = () => {
-  modal.value = !modal.value
+  isModalOpen.value = !isModalOpen.value
 }
 
 </script>
@@ -15,7 +15,7 @@ const toggleModal = () => {
 <template>
   <article class="billboard">
 
-    <div class="left">
+    <section class="text">
       <h1>¡Obtén una página web profesional con Hosting
         <span class="animate-text">GRATIS</span> durante el primer año!
       </h1>
@@ -25,13 +25,12 @@ const toggleModal = () => {
         class="learn-more"
         text="¡Aprender más!" 
         :active="true" 
-        @click="toggleModal" 
+        @click="toggleModal"
       />
-    </div>
+    </section>
 
-    <SvgsBillboard />
+    <SvgsBillboard aria-label="imagen soluciones creativas de diseño gráfico"/>
 
-    <ModalMoreInfo v-if="modal" :isModalOpen="modal" :toggleModal="toggleModal" />
-
+    <ModalMoreInfo v-if="isModalOpen" :toggleModal="toggleModal"/>
   </article>
 </template>

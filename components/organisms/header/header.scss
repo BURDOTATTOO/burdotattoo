@@ -16,7 +16,7 @@
     border-radius: 40px;
     box-shadow: var(--shadow-base);
 
-    .left {
+    .logo {
       display: flex;
       align-items: center;
       backdrop-filter: blur(5px);
@@ -50,7 +50,7 @@
       }
     }
 
-    .right {
+    .details {
       display: flex;
       align-items: center;
       

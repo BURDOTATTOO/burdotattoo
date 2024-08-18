@@ -7,18 +7,17 @@ import AnimatedColorfulText from '~/components/atoms/animated-colorful-text/inde
 <template>
   <article class="billboard-2">
 
-    <section class="left">
-      <NuxtPicture 
-        src="/images/diseno-web.webp" 
-        sizes="100vw xs:360px sm:500px"
-        width="500"
-        height="320" 
-        format="webp" 
-        alt="imagen soluciones creativas de diseño gráfico" 
-      />
-    </section>
+    <NuxtPicture 
+      src="/images/diseno-web.webp" 
+      class="image"
+      sizes="100vw xs:360px sm:500px"
+      width="500"
+      height="320" 
+      format="webp" 
+      alt="imagen soluciones creativas de diseño gráfico" 
+    />
 
-    <section class="right">
+    <section class="details">
       <h2>Desbloquea tu Identidad
         <AnimatedColorfulText>Visual</AnimatedColorfulText>
       </h2>

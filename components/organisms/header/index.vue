@@ -34,16 +34,16 @@ const toggleSliderTopNav = () => {
 </script>
 
 <template>
-  <section class="header-container">
+  <div class="header-container">
 
     <header class="header">
-      <div class="left">
+      <div class="logo">
         <NuxtLink to="/" class="logo-container" aria-label="Logo de Vanguardia" >
           <Logo />
         </NuxtLink>
       </div>
 
-      <div class="right">
+      <div class="details">
 
         <div class="dark-mode-icons" @click="handleTheme()" aria-label="Cambiar tema del sitio web" >
           <MoonSvg v-if="!isDarkMode" class="icon sun" />
@@ -63,6 +63,6 @@ const toggleSliderTopNav = () => {
       </div>
     </header>
 
-  </section>
+  </div>
 
 </template>

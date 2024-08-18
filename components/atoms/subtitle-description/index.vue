@@ -15,13 +15,9 @@ const { title, description } = defineProps<TitleSubtitleProps>()
   <article class="title-subtitle-container">
     <section :class="{ 'extra-top-space': marginTop }">
 
-      <div class="title">
-        <h2>{{ title }}</h2>
-      </div>
+      <h2 class="title">{{ title }}</h2>
 
-      <div class="description">
-        <p>{{ description }}</p>
-      </div>
+      <p class="description">{{ description }}</p>
 
     </section>
   </article>

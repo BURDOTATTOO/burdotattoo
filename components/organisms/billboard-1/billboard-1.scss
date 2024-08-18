@@ -1,4 +1,4 @@
-.diseno-web-billboard {
+.billboard-1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: var(--tablet-width);
@@ -15,13 +15,13 @@
     }
   }
 
-  .text {
+  .details-wrapper {
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
 
-    .content {
+    .details {
       background-color: var(--background);
       position: absolute;
       top: 48px;

@@ -10,8 +10,8 @@ import PromoSvg from '~/components/icons/PromoSvg.vue'
 
 
 useSeoMeta({
-  title: 'Servicios Web Profesionales en Colombia - Vanguardia',
-  ogTitle: 'Servicios Web Profesionales en Colombia - Vanguardia',
+  title: 'Servicios Web Profesional en Colombia - Vanguardia',
+  ogTitle: 'Servicios Web Profesional en Colombia - Vanguardia',
   description: 'Descubre los servicios profesionales de Vanguardia: marketing en redes sociales, alojamiento web administrado y optimización SEO. Obtén hosting gratis el primer año con un diseño web único.',
   ogDescription: 'Vanguardia ofrece servicios clave como marketing en redes sociales, alojamiento web administrado y optimización SEO. Disfruta de hosting gratis el primer año con un diseño web excepcional.',
   ogImage: '/meta/inicio-web-profesional.webp',
@@ -21,7 +21,7 @@ useSeoMeta({
   twitterDescription: 'Explora los servicios de Vanguardia: marketing en redes sociales, alojamiento web administrado y optimización SEO. Aprovecha el hosting gratis el primer año y un diseño web único.',
   twitterLabel1: 'Tiempo de lectura',
   twitterData1: '2 minutos',
-});
+})
 
 const serviceCards = [
   {
@@ -31,7 +31,7 @@ const serviceCards = [
     icon: PromoSvg,
     iconAlt: 'Imagen del servicio de marketing en redes sociales',
     description: 'Contrata a nuestro equipo de expertos en marketing en redes sociales y aumenta tus oportunidades de negocio. Dirígete a clientes potenciales en función de grupos demográficos específicos.',
-    cta: 'Leer más',
+    buttonText: 'Leer más',
     link: 'marketing-en-redes-sociales'
   },
   {
@@ -41,7 +41,7 @@ const serviceCards = [
     icon: ProSvg,
     iconAlt: 'Imagen del servicio de alojamiento web administrado - cPanel',
     description: '¡Potente alojamiento de sitios web administrado con cPanel, correos electrónicos ilimitados, 25 GB de espacio en disco, Jet Backup y 500 GB de ancho de banda!',
-    cta: 'Leer más',
+    buttonText: 'Leer más',
     link: 'alojamiento-web-administrado-cpanel'
   },
   {
@@ -51,7 +51,7 @@ const serviceCards = [
     icon: PremiumSvg,
     iconAlt: 'Imagen del servicio de marketing en motores de búsqueda',
     description: 'Haga que su sitio web aparezca en los principales motores de búsqueda con nuestro servicio de optimización de motores de búsqueda y marketing de motores de búsqueda.',
-    cta: 'Leer más',
+    buttonText: 'Leer más',
     link: 'marketing-en-motores-de-busqueda'
   }
 ]

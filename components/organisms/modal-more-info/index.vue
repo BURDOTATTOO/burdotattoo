@@ -3,16 +3,12 @@ import './more-info.scss'
 import { ref } from 'vue'
 import Loading from '~/components/atoms/loading/dual-spinner/index.vue'
 
-const { isModalOpen, toggleModal } = defineProps<{
-  isModalOpen: boolean
-  toggleModal: () => void
-}>()
-
 const name = ref('')
 const email = ref('')
 const phone = ref('')
 const message = ref('')
 
+const isModalOpen = ref(false)
 const isResponseError = ref(false)
 const isRequestError = ref(false)
 const isSuccess = ref(false)
@@ -27,18 +23,22 @@ type CreateFormTypes = {
   confirmPassword: string
 }
 
+const { toggleModal } = defineProps<{
+  toggleModal: () => void
+}>()
+
 const submitHandler = async (createForm: CreateFormTypes) => {
   isLoading.value = true
   await new Promise(resolve => setTimeout(resolve, 3000))  
   isLoading.value = false
-  toggleModal()
+  // toggleModal()
 }
 
 </script>
 
 <template>
-  <section v-if="isModalOpen" class="modal-wrapper">
-    <div class="create-modal-inner">
+  <article class="modal-wrapper">
+    <section class="create-modal-inner">
       <div @click="toggleModal" class="btn-close">&times;</div>
 
       <Loading v-if="isLoading" />
@@ -109,6 +109,6 @@ const submitHandler = async (createForm: CreateFormTypes) => {
 
       </div>
 
-    </div>
-  </section>
+    </section>
+  </article>
 </template>

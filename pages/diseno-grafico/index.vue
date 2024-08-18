@@ -19,10 +19,8 @@ useSeoMeta({
 </script>
 
 <template>
-  <main>
-    <Billboard />
-    <Services />
-    <TextParagraph />
-    <TextImage />
-  </main>
+  <Billboard />
+  <Services />
+  <TextParagraph />
+  <TextImage />
 </template>

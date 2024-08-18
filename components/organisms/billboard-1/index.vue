@@ -4,7 +4,7 @@ import './billboard-1.scss'
 </script>
 
 <template>
-  <article class="diseno-web-billboard">
+  <article class="billboard-1">
 
     <NuxtPicture
       class="desktop-only"
@@ -13,9 +13,8 @@ import './billboard-1.scss'
       format="webp"
       alt="Imagen de diseño web portfolio" />
 
-
-    <section class="text">
-      <div class="content">
+    <section class="details-wrapper">
+      <div class="details">
         <h1>
           Expertos en Diseño Web - Servicio Profesional
         </h1>
