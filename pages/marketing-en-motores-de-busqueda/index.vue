@@ -1,10 +1,10 @@
 <script setup lang="ts">
 
 import Title from '~/components/atoms/title-description/index.vue'
-import PostText from '~/components/organisms/post-text/index.vue'
+import PostSubtitle from '~/components/organisms/post-subtitle/index.vue'
 import SubTitle from '~/components/atoms/subtitle-description/index.vue'
 import IconTitle from '~/components/organisms/icon-title/index.vue'
-import CardMarketingColorSeo from '~/components/sections/marketing/marketing-color-seo/index.vue'
+import ServiceCards from '~/components/organisms/service-cards-1/index.vue'
 
 //icons
 
@@ -14,6 +14,9 @@ import BrandPromoSvg from '~/components/icons/BrandPromoSvg.vue'
 import StatisticsUpSvg from '~/components/icons/StatisticsUpSvg.vue'
 import OptimizationSvg from '~/components/icons/OptimizationSvg.vue'
 import PayPerClicSvg from '~/components/icons/PayPerClicSvg.vue'
+import PremiumSvg from '~/components/icons/PremiumSvg.vue'
+import ProSvg from '~/components/icons/ProSvg.vue'
+import DevelopSvg from '~/components/icons/DevelopSvg.vue'
 
 useSeoMeta({
   title: 'Mejora el Rendimiento y Visibilidad de tu Sitio Web con SEO - Vanguardia',
@@ -60,6 +63,52 @@ const iconTitle = [
   },
 ]
 
+const serviceCards = [
+  {
+    title: 'SEO Básico',
+    price: '$1,199.999',
+    icon: DevelopSvg,
+    features: [
+      'Optimización de contenido',
+      'Optimización de etiquetas y descripciones',
+      'Páginas a optimizar: 1-5',
+      'Palabras clave incluidas: 1-10',
+      'Informe de rendimiento: 1 por año',
+    ],
+    cta: 'Solicitar'
+  },
+  {
+    title: 'SEO Pro',
+    price: '$2,999.999',
+    icon: ProSvg,
+    features: [
+      'Optimización de contenido',
+      'Optimización de etiquetas y descripciones',
+      'Páginas a optimizar: 1-15',
+      'Palabras clave incluidas: 21-40',
+      'Creación de enlaces incluida',
+      'Publicaciones de blog: 4 por año',
+      'Informe de rendimiento: 4 por año',
+    ],
+    cta: 'Solicitar'
+  },
+  {
+    title: 'SEO Premium',
+    price: '$4,999.999',
+    icon: PremiumSvg,
+    features: [
+      'Optimización de contenido',
+      'Optimización de etiquetas y descripciones',
+      'Páginas a optimizar: 1-20',
+      'Palabras clave incluidas: 41-60',
+      'Creación de enlaces incluido',
+      'Publicaciones de blog: 12 por año',
+      'Informe de rendimiento: 4 por año',
+    ],
+    cta: 'Solicitar'
+  }
+]
+
 </script>
 
 <template>
@@ -70,9 +119,11 @@ const iconTitle = [
     description="Haz que tu página web aparezca en los principales motores de búsqueda con nuestro servicio integral de optimización y marketing online." 
   />
 
-  <IconTitle :data="iconTitle" />
+  <IconTitle
+    :data="iconTitle"
+  />
 
-  <PostText
+  <PostSubtitle
     marginTop
     title="¿Cómo Mejorar el rendimiento de tu sitio web y hacerlo más atractivo para los motores de búsqueda?"
     text="La optimización en motores de búsqueda (SEO) es fundamental para mejorar la visibilidad y el posicionamiento de tu sitio web en las páginas de resultados de los buscadores (SERPs). Mediante técnicas avanzadas de optimización técnica, refinamiento de contenido y creación estratégica de enlaces, el SEO no solo aumenta el tráfico orgánico, sino que también fortalece la presencia online de tu negocio." 
@@ -81,12 +132,11 @@ const iconTitle = [
   />
 
   <SubTitle
-    marginTop
     title="Nuestros planes de SEO"
     description="Diseñados para maximizar tu presencia digital y alcanzar tus objetivos comerciales con precisión y eficacia."
   />
 
-  <CardMarketingColorSeo />
+  <ServiceCards :data="serviceCards" />
 
   <PostText
     marginTop
@@ -96,3 +146,4 @@ const iconTitle = [
   />
 
 </template>
+

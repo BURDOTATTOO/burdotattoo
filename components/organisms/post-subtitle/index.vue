@@ -1,7 +1,7 @@
 <script lang="ts" setup>
-import './post-text.scss'
+import './post-subtitle.scss'
 
-interface TitleSubtitleProps {
+interface PostSubtitleProps {
   title: string
   text: string
   text1?: string
@@ -10,12 +10,12 @@ interface TitleSubtitleProps {
   marginTop?: boolean
 }
 
-const { title, text, text1, text2, text3, marginTop } = defineProps<TitleSubtitleProps>()
+const { title, text, text1, text2, text3, marginTop } = defineProps<PostSubtitleProps>()
 
 </script>
 
 <template>
-  <section class="post-text-container">
+  <section class="post-subtitle">
     <article :class="{ 'extra-top-space': marginTop }">
 
       <div class="title">

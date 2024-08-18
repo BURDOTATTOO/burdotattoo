@@ -1,18 +1,14 @@
 <script setup lang="ts">
-import './service-cards.scss'
+import './service-cards-1.scss'
 import Button from '~/components/atoms/buttons/default/index.vue'
 
 type ServiceCardsProps = {
   data: {
     title: string
-    subtitle: string
     price: string
     icon: Component
-    imageAlt: string
-    description: string
+    features: string[]
     cta: string
-    link?: string
-    onClick?: () => void
   }[]
 }
 
@@ -22,36 +18,37 @@ const { data } = defineProps<ServiceCardsProps>()
 
 <template>
 
-  <article class="service-cards">
+  <article class="service-cards-1">
 
     <section class="item" v-for="(item, index) in data" :key="index">
 
       <div class="heading">
-
         <h3 class="title">
           {{ item.title }}
         </h3>
-
-        <p class="subtitle">
-          {{ item.subtitle }}
-        </p>
-
-        <p class="price">
+        <span class="subtitle">
           {{ item.price }}
-        </p>
-
+        </span>
       </div>
 
       <div class="details">
 
-        <component :is="item.icon" class="image" :aria-label="item.imageAlt" />
+        <div class="image">
+          <Component :is="item.icon" />
+        </div>
 
-        <p class="description">
-          {{ item.description }}
-        </p>
+        <div class="description">
+
+          <button v-for="(i, index) in item.features" :key="index">
+            {{ i }}
+          </button>
+        </div>
+
       </div>
 
-      <Button class="cta" :text="item.cta" :link="item.link" @click="item.onClick" />
+      <div class="cta">
+        <Button :text="item.cta" />
+      </div>
 
     </section>
 
