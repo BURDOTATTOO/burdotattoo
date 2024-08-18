@@ -7,8 +7,11 @@ type ServiceCardsProps = {
     title: string
     price: string
     icon: Component
+    iconAlt: string
     features: string[]
     cta: string
+    link?: string
+    onClick?: () => void
   }[]
 }
 
@@ -23,9 +26,11 @@ const { data } = defineProps<ServiceCardsProps>()
     <section class="item" v-for="(item, index) in data" :key="index">
 
       <div class="heading">
+
         <h3 class="title">
           {{ item.title }}
         </h3>
+
         <span class="subtitle">
           {{ item.price }}
         </span>
@@ -34,13 +39,13 @@ const { data } = defineProps<ServiceCardsProps>()
       <div class="details">
 
         <div class="image">
-          <Component :is="item.icon" />
+          <Component :is="item.icon" :aria-label="item.iconAlt" />
         </div>
 
         <div class="description">
 
-          <button v-for="(i, index) in item.features" :key="index">
-            {{ i }}
+          <button v-for="(text, index) in item.features" :key="index">
+            {{ text }}
           </button>
         </div>
 
@@ -49,6 +54,8 @@ const { data } = defineProps<ServiceCardsProps>()
       <div class="cta">
         <Button :text="item.cta" />
       </div>
+
+      <Button class="cta" :text="item.cta" :link="item.link" @click="item.onClick" />
 
     </section>
 

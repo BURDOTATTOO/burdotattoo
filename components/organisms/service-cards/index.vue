@@ -8,7 +8,7 @@ type ServiceCardsProps = {
     subtitle: string
     price: string
     icon: Component
-    imageAlt: string
+    iconAlt: string
     description: string
     cta: string
     link?: string
@@ -44,7 +44,7 @@ const { data } = defineProps<ServiceCardsProps>()
 
       <div class="details">
 
-        <component :is="item.icon" class="image" :aria-label="item.imageAlt" />
+        <component :is="item.icon" class="image" :aria-label="item.iconAlt" />
 
         <p class="description">
           {{ item.description }}

@@ -1,4 +1,4 @@
-.card-marketing-two-container {
+.icon-cards {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   margin: 40px auto 0;
@@ -51,7 +51,7 @@
         padding: 0 .6rem;
       }
 
-      .subtitle {
+      .description {
         font-size: 1rem;
         letter-spacing: 0.08px;
         line-height: 1.7rem;

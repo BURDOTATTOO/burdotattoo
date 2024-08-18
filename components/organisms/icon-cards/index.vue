@@ -1,11 +1,12 @@
 <script setup lang="ts">
-import './icon-title.scss'
+import './icon-cards.scss'
 
 type IconTitleProps = {
   data: {
-    title: string
-    subtitle: string
     icon: Component
+    iconAlt: string
+    title: string
+    description: string
   }[]
 }
 
@@ -15,21 +16,21 @@ const { data } = defineProps<IconTitleProps>()
 
 <template>
 
-  <article class="icon-title">
+  <article class="icon-cards">
 
     <section class="item" v-for="(item, index) in data" :key="index">
 
       <div class="heading">
 
         <div class="image">
-          <component :is="item.icon" />
+          <component :is="item.icon" :aria-label="item.iconAlt"/>
         </div>
 
         <h3 class="title">
           {{ item.title }}
         </h3>
-        <span class="subtitle">
-          {{ item.subtitle }}
+        <span class="description">
+          {{ item.description }}
         </span>
 
       </div>
