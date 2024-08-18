@@ -1,8 +1,8 @@
 <script lang="ts" setup>
-import './inicio-billboard.scss'
+import './billboard.scss'
 import ButtonsGlowOn from '~/components/atoms/buttons/glow-on/index.vue'
+import ModalMoreInfo from '~/components/organisms/modal-more-info/index.vue'
 import SvgsBillboard from '~/public/svgs/billboard.vue'
-import MoreInfoModal from '~/components/modal/more-info/index.vue'
 
 const modal = ref(false)
 
@@ -13,7 +13,7 @@ const toggleModal = () => {
 </script>
 
 <template>
-  <article class="inicio-billboard">
+  <article class="billboard">
 
     <div class="left">
       <h1>¡Obtén una página web profesional con Hosting
@@ -31,7 +31,7 @@ const toggleModal = () => {
 
     <SvgsBillboard />
 
-    <MoreInfoModal v-if="modal" :isModalOpen="modal" :toggleModal="toggleModal" />
+    <ModalMoreInfo v-if="modal" :isModalOpen="modal" :toggleModal="toggleModal" />
 
   </article>
 </template>

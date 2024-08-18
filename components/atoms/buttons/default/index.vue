@@ -1,18 +1,23 @@
 <script setup lang="ts">
 import './regular.scss'
 
-type GlowOnProps = {
+type ButtonProps = {
   text: string
   link?: string
+  onClick?: () => void
 }
 
 const router = useRouter()
 
-const { text, link } = defineProps<GlowOnProps>()
+const { text, link, onClick } = defineProps<ButtonProps>()
 
 const handleClick = () => {
   if (link) {
     router.push(link)
+  }
+
+  if (onClick) {
+    onClick()
   }
 }
 </script>

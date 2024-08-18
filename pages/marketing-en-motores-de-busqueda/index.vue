@@ -1,10 +1,19 @@
 <script setup lang="ts">
 
 import Title from '~/components/atoms/title-description/index.vue'
-import PostText from '~/components/sections/seo/post-text/index.vue'
+import PostText from '~/components/organisms/post-text/index.vue'
 import SubTitle from '~/components/atoms/subtitle-description/index.vue'
-import CardMarketingSeo from '~/components/sections/seo/marketing-seo/index.vue'
+import IconTitle from '~/components/organisms/icon-title/index.vue'
 import CardMarketingColorSeo from '~/components/sections/marketing/marketing-color-seo/index.vue'
+
+//icons
+
+import SeoSvg from '~/components/icons/SeoSvg.vue'
+import OffPageSvg from '~/components/icons/OffPageSvg.vue'
+import BrandPromoSvg from '~/components/icons/BrandPromoSvg.vue'
+import StatisticsUpSvg from '~/components/icons/StatisticsUpSvg.vue'
+import OptimizationSvg from '~/components/icons/OptimizationSvg.vue'
+import PayPerClicSvg from '~/components/icons/PayPerClicSvg.vue'
 
 useSeoMeta({
   title: 'Mejora el Rendimiento y Visibilidad de tu Sitio Web con SEO - Vanguardia',
@@ -16,7 +25,40 @@ useSeoMeta({
   twitterTitle: 'Mejora tu Presencia Online con Servicios de SEO en Colombia - Vanguardia',
   twitterCard: 'summary_large_image',
   twitterDescription: 'Potencia tu sitio web con nuestro SEO en Colombia. Aumenta la visibilidad local y general, atrae tráfico dirigido y optimiza el rendimiento de tu negocio online.',
-});
+})
+
+const iconTitle = [
+  {
+    title: 'Optimización de Motores de Búsqueda (SEO)',
+    subtitle: 'Aumenta la calidad y cantidad del tráfico en tu sitio web incrementando su visibilidad en los motores de búsqueda.',
+    icon: SeoSvg
+  },
+  {
+    title: 'Optimización de Contenido',
+    subtitle: 'Asegúrate de que el contenido esté escrito de manera que alcance a la mayor audiencia posible.',
+    icon: OptimizationSvg
+  },
+  {
+    title: 'Optimización (On-Page)',
+    subtitle: 'Mejora individualmente cada página web para que ocupe posiciones más altas y atraiga tráfico relevante desde los motores de búsqueda.',
+    icon: StatisticsUpSvg
+  },
+  {
+    title: 'Optimización (Off-Page)',
+    subtitle: 'Incrementa la autoridad de tu dominio mediante la creación de contenido y la obtención de backlinks desde otros sitios web.',
+    icon: OffPageSvg
+  },
+  {
+    title: 'Marketing en Redes Sociales',
+    subtitle: 'Contrata a nuestro equipo de expertos en marketing en redes sociales y multiplica tus oportunidades de negocio. Dirígete a clientes potenciales en función de grupos demográficos específicos.',
+    icon: BrandPromoSvg
+  },
+  {
+    title: 'Marketing PPC (Pago por Clic)',
+    subtitle: 'Publicidad de pago por clic para obtener resultados y tráfico de forma inmediata.',
+    icon: PayPerClicSvg
+  },
+]
 
 </script>
 
@@ -28,14 +70,14 @@ useSeoMeta({
     description="Haz que tu página web aparezca en los principales motores de búsqueda con nuestro servicio integral de optimización y marketing online." 
   />
 
-  <CardMarketingSeo />
+  <IconTitle :data="iconTitle" />
 
   <PostText
     marginTop
     title="¿Cómo Mejorar el rendimiento de tu sitio web y hacerlo más atractivo para los motores de búsqueda?"
     text="La optimización en motores de búsqueda (SEO) es fundamental para mejorar la visibilidad y el posicionamiento de tu sitio web en las páginas de resultados de los buscadores (SERPs). Mediante técnicas avanzadas de optimización técnica, refinamiento de contenido y creación estratégica de enlaces, el SEO no solo aumenta el tráfico orgánico, sino que también fortalece la presencia online de tu negocio." 
-    textTwo="Nuestros expertos en SEO analizan los algoritmos de los motores de búsqueda y los patrones de comportamiento de los usuarios para optimizar los sitios web, alineándolos con palabras clave relevantes y consultas de los usuarios. Esto permite atraer tráfico dirigido y maximizar las tasas de conversión. Los servicios de SEO incluyen optimización on-page, que abarca la investigación de palabras clave, la optimización de metaetiquetas y la mejora del contenido, así como optimización off-page, que incluye la construcción de enlaces y la integración con redes sociales."
-    textThree="En un entorno digital competitivo, contar con servicios de SEO efectivos es fundamental para que las empresas establezcan su presencia digital y alcancen a su audiencia objetivo de manera eficiente."
+    text1="Nuestros expertos en SEO analizan los algoritmos de los motores de búsqueda y los patrones de comportamiento de los usuarios para optimizar los sitios web, alineándolos con palabras clave relevantes y consultas de los usuarios. Esto permite atraer tráfico dirigido y maximizar las tasas de conversión. Los servicios de SEO incluyen optimización on-page, que abarca la investigación de palabras clave, la optimización de metaetiquetas y la mejora del contenido, así como optimización off-page, que incluye la construcción de enlaces y la integración con redes sociales."
+    text2="En un entorno digital competitivo, contar con servicios de SEO efectivos es fundamental para que las empresas establezcan su presencia digital y alcancen a su audiencia objetivo de manera eficiente."
   />
 
   <SubTitle

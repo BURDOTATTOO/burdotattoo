@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import Billboard from '~/components/sections/diseno-grafico/billboard/index.vue'
-import Services from '~/components/sections/diseno-grafico/services-list/index.vue'
-import TextParagraph from '~/components/sections/diseno-grafico/text-paragraph/index.vue'
-import TextImage from '~/components/sections/diseno-grafico/image-text/index.vue'
+import Billboard from '~/components/organisms/billboard-2/index.vue'
+import Services from '~/components/organisms/services-list/index.vue'
+import TextParagraph from '~/components/organisms/text-paragraph/index.vue'
+import TextImage from '~/components/organisms/image-text/index.vue'
 
 useSeoMeta({
   title: 'Diseño Gráfico Profesional en Colombia - Identidad Corporativa y Más',
@@ -15,7 +15,6 @@ useSeoMeta({
   twitterCard: 'summary_large_image',
   twitterDescription: 'Transforma tu identidad corporativa con nuestro diseño gráfico profesional en Colombia. Creamos logotipos y materiales publicitarios que comunican eficazmente tus ofertas y destacan entre la competencia.',
 })
-
 
 </script>
 

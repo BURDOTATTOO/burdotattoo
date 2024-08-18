@@ -1,9 +1,10 @@
 <script setup lang="ts">
-import Title from '~/components/atoms/title-description/index.vue'
-import Cards from '~/components/organisms/service-cards-color/index.vue'
-import MoreInfoModal from '~/components/modal/more-info/index.vue'
-import Billboard from '~/components/sections/diseno-web/billboard/index.vue'
+import SubTitle from '~/components/atoms/subtitle-description/index.vue'
+import Cards from '~/components/organisms/service-cards/index.vue'
+import Billboard from '~/components/organisms/billboard-1/index.vue'
+import ModalMoreInfo from '~/components/organisms/modal-more-info/index.vue'
 
+// Icons
 import PremiumSvg from '~/components/icons/PremiumSvg.vue'
 import ProSvg from '~/components/icons/ProSvg.vue'
 import PromoSvg from '~/components/icons/PromoSvg.vue'
@@ -66,13 +67,13 @@ const cardData = [
 
   <Billboard />
 
-  <Title
+  <SubTitle
     marginTop
     title="Nuestras promociones populares de diseño web"
     description="¡Obtenga un sitio web con todas las funciones que aumente sus ingresos y expanda su negocio!" />
 
   <Cards :data="cardData" />
 
-  <MoreInfoModal v-if="modal" :isModalOpen="modal" :toggleModal="toggleModal" />
+  <ModalMoreInfo v-if="modal" :isModalOpen="modal" :toggleModal="toggleModal" />
 
 </template>

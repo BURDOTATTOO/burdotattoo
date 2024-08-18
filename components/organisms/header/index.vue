@@ -5,7 +5,7 @@ import { setDarkMode } from '~/utils/utils'
 import DropdownMenu from '~/components/menus/dropdown/desktop/index.vue'
 import SunSvg from '~/components/icons/header/SunSvg.vue'
 import MoonSvg from '~/components/icons/header/MoonSvg.vue'
-import SliderTopNav from '~/components/sliders/top-nav/TopNav.vue'
+import SliderTopNav from '~/components/menus/sliders/top-nav/index.vue'
 import ButtonsGlowOn from '~/components/atoms/buttons/glow-on/index.vue'
 import Logo from '~/public/logo.vue'
 

@@ -1,12 +1,26 @@
 <script setup lang="ts">
-import './service-cards-color.scss'
+import './service-cards-1.scss'
 import Button from '~/components/atoms/buttons/default/index.vue'
 
-type CardProps = {
-  data: Array<Record<string, string | Component> & { cta: string, link?: string, toggleEvent?: () => void }>
+// type CardProps = {
+//   data: Array<Record<string, string | Component> & { cta: string, link?: string, toggleEvent?: () => void }>
+// }
+
+type ServiceCardProps = {
+  data: {
+    title: string
+    subtitle: string
+    price: string
+    image: Component
+    imageAlt: string
+    description: string
+    cta: string
+    link?: string
+    onClick?: () => void
+  }[]
 }
 
-const { data } = defineProps<CardProps>()
+const { data } = defineProps<ServiceCardProps>()
 
 </script>
 
@@ -41,7 +55,7 @@ const { data } = defineProps<CardProps>()
 
       </div>
 
-      <Button class="cta" :text="item.cta" :link="item.link" @click="item.toggleEvent" />
+      <Button class="cta" :text="item.cta" :link="item.link" @click="item.onClick" />
 
     </section>
 

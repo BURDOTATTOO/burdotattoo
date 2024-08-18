@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import './diseno-grafico-billboard.scss'
+import './billboard-1.scss'
 
 </script>
 
@@ -20,13 +20,9 @@ import './diseno-grafico-billboard.scss'
           Expertos en Diseño Web - Servicio Profesional
         </h1>
         <h2>
-           soluciones web personalizadas.
+          soluciones web personalizadas.
         </h2>
-        <p>
-
-          Claro, aquí tienes una versión reducida del texto:
-
-          Somos una empresa líder en diseño web y desarrollo digital en Colombia, ofreciendo soluciones profesionales
+        <p>Somos una empresa líder en diseño web y desarrollo digital en Colombia, ofreciendo soluciones profesionales
           para pequeñas empresas, corporaciones y necesidades individuales. Creamos sitios web destacados que impulsan
           el crecimiento orgánico y fortalecen su presencia digital.
         </p>

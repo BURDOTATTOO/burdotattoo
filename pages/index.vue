@@ -1,8 +1,9 @@
 <script setup lang="ts">
-import Billboard from '~/components/sections/inicio/billboard/index.vue'
-import Title from '~/components/atoms/title-description/index.vue'
-import BrandDescription from '~/components/sections/inicio/brand-description/index.vue'
-import Cards from '~/components/organisms/service-cards-color/index.vue'
+import Billboard from '~/components/organisms/billboard/index.vue'
+import SubTitle from '~/components/atoms/subtitle-description/index.vue'
+import BrandDescription from '~/components/organisms/brand-description/index.vue'
+import Cards from '~/components/organisms/service-cards/index.vue'
+// Icons
 import PremiumSvg from '~/components/icons/PremiumSvg.vue'
 import ProSvg from '~/components/icons/ProSvg.vue'
 import PromoSvg from '~/components/icons/PromoSvg.vue'
@@ -60,7 +61,7 @@ const cardData = [
 <template>
   <Billboard />
 
-  <Title
+  <SubTitle
     marginTop
     title="Nuestros Planes"
     description="Agencia Colombiana de marketing que ofrece soluciones efectivas y personalizadas a empresas de cualquier tamaño." />

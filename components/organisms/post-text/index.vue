@@ -4,12 +4,13 @@ import './post-text.scss'
 interface TitleSubtitleProps {
   title: string
   text: string
-  textTwo?: string
-  textThree?: string
+  text1?: string
+  text2?: string
+  text3?: string
   marginTop?: boolean
 }
 
-const { title, text, textTwo, textThree, marginTop } = defineProps<TitleSubtitleProps>()
+const { title, text, text1, text2, text3, marginTop } = defineProps<TitleSubtitleProps>()
 
 </script>
 
@@ -23,8 +24,9 @@ const { title, text, textTwo, textThree, marginTop } = defineProps<TitleSubtitle
 
       <div class="details">
         <p>{{ text }}</p>
-        <p>{{ textTwo }}</p>
-        <p>{{ textThree }}</p>
+        <p>{{ text1 }}</p>
+        <p>{{ text2 }}</p>
+        <p>{{ text3 }}</p>
       </div>
 
     </article>
