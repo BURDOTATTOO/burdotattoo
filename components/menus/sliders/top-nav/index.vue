@@ -16,11 +16,56 @@ const { toggleTopNav, isTopNavOpen } = defineProps<{
   isTopNavOpen: boolean | undefined
 }>()
 
+const navLinks = [
+  {
+    title: 'Diseño web',
+    link: '/diseno-web',
+    icon: WebDesignSvg,
+    iconAlt: 'Diseño web'
+  },
+  {
+    title: 'Diseño gráfico',
+    link: '/diseno-grafico',
+    icon: GraphicDesignSvg,
+    iconAlt: 'Diseño gráfico'
+  },
+  {
+    title: 'Marketing de motores de búsqueda',
+    link: '/marketing-en-motores-de-busqueda',
+    icon: SeoSvg,
+    iconAlt: 'Marketing de motores de búsqueda'
+  },
+  {
+    title: 'Marketing de medios sociales',
+    link: '/marketing-en-redes-sociales',
+    icon: MarketingSvg,
+    iconAlt: 'Marketing de medios sociales'
+  },
+  {
+    title: 'Contacta con soporte',
+    link: '/',
+      icon: SupportSvg,
+    iconAlt: 'Contacta con soporte'
+  },
+  {
+    title: 'Sugerencias',
+    link: '/',
+    icon: SuggestionsSvg,
+    iconAlt: 'Sugerencias'
+  },
+  {
+    title: 'Anuncios',
+    link: '/',
+    icon: AnnouncementsSvg,
+    iconAlt: 'Anuncios'
+  }
+]
+
 </script>
 
 <template>
 
-  <section
+  <div
     :class="[isTopNavOpen === undefined ? 'display-none' : 'top-nav-container',  isTopNavOpen ? 'top-slide-in' : '', isTopNavOpen === false ? 'top-slide-out' : '']">
     
     <div class="top-nav-header">
@@ -39,40 +84,13 @@ const { toggleTopNav, isTopNavOpen } = defineProps<{
       <nav>
         <ul class="list">
 
-          <NuxtLink to="/diseno-web" class="item" @click="toggleTopNav()">
-            <WebDesignSvg class="icon" />
-            <p>Diseño web</p>
-          </NuxtLink>
+          <li v-for="(link, index) in navLinks" :key="index">
+            <NuxtLink :to="link.link" class="item" @click="toggleTopNav()">
+              <component :is="link.icon" class="icon" :alt="link.iconAlt" />
+              <p>{{ link.title }}</p>
+            </NuxtLink>
+          </li>
 
-          <NuxtLink to="/diseno-grafico" class="item" @click="toggleTopNav()">
-            <GraphicDesignSvg class="icon" />
-            <p>Diseño gráfico</p>
-          </NuxtLink>
-
-          <NuxtLink to="/marketing-en-motores-de-busqueda" class="item" @click="toggleTopNav()">
-            <SeoSvg class="icon" />
-            Marketing de motores de búsqueda
-          </NuxtLink>
-
-          <NuxtLink to="/marketing-en-redes-sociales" class="item" @click="toggleTopNav()">
-            <MarketingSvg class="icon comment-icon" />
-            Marketing de medios sociales
-          </NuxtLink>
-
-          <NuxtLink to="/" class="item" @click="toggleTopNav()">
-            <SupportSvg class="icon" />
-            Contacta con soporte
-          </NuxtLink>
-
-          <NuxtLink to="/" class="item" @click="toggleTopNav()">
-            <SuggestionsSvg class="icon" />
-            Sugerencias
-          </NuxtLink>
-          
-          <NuxtLink to="/" class="item" @click="toggleTopNav()">
-            <AnnouncementsSvg class="icon" />
-            Anuncios
-          </NuxtLink>
         </ul>
       </nav>
 
@@ -91,7 +109,7 @@ const { toggleTopNav, isTopNavOpen } = defineProps<{
 
     </div>
 
-  </section>
+  </div>
 
   <div v-if="isTopNavOpen" @click="toggleTopNav" class="content-bg" />
 </template>

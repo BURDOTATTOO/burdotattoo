@@ -34,26 +34,26 @@ const toggleSliderTopNav = () => {
 </script>
 
 <template>
-  <header class="header-container">
+  <section class="header-container">
 
-    <div class="header">
+    <header class="header">
       <div class="left">
-        <NuxtLink to="/" class="logo-container">
+        <NuxtLink to="/" class="logo-container" aria-label="Logo de Vanguardia" >
           <Logo />
         </NuxtLink>
       </div>
 
       <div class="right">
 
-        <div class="dark-mode-icons" @click="handleTheme()" >
+        <div class="dark-mode-icons" @click="handleTheme()" aria-label="Cambiar tema del sitio web" >
           <MoonSvg v-if="!isDarkMode" class="icon sun" />
           <SunSvg v-else class="icon moon" />
         </div>
 
-        <DropdownMenu />
-        <ButtonsGlowOn text="Contacto" class="contact-button" />
+        <DropdownMenu class="desktop-only" />
+        <ButtonsGlowOn text="Contacto" class="contact-button" aria-label="Ir a la sección de contacto" />
         
-        <div class="hamburger-menu mobile-only" @click="toggleSliderTopNav">
+        <div class="hamburger-menu mobile-only" @click="toggleSliderTopNav" aria-label="Abrir menú de navegación" >
           <HamburgerVerticalSvg class="icon" />
         </div>
 
@@ -61,8 +61,8 @@ const toggleSliderTopNav = () => {
           :toggleTopNav="toggleSliderTopNav"
           :isTopNavOpen="isSliderTopNavOpen" />
       </div>
-    </div>
+    </header>
 
-  </header>
+  </section>
 
 </template>
