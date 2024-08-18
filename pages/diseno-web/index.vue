@@ -27,13 +27,13 @@ const toggleModal = () => {
   modal.value = !modal.value
 }
 
-const cardData = [
+const serviceCards = [
   {
     title: 'Esencial',
     subtitle: 'Promoción de páginas web',
     price: '$599.999',
     icon: PromoSvg,
-    iconAlt: 'Imagen del servicio de promoción de páginas web',
+    iconAlt: 'Servicio Esencial de Promoción de Páginas Web con Alojamiento Gratis',
     description: '¡Obtén un sitio web impresionante y alojamiento GRATIS durante tu primer año!',
     cta: 'Leer más',
     onClick: toggleModal
@@ -42,7 +42,8 @@ const cardData = [
     title: 'Web Pro',
     subtitle: 'Sitio web de 5 páginas',
     price: '$999.999',
-    image: ProSvg,
+    icon: ProSvg,
+    iconAlt: 'Servicio Web Pro - Creación de un Sitio Web de 5 Páginas con Alojamiento Gratis',
     description: '¡Obtén un sitio web de comercio electrónico con 5 páginas y alojamiento GRATIS tu primer año!',
     cta: 'Leer más',
     onClick: () => {
@@ -53,7 +54,8 @@ const cardData = [
     title: 'Premium',
     subtitle: 'Promoción de tienda online',
     price: '$4,999.999',
-    image: PremiumSvg,
+    icon: PremiumSvg,
+    iconAlt: 'Servicio Premium de Promoción de Tienda Online con Alojamiento Gratis',
     description: '¡Obtén un sitio web de comercio electrónico con 5 páginas y alojamiento GRATIS tu primer año!',
     cta: 'Leer más',
     onClick: () => {
@@ -61,6 +63,7 @@ const cardData = [
     }
   },
 ]
+
 
 </script>
 
@@ -73,7 +76,7 @@ const cardData = [
     title="Nuestras promociones populares de diseño web"
     description="¡Obtenga un sitio web con todas las funciones que aumente sus ingresos y expanda su negocio!" />
 
-  <Cards :data="cardData" />
+  <Cards :data="serviceCards" />
 
   <ModalMoreInfo v-if="modal" :isModalOpen="modal" :toggleModal="toggleModal" />
 
