@@ -6,16 +6,16 @@ import './text-paragraph.scss'
 <template>
   <article class="text-paragraph">
 
-    <div class="left">
+    <section class="title">
       <p>
         Haciendo cosas <span>hermosas</span>
       </p>
       <h2>
         Diseñadores gráficos expertos listos para trabajar para usted.
       </h2>
-    </div>
+    </section>
 
-    <div class="text">
+    <section class="details">
       <p>
         El diseño gráfico de su sitio web, logotipo, tarjeta de presentación y publicidad es crucial para causar una
         buena primera impresión. Nuestro equipo profesional se encarga de destacar su negocio y comunicar
@@ -23,6 +23,6 @@ import './text-paragraph.scss'
         efectivo para vender su producto o servicio. Trabajamos para que el diseño final sea estéticamente atractivo y
         rentable, ayudándole a conectar con su mercado objetivo de manera asequible y efectiva.
       </p>
-    </div>
+    </section>
   </article>
 </template>

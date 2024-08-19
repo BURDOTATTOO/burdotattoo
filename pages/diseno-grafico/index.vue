@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import Billboard from '~/components/organisms/billboard-2/index.vue'
+import Subtitle from '~/components/atoms/subtitle-description/index.vue'
 import Services from '~/components/organisms/services-list/index.vue'
 import TextParagraph from '~/components/organisms/text-paragraph/index.vue'
 import TextImage from '~/components/organisms/image-text/index.vue'
@@ -16,11 +17,69 @@ useSeoMeta({
   twitterDescription: 'Transforma tu identidad corporativa con nuestro diseño gráfico profesional en Colombia. Creamos logotipos y materiales publicitarios que comunican eficazmente tus ofertas y destacan entre la competencia.',
 })
 
+const services = [
+  {
+    title: 'Diseño de folletos',
+    iconAlt: 'Diseño de folletos',
+  },
+  {
+    title: 'Diseño de logotipos e identidad',
+    iconAlt: 'Diseño de logotipos e identidad',
+  },
+  {
+    title: 'Boletines informativos y catálogos',
+    iconAlt: 'Boletines informativos y catálogos',
+  },
+  {
+    title: 'Diseño de papelería',
+    iconAlt: 'Diseño de papelería',
+  },
+  {
+    title: 'Afiches/volantes/postales',
+    iconAlt: 'Afiches/volantes/postales',
+  },
+  {
+    title: 'Tarjetas de presentación',
+    iconAlt: 'Tarjetas de presentación',
+  },
+  {
+    title: 'Menús de restaurantes',
+    iconAlt: 'Menús de restaurantes',
+  },
+  {
+    title: 'Letreros para césped',
+    iconAlt: 'Letreros para césped',
+  },
+  {
+    title: 'Banners',
+    iconAlt: 'Banners',
+  },
+  {
+    title: 'Carpetas de presentación',
+    iconAlt: 'Carpetas de presentación',
+  },
+  {
+    title: 'Tarjetas de felicitación',
+    iconAlt: 'Tarjetas de felicitación',
+  },
+  {
+    title: 'Colgadores para puertas',
+    iconAlt: 'Colgadores para puertas',
+  },
+]
+
 </script>
 
 <template>
   <Billboard />
-  <Services />
+
+  <Subtitle
+    marginTop
+    title="Servicios"
+    description="Estos son algunos de los servicios de diseño gráfico que ofrece Vanguardia."
+  />
+  <Services :data="services" />
+
   <TextParagraph />
   <TextImage />
 </template>
