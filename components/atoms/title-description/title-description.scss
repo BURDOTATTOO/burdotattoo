@@ -1,4 +1,4 @@
-.title-subtitle-container {
+.title-description {
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -25,10 +25,16 @@
     font-size: 1.2rem;
     color: var(--text);
     max-width: var(--tablet-width);
-    
-    @media (max-width: 756px) {
+  }
+
+  @media (max-width: 756px) {
+    .description {
       line-height: 1.6rem;
       padding-top: 16px;
+    }
+
+    .extra-top-space {
+      padding-top: 0;
     }
   }
 }

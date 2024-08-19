@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import Billboard from '~/components/organisms/billboard-2/index.vue'
+import Billboard2 from '~/components/organisms/billboard-2/index.vue'
 import Subtitle from '~/components/atoms/subtitle-description/index.vue'
 import Services from '~/components/organisms/services-list/index.vue'
-import TextParagraph from '~/components/organisms/text-paragraph/index.vue'
-import TextImage from '~/components/organisms/image-text/index.vue'
+import Billboard3 from '~/components/organisms/billboard-3/index.vue'
+import Billboard4 from '~/components/organisms/billboard-4/index.vue'
 
 useSeoMeta({
   title: 'Diseño Gráfico Profesional en Colombia - Identidad Corporativa y Más',
@@ -71,7 +71,7 @@ const services = [
 </script>
 
 <template>
-  <Billboard />
+  <Billboard2 />
 
   <Subtitle
     marginTop
@@ -80,6 +80,7 @@ const services = [
   />
   <Services :data="services" />
 
-  <TextParagraph />
-  <TextImage />
+  <Billboard3 />
+
+  <Billboard4 />
 </template>

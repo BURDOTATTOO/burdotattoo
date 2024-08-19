@@ -1,23 +1,22 @@
 <script setup lang="ts">
-import './image-text.scss'
+import './billboard-4.scss'
 
 </script>
 
 <template>
-  <article class="diseno-grafico-image-text">
+  <article class="billboard-4">
 
-    <div class="image">
-      <div>
-        <NuxtPicture 
-          src="/images/diseno-grafico.webp" 
-          sizes="100vw xs:300px sm:400px"
-          format="webp" 
-          alt="Imagen de identidad corporativa de diseño gráfico" 
-        />
-      </div>
-    </div>
+    <NuxtPicture 
+      class="image"
+      src="/images/diseno-grafico.webp"
+      width="500"
+      height="320" 
+      sizes="100vw xs:360px sm:500px"
+      format="webp" 
+      alt="Imagen de identidad corporativa de diseño gráfico" 
+    />
 
-    <div class="text">
+    <section class="details">
       <h2>
         Identidad <span>corporativa</span>
       </h2>
@@ -27,7 +26,6 @@ import './image-text.scss'
         consumidores a nivel personal. Podemos ayudarlo a crear una identidad corporativa completamente nueva desde cero
         o a renovar una imagen corporativa “cansada” u obsoleta.
       </p>
-    </div>
-    
+    </section>
   </article>
 </template>

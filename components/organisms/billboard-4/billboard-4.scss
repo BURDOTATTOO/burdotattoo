@@ -1,4 +1,4 @@
-.diseno-grafico-image-text {
+.billboard-4 {
   display: grid;
   grid-template-columns: 1fr 1fr; 
   max-width: var(--tablet-width);
@@ -8,15 +8,15 @@
 
   .image {
     display: flex;
-    align-items: end;
+    align-items: center;
     justify-content: center;
-
-    img {
-      box-shadow: var(--shadow);
-    }
   }
 
-  .text {
+  img {
+    box-shadow: var(--shadow);
+  }
+
+  .details {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,23 +37,19 @@
       line-height: 1.5rem;
       letter-spacing: .8px;
     }
+
     @media(max-width: 1024px){ 
       align-items: center;
     }
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 900px) {
     grid-template-columns: 1fr;
-    gap: 20px;
 
     img {
       width: 100%;
       height: 100%;
-    }
-
-    .text {
-      order: -1;
-      padding-bottom: 16px;
+      max-width: 500px;
     }
   }
 }

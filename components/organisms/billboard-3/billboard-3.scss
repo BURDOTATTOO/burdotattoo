@@ -1,4 +1,4 @@
-.text-paragraph {
+.billboard-3 {
   display: grid;
   grid-template-columns: 1fr 1fr; 
   max-width: var(--tablet-width);
@@ -11,7 +11,7 @@
     flex-direction: column;
     justify-content: center;
 
-    p {
+    h2 {
       font-size: 3rem;
       line-height: 2.6rem;
       letter-spacing: 2px;
@@ -21,21 +21,15 @@
       }
     }
 
-    h2 {
+    h3 {
       padding-top: 24px;
-      font-size: 1rem;
+      font-size: 1.2rem;
       line-height: 1.5rem;
       letter-spacing: .8px;
     }
     
     @media(max-width: 1024px){ 
       align-items: center;
-    }
-  }
-
-  .details {
-    p {
-      padding-top: 1rem;
     }
   }
 

@@ -12,7 +12,7 @@ const { title, description } = defineProps<TitleSubtitleProps>()
 </script>
 
 <template>
-  <article class="title-subtitle-container">
+  <article class="title-description">
     <section :class="{ 'extra-top-space': marginTop }">
 
       <h2 class="title">{{ title }}</h2>
