@@ -16,8 +16,8 @@ const isDarkMode = ref(false)
 
 onMounted(() => {
   const theme = localStorage.getItem('theme')
-  
-  if(theme === 'dark') {
+
+  if (theme === 'dark') {
     isDarkMode.value = true
   }
 })
@@ -34,35 +34,33 @@ const toggleSliderTopNav = () => {
 </script>
 
 <template>
-  <div class="header-container">
 
-    <header class="header">
-      <div class="logo">
-        <NuxtLink to="/" class="logo-container" aria-label="Logo de Vanguardia" >
-          <Logo />
-        </NuxtLink>
-      </div>
+  <header class="header">
+
+    <div class="container">
+      <NuxtLink to="/" class="logo" aria-label="Logo de Vanguardia">
+        <Logo />
+      </NuxtLink>
 
       <div class="details">
 
-        <div class="dark-mode-icons" @click="handleTheme()" aria-label="Cambiar tema del sitio web" >
+        <div class="dark-mode-icons" @click="handleTheme()" aria-label="Cambiar tema del sitio web">
           <MoonSvg v-if="!isDarkMode" class="icon sun" />
           <SunSvg v-else class="icon moon" />
         </div>
 
         <DropdownMenu class="desktop-only" />
-        <ButtonsGlowOn text="Contacto" class="contact-button" aria-label="Ir a la sección de contacto" />
-        
-        <div class="hamburger-menu mobile-only" @click="toggleSliderTopNav" aria-label="Abrir menú de navegación" >
+        <ButtonsGlowOn text="Contacto" class="contact-button desktop-only" aria-label="Ir a la sección de contacto" />
+
+        <div class="hamburger-menu mobile-only" @click="toggleSliderTopNav" aria-label="Abrir menú de navegación">
           <HamburgerVerticalSvg class="icon" />
         </div>
 
-        <SliderTopNav
-          :toggleTopNav="toggleSliderTopNav"
-          :isTopNavOpen="isSliderTopNavOpen" />
+        <SliderTopNav :toggleTopNav="toggleSliderTopNav" :isTopNavOpen="isSliderTopNavOpen" />
       </div>
-    </header>
+    </div>
+    
+  </header>
 
-  </div>
 
 </template>

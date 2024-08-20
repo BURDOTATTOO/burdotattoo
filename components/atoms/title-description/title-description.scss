@@ -7,15 +7,15 @@
   margin-top: 40px;
   text-align: center;
 
+  .extra-top-space {
+    padding-top: 40px;
+  }
+  
   .title {
     font-size: 2rem;
     color: var(--heading);
     line-height: 3.1rem;
     padding-bottom: .5rem;
-  }
-
-  .extra-top-space {
-    padding-top: 40px;
   }
 
   .description {

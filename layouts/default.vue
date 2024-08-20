@@ -24,9 +24,9 @@ onMounted(() => {
 
 <template>
   <Loading v-if="loading" />
-  <div v-else>
+  <article v-else>
     <Header />
     <NuxtPage />
     <Footer />
-  </div>
+  </article>
 </template>

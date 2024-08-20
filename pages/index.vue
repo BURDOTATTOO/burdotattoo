@@ -8,7 +8,6 @@ import PremiumSvg from '~/components/icons/PremiumSvg.vue'
 import ProSvg from '~/components/icons/ProSvg.vue'
 import PromoSvg from '~/components/icons/PromoSvg.vue'
 
-
 useSeoMeta({
   title: 'Servicios Web Profesional en Colombia - Vanguardia',
   ogTitle: 'Servicios Web Profesional en Colombia - Vanguardia',

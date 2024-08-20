@@ -13,9 +13,9 @@ const toggleModal = () => {
 </script>
 
 <template>
-  <article class="billboard">
+  <section class="billboard">
 
-    <section class="text">
+    <div class="text">
       <h1>¡Obtén una página web profesional con Hosting
         <span class="animate-text">GRATIS</span> durante el primer año!
       </h1>
@@ -27,10 +27,10 @@ const toggleModal = () => {
         :active="true" 
         @click="toggleModal"
       />
-    </section>
+    </div>
 
     <SvgsBillboard aria-label="imagen soluciones creativas de diseño gráfico"/>
 
     <ModalMoreInfo v-if="isModalOpen" :toggleModal="toggleModal"/>
-  </article>
+  </section>
 </template>
