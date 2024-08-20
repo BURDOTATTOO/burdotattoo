@@ -2,7 +2,7 @@
 import './service-cards.scss'
 import Button from '~/components/atoms/buttons/default/index.vue'
 
-type ServiceCardsProps = {
+type Props = {
   data: {
     title: string
     subtitle: string
@@ -16,7 +16,7 @@ type ServiceCardsProps = {
   }[]
 }
 
-const { data } = defineProps<ServiceCardsProps>()
+const { data } = defineProps<Props>()
 
 </script>
 

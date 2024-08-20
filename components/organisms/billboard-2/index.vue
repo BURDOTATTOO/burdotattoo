@@ -5,7 +5,7 @@ import AnimatedColorfulText from '~/components/atoms/animated-colorful-text/inde
 </script>
 
 <template>
-  <article class="billboard-2">
+  <section class="billboard-2">
 
     <NuxtPicture 
       src="/images/diseno-web.webp" 
@@ -17,7 +17,7 @@ import AnimatedColorfulText from '~/components/atoms/animated-colorful-text/inde
       alt="imagen soluciones creativas de diseño gráfico" 
     />
 
-    <section class="details">
+    <div class="details">
       <h2>Desbloquea tu Identidad
         <AnimatedColorfulText>Visual</AnimatedColorfulText>
       </h2>
@@ -25,7 +25,7 @@ import AnimatedColorfulText from '~/components/atoms/animated-colorful-text/inde
       <p>
         Ofrecemos un servicio de diseño gráfico de alta calidad a precios competitivos, lo que nos permite apoyar o integrarnos como parte de su equipo de marketing.
       </p>
-    </section>
+    </div>
 
-  </article>
+  </section>
 </template>

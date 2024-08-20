@@ -21,7 +21,7 @@
     flex-direction: column;
     justify-content: center;
 
-    h2 {
+    .title {
       font-size: 3rem;
       line-height: 2.6rem;
       letter-spacing: 2px;
@@ -31,7 +31,7 @@
       }
     }
 
-    p {
+    .subtitle {
       padding-top: 24px;
       font-size: 1rem;
       line-height: 1.5rem;

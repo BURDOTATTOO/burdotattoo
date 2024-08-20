@@ -78,6 +78,7 @@ const services = [
     title="Servicios"
     description="Estos son algunos de los servicios de diseño gráfico que ofrece Vanguardia."
   />
+  
   <Services :data="services" />
 
   <Billboard3 />

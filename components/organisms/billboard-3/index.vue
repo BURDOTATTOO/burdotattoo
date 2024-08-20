@@ -4,16 +4,16 @@ import './billboard-3.scss'
 </script>
 
 <template>
-  <article class="billboard-3">
+  <section class="billboard-3">
 
-    <section class="title">
-      <h2>
+    <div class="details">
+      <h2 class="title">
         Haciendo cosas <span>hermosas</span>
       </h2>
-      <h3>
+      <h3 class="subtitle">
         Diseñadores gráficos expertos listos para trabajar para usted.
       </h3>
-    </section>
+    </div>
 
     <p>
       El diseño gráfico de su sitio web, logotipo, tarjeta de presentación y publicidad es crucial para causar una
@@ -22,5 +22,5 @@ import './billboard-3.scss'
       efectivo para vender su producto o servicio. Trabajamos para que el diseño final sea estéticamente atractivo y
       rentable, ayudándole a conectar con su mercado objetivo de manera asequible y efectiva.
     </p>
-  </article>
+  </section>
 </template>

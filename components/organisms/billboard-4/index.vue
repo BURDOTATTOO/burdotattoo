@@ -4,7 +4,7 @@ import './billboard-4.scss'
 </script>
 
 <template>
-  <article class="billboard-4">
+  <section class="billboard-4">
 
     <NuxtPicture 
       class="image"
@@ -16,16 +16,16 @@ import './billboard-4.scss'
       alt="Imagen de identidad corporativa de diseño gráfico" 
     />
 
-    <section class="details">
-      <h2>
+    <div class="details">
+      <h2 class="title">
         Identidad <span>corporativa</span>
       </h2>
-      <p>
+      <p class="subtitle">
         La piedra angular de cualquier emprendimiento sólido es un paquete de identidad que no solo se distinga de la
         competencia y funcione bien en todos los medios, sino que también comunique sus ofertas a los posibles
         consumidores a nivel personal. Podemos ayudarlo a crear una identidad corporativa completamente nueva desde cero
         o a renovar una imagen corporativa “cansada” u obsoleta.
       </p>
-    </section>
-  </article>
+    </div>
+  </section>
 </template>
