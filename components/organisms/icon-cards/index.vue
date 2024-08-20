@@ -18,23 +18,19 @@ const { data } = defineProps<IconTitleProps>()
 
   <section class="icon-cards">
 
-    <div class="item" v-for="(item, index) in data" :key="index">
+    <div class="card" v-for="(item, index) in data" :key="index">
 
-      <div class="card">
-
-        <div class="image">
-          <component :is="item.icon" :aria-label="item.iconAlt"/>
-        </div>
-
-        <h3 class="title">
-          {{ item.title }}
-        </h3>
-
-        <span class="description">
-          {{ item.description }}
-        </span>
-
+      <div class="image">
+        <component :is="item.icon" :aria-label="item.iconAlt"/>
       </div>
+
+      <h3 class="title">
+        {{ item.title }}
+      </h3>
+
+      <span class="description">
+        {{ item.description }}
+      </span>
 
     </div>
     
