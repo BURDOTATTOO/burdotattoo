@@ -3,26 +3,19 @@
   padding: 60px 0;
   margin-top: 80px;
 
-  .items{
+  .items {
     display: flex;
     margin: 0 auto;
     max-width: var(--max-width);
     padding: 0 20px;
     gap: 32px;
-
-    @media(max-width: 758px) {
-      flex-direction: column;
-    }
-  }
-
-  .item {
     color: var(--white);
 
     .title {
       padding-bottom: 1.2rem;
     }
 
-    h2 {
+    .description {
       font-weight: bold;
 
       span {
@@ -32,8 +25,10 @@
         text-decoration: underline;
       }
     }
-    p {
-      font-size: 1rem;
+
+    @media(max-width: 758px) {
+      flex-direction: column;
     }
   }
+
 }
