@@ -92,17 +92,36 @@ const servicesCards = [
   {
     title: 'Esencial',
     price: '$599.999',
+    star: true,
     icon: PromoSvg,
     iconAlt: 'Paquete Esencial de Marketing en Redes Sociales - Facebook e Instagram',
     features: [
-      'Facebook & Instagram',
-      'Llamada de inicio',
-      'Gasto mensual en anuncios $150.000',
-      '1 unidades de anuncios patrocinados',
-      'Hasta 4 creaciones de publicaciones por mes',
-      'Publicaciones bilingües/traducciones incluidas',
-      'Post boost',
-      'Informes de rendimiento'
+      {
+        text: 'Facebook & Instagram',
+      },
+      {
+        text: 'Llamada de inicio',
+      },
+      {
+        text: 'Gasto mensual en anuncios $150.000',
+        star: true
+      },
+      {
+        text: '1 unidades de anuncios patrocinados',
+        star: true
+      },
+      {
+        text: 'Hasta 4 creaciones de publicaciones por mes',
+      },
+      {
+        text: 'Publicaciones bilingües/traducciones incluidas',
+      },
+      {
+        text: 'Post boost',
+      },
+      {
+        text: 'Informes de rendimiento',
+      }
     ],
     cta: 'Solicitar'
   },
@@ -112,14 +131,32 @@ const servicesCards = [
     icon: ProSvg,
     iconAlt: 'Paquete Pro de Marketing en Redes Sociales - Estrategia Avanzada en Facebook e Instagram',
     features: [
-      'Facebook & Instagram',
-      'Llamada de inicio',
-      'Gasto mensual en anuncios $300.000',
-      '2 unidades de anuncios patrocinados',
-      'Hasta 4 creaciones de publicaciones por mes',
-      'Publicaciones bilingües/traducciones incluidas',
-      'Post boost',
-      'Informes de rendimiento'
+      {
+        text: 'Facebook & Instagram',
+      },
+      {
+        text: 'Llamada de inicio',
+      },
+      {
+        text: 'Gasto mensual en anuncios $300.000',
+        star: true
+      },
+      {
+        text: '2 unidades de anuncios patrocinados',
+        star: true
+      },
+      {
+        text: 'Hasta 4 creaciones de publicaciones por mes',
+      },
+      {
+        text: 'Publicaciones bilingües/traducciones incluidas',
+      },
+      {
+        text: 'Post boost',
+      },
+      {
+        text: 'Informes de rendimiento',
+      }
     ],
     cta: 'Solicitar'
   },
@@ -129,14 +166,32 @@ const servicesCards = [
     icon: PremiumSvg,
     iconAlt: 'Paquete Premium de Marketing en Redes Sociales - Publicidad y Gestión en Facebook e Instagram',
     features: [
-      'Facebook & Instagram',
-      'Llamada de inicio',
-      'Gasto mensual en anuncios $400.000',
-      '2 unidades de anuncios patrocinados',
-      'Hasta 4 creaciones de publicaciones por mes',
-      'Publicaciones bilingües/traducciones incluidas',
-      'Post boost',
-      'Informes de rendimiento'
+      {
+        text:   'Facebook & Instagram',
+      },
+      {
+        text: 'Llamada de inicio',
+      },
+      {
+        text: 'Gasto mensual en anuncios $400.000',
+        star: true
+      },
+      {
+        text: '2 unidades de anuncios patrocinados',
+        star: true
+      },
+      {
+        text: 'Hasta 4 creaciones de publicaciones por mes',
+      },
+      {
+        text: 'Publicaciones bilingües/traducciones incluidas',
+      },
+      {
+        text: 'Post boost',
+      },
+      {
+        text: 'Informes de rendimiento',
+      }
     ],
     cta: 'Solicitar'
   }
@@ -146,7 +201,9 @@ const servicesCards = [
 
 <template>
 
-  <Title marginTop title="Soluciones de marketing en redes sociales"
+  <Title 
+    marginTop
+    title="Soluciones de marketing en redes sociales"
     description="El equipo profesional de marketing en redes sociales se encargará de diversas funciones esenciales para impulsar tu marca en el entorno digital. Estas funciones incluyen:" />
 
   <IconCards :data="iconCards" />
@@ -159,6 +216,5 @@ const servicesCards = [
   <ServicesCards :data="servicesCards" />
 
   <MarketingAgreement />
-
 
 </template>

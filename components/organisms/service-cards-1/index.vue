@@ -1,29 +1,34 @@
 <script setup lang="ts">
 import './service-cards-1.scss'
 import Button from '~/components/atoms/buttons/default/index.vue'
+import LightningSvg from '~/components/icons/LightningSvg.vue'
 
-type ServiceCardsProps = {
+type Props = {
   data: {
     title: string
     price: string
+    star?: boolean
     icon: Component
     iconAlt: string
-    features: string[]
+    features: {
+      text: string
+      star?: boolean
+    }[]
     cta: string
     link?: string
     onClick?: () => void
   }[]
 }
 
-const { data } = defineProps<ServiceCardsProps>()
+const { data } = defineProps<Props>()
 
 </script>
 
 <template>
 
-  <article class="service-cards-1">
+  <section class="service-cards-1">
 
-    <section class="item" v-for="(item, index) in data" :key="index">
+    <div class="item" v-for="(item, index) in data" :key="index">
 
       <div class="heading">
 
@@ -38,24 +43,22 @@ const { data } = defineProps<ServiceCardsProps>()
 
       <div class="details">
 
-        <div class="image">
-          <Component :is="item.icon" :aria-label="item.iconAlt" />
-        </div>
+        <Component class="image" :is="item.icon" :aria-label="item.iconAlt" />
 
-        <div class="description">
-
-          <button v-for="(text, index) in item.features" :key="index">
-            {{ text }}
-          </button>
-        </div>
+        <ul class="description">
+          
+          <li class="item" v-for="(feature, index) in item.features" :key="index">
+            <LightningSvg class="icon" v-if="feature.star"  :class="{ 'star': feature.star }" />
+            {{ feature.text }}
+          </li>
+        </ul>
 
       </div>
 
-
       <Button class="cta" :text="item.cta" :link="item.link" @click="item.onClick" />
 
-    </section>
+    </div>
 
-  </article>
+  </section>
 
 </template>

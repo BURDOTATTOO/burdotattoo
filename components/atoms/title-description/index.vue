@@ -1,13 +1,13 @@
 <script lang="ts" setup>
 import './title-description.scss'
 
-interface TitleSubtitleProps {
+type Props = {
   title: string
   description?: string
   marginTop?: boolean
 }
 
-const { title, description } = defineProps<TitleSubtitleProps>()
+const { title, description } = defineProps<Props>()
 
 </script>
 
