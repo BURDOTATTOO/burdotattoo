@@ -15,12 +15,10 @@ const { text, text1, text2, text3 } = defineProps<PostSubtitleProps>()
 <template>
   <section class="post-description">
 
-    <div class="details">
       <p>{{ text }}</p>
       <p>{{ text1 }}</p>
       <p>{{ text2 }}</p>
       <p>{{ text3 }}</p>
-    </div>
 
   </section>
 </template>
