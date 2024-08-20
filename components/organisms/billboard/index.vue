@@ -3,6 +3,7 @@ import './billboard.scss'
 import ButtonsGlowOn from '~/components/atoms/buttons/glow-on/index.vue'
 import ModalMoreInfo from '~/components/organisms/modal-more-info/index.vue'
 import SvgsBillboard from '~/components/icons/web-dev.vue'
+import AnimateText from '~/components/atoms/animated-colorful-text/index.vue'
 
 const isModalOpen = ref(false)
 
@@ -15,11 +16,11 @@ const toggleModal = () => {
 <template>
   <section class="billboard">
 
-    <div class="text">
-      <h1>¡Obtén una página web profesional con Hosting
-        <span class="animate-text">GRATIS</span> durante el primer año!
+    <div class="details">
+      <h1 class="title">¡Obtén una página web profesional con Hosting
+        <AnimateText>GRATIS</AnimateText> durante el primer año! 
       </h1>
-      <p>Elige entre una variedad de diseños modernos por solo $500,000.</p>
+      <p class="description">Elige entre una variedad de diseños modernos por solo $500,000.</p>
       
       <ButtonsGlowOn
         class="learn-more"

@@ -4,8 +4,9 @@ import './brand-description.scss'
 </script>
 
 <template>
-  <article class="brand-description">
-    <section class="items">
+  <section class="brand-description">
+    <div class="items">
+      
       <div class="item">
         <p class="title">Fundada en 2016</p>
 
@@ -28,6 +29,6 @@ import './brand-description.scss'
         cualquier consulta que pueda tener.
       </p>
 
-    </section>
-  </article>
+    </div>
+  </section>
 </template>

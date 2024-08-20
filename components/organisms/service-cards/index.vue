@@ -22,9 +22,9 @@ const { data } = defineProps<ServiceCardsProps>()
 
 <template>
 
-  <article class="service-cards">
+  <section class="service-cards">
 
-    <section class="item" v-for="(item, index) in data" :key="index">
+    <div class="item" v-for="(item, index) in data" :key="index">
 
       <div class="heading">
 
@@ -53,8 +53,8 @@ const { data } = defineProps<ServiceCardsProps>()
 
       <Button class="buttonText" :text="item.buttonText" :link="item.link" @click="item.onClick" />
 
-    </section>
+    </div>
 
-  </article>
+  </section>
 
 </template>
