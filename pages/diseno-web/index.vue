@@ -27,6 +27,16 @@ const toggleModal = () => {
   isModalOpen.value = !isModalOpen.value
 }
 
+const billboardData = {
+  title: 'Expertos en Diseño Web - Servicio Profesional',
+  subtitle: 'soluciones web personalizadas.',
+  text: [
+    'Somos una empresa líder en diseño web y desarrollo digital en Colombia, ofreciendo soluciones profesionales para pequeñas empresas, corporaciones y necesidades individuales.Creamos sitios web destacados que impulsan el crecimiento orgánico y fortalecen su presencia digital', 
+    'Nos especializamos en diseño web responsivo, desarrollo de aplicaciones web, SEO y marketing digital integral. Nuestro objetivo es atraer más atención a su sitio y establecer una posición dominante en su industria.',
+    'Los beneficios de nuestro trabajo incluyen aumento del tráfico orgánico, mejora de la experiencia del usuario, incremento en las conversiones y fortalecimiento de la imagen de marca.'
+  ]
+} 
+
 const serviceCards = [
   {
     title: 'Esencial',
@@ -68,7 +78,7 @@ const serviceCards = [
 
 <template>
 
-  <Billboard />
+  <Billboard :data="billboardData" />
 
   <SubTitle
     marginTop
