@@ -63,7 +63,12 @@
           gap: .5rem;
           padding: .6rem;
           background-color: transparent;
-
+          color: var(--black);
+          font-size: 1rem;
+          font-weight: 400;
+          line-height: 1.2rem;
+          letter-spacing: 1px;
+          
           .star {
             margin-left: -2rem;
           }
@@ -80,7 +85,7 @@
     }
 
     .cta {
-      margin: 0 auto  20px;
+      margin: 0 auto  32px;
     }
 
     &:nth-child(1){

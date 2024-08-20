@@ -75,11 +75,31 @@ const serviceCards = [
     icon: DevelopSvg,
     iconAlt: 'Paquete SEO Básico - Optimización de Motores de Búsqueda para pequeñas empresas',
     features: [
-      'Optimización de contenido',
-      'Optimización de etiquetas y descripciones',
-      'Páginas a optimizar: 1-5',
-      'Palabras clave incluidas: 1-10',
-      'Informe de rendimiento: 1 por año',
+      {
+        text: 'Optimización de contenido',
+      },
+      {
+        text: 'Optimización de etiquetas y descripciones',
+      },
+      {
+        text: 'Creación de enlaces incluida',
+      },
+      {
+        text: 'Páginas a optimizar: 1-5',
+        star: true,
+      },
+      {
+        text: 'Palabras clave incluidas: 1-10',
+        star: true,
+      },
+      {
+        text: 'Publicaciones de blog: 1 por año',
+        star: true,
+      },
+      {
+        text: 'Informe de rendimiento: 1 por año',
+        star: true,
+      },
     ],
     cta: 'Solicitar'
   },
@@ -89,13 +109,31 @@ const serviceCards = [
     icon: ProSvg,
     iconAlt: 'Paquete SEO Pro - Optimización avanzada de Motores de Búsqueda para medianas empresas',
     features: [
-      'Optimización de contenido',
-      'Optimización de etiquetas y descripciones',
-      'Páginas a optimizar: 1-15',
-      'Palabras clave incluidas: 21-40',
-      'Creación de enlaces incluida',
-      'Publicaciones de blog: 4 por año',
-      'Informe de rendimiento: 4 por año',
+      {
+        text: 'Optimización de contenido',
+      },
+      {
+        text: 'Optimización de etiquetas y descripciones',
+      },
+      {
+        text: 'Creación de enlaces incluida',
+      },
+      {
+        text: 'Páginas a optimizar: 1-15',
+        star: true,
+      },
+      {
+        text: 'Palabras clave incluidas: 21-40',
+        star: true,
+      },
+      {
+        text: 'Publicaciones de blog: 4 por año',
+        star: true,
+      },
+      {
+        text: 'Informe de rendimiento: 4 por año',
+        star: true,
+      },
     ],
     cta: 'Solicitar'
   },
@@ -105,13 +143,31 @@ const serviceCards = [
     icon: PremiumSvg,
     iconAlt: 'Paquete SEO Premium - Estrategia integral de Optimización de Motores de Búsqueda para grandes empresas',
     features: [
-      'Optimización de contenido',
-      'Optimización de etiquetas y descripciones',
-      'Páginas a optimizar: 1-20',
-      'Palabras clave incluidas: 41-60',
-      'Creación de enlaces incluido',
-      'Publicaciones de blog: 12 por año',
-      'Informe de rendimiento: 4 por año',
+      {
+        text: 'Optimización de contenido',
+      },
+      {
+        text: 'Optimización de etiquetas y descripciones',
+      },
+      {
+        text: 'Creación de enlaces incluida',
+      },
+      {
+        text: 'Páginas a optimizar: 1-20',
+        star: true,
+      },
+      {
+        text: 'Palabras clave incluidas: 41-60',
+        star: true,
+      },
+      {
+        text: 'Publicaciones de blog: 12 por año',
+        star: true,
+      },
+      {
+        text: 'Informe de rendimiento: 4 por año',
+        star: true,
+      },
     ],
     cta: 'Solicitar'
   }
