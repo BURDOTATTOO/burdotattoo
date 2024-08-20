@@ -37,8 +37,8 @@ const submitHandler = async (createForm: CreateFormTypes) => {
 </script>
 
 <template>
-  <article class="modal-wrapper">
-    <section class="create-modal-inner">
+  <section class="modal-wrapper">
+    <div class="create-modal-inner">
       <div @click="toggleModal" class="btn-close">&times;</div>
 
       <Loading v-if="isLoading" />
@@ -109,6 +109,6 @@ const submitHandler = async (createForm: CreateFormTypes) => {
 
       </div>
 
-    </section>
-  </article>
+    </div>
+  </section>
 </template>
