@@ -1,16 +1,12 @@
 .title-description {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  gap: 20px;
+  gap: 0;
   color: var(--heading);
-  padding: 0 20px;
-  margin-top: 40px;
+  padding: 148px 20px 0;
   text-align: center;
 
-  .extra-top-space {
-    padding-top: 40px;
-  }
-  
   .title {
     font-size: 2rem;
     color: var(--heading);

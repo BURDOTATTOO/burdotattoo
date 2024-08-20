@@ -7,7 +7,6 @@ import IconCards from '~/components/organisms/icon-cards/index.vue'
 import ServiceCards from '~/components/organisms/service-cards-1/index.vue'
 
 //icons
-
 import SeoSvg from '~/components/icons/SeoSvg.vue'
 import OffPageSvg from '~/components/icons/OffPageSvg.vue'
 import BrandPromoSvg from '~/components/icons/BrandPromoSvg.vue'
@@ -141,8 +140,8 @@ const serviceCards = [
   />
 
   <SubTitle
-    title="Nuestros planes de SEO"
-    description="Diseñados para maximizar tu presencia digital y alcanzar tus objetivos comerciales con precisión y eficacia."
+      title="Nuestros planes de SEO"
+      description="Diseñados para maximizar tu presencia digital y alcanzar tus objetivos comerciales con precisión y eficacia."
   />
 
   <ServiceCards :data="serviceCards" />
