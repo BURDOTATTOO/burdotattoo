@@ -1,5 +1,16 @@
 <script setup lang="ts">
 import './billboard-3.scss'
+import AnimatedShowText from '@/components/atoms/animated-show-text/index.vue'
+
+type Props = {
+  data: {
+    text: string
+    words: string[]
+  }
+}
+
+const { data } = defineProps<Props>()
+
 
 </script>
 
@@ -7,12 +18,14 @@ import './billboard-3.scss'
   <section class="billboard-3">
 
     <div class="details">
-      <h2 class="title">
-        Haciendo cosas <span>hermosas</span>
-      </h2>
-      <h3 class="subtitle">
-        Diseñadores gráficos expertos listos para trabajar para usted.
-      </h3>
+
+      <h2 class="title">{{ data.text }}</h2>
+
+        <AnimatedShowText :data="data.words" />
+
+        <h3 class="subtitle">
+          Diseñadores gráficos expertos listos para trabajar para usted.
+        </h3>
     </div>
 
     <p>

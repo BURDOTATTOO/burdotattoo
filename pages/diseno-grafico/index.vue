@@ -68,6 +68,12 @@ const services = [
   },
 ]
 
+const billboard3Data = {
+  text: 'Creando cosas',
+  words: ['Hermosas', 'Geniales', 'Increíbles']
+}
+
+
 </script>
 
 <template>
@@ -81,7 +87,7 @@ const services = [
   
   <Services :data="services" />
 
-  <Billboard3 />
+  <Billboard3 :data="billboard3Data" />
 
   <Billboard4 />
 </template>

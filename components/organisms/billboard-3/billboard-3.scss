@@ -13,12 +13,9 @@
 
     .title {
       font-size: 3rem;
+      margin-bottom: 4px;
       line-height: 2.6rem;
       letter-spacing: 2px;
-      
-      span {
-        text-decoration: underline 1px solid;
-      }
     }
 
     .subtitle {
@@ -26,10 +23,6 @@
       font-size: 1.2rem;
       line-height: 1.5rem;
       letter-spacing: .8px;
-    }
-    
-    @media(max-width: 1024px){ 
-      align-items: center;
     }
   }
 
