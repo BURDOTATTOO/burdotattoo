@@ -45,7 +45,7 @@ const submitHandler = async (createForm: Props) => {
             <div class="form-group-inline">
               <div class="form-group">
               <label for="name">Nombre</label>
-              <FormKit type="text" placeholder="Nombre" maxLength="30" minLength="3" v-model="name" name="name"
+              <FormKit type="text" placeholder="Juan Perez" maxLength="30" minLength="3" v-model="name" name="name"
                 validation="required" />
             </div>
 
@@ -57,11 +57,11 @@ const submitHandler = async (createForm: Props) => {
             </div>
 
             <div class="form-group">
-              <label for="message">Descripción del problema</label>
+              <label for="message">Mensaje</label>
               <FormKit
                 type="textarea"
                 name="message"
-                placeholder="Mensaje"
+                placeholder="Descripción del problema"
                 maxLength="85"
                 v-model="message"
                 validation="required" />
