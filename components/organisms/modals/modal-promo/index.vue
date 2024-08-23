@@ -49,10 +49,10 @@ const submitHandler = async (createForm: Props) => {
 
         <h2 class="modal-description"><span>¡Aprovecha esta promoción </span> ahora!</h2>
 
-        <FormKit type="form" id="email-create" #default="{ value, state }"
+        <FormKit type="form" id="promo-form" #default="{ value, state }"
           @submit="submitHandler">
 
-          <FormKit type="group" name="email">
+          <FormKit type="group" name="promo">
             <div class="form-group">
               <label for="name">Nombre</label>
               <FormKit type="text" placeholder="Nombre" maxLength="30" minLength="3" v-model="name" name="name"

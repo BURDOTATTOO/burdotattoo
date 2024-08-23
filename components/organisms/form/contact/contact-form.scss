@@ -30,7 +30,6 @@
       .form-group-inline {
         display: flex;
         align-items: center;
-        justify-content: space-between;
         gap: 24px;
 
         @media screen and (max-width: 758px) {
@@ -100,8 +99,8 @@
 
           .formkit-messages {
             text-align: left;
-            padding-left: 10px;
-            margin-bottom: -10px;
+            padding-left: 5px;
+            margin-bottom: -15px;
           }
 
         }
@@ -114,7 +113,8 @@
         background-color: var(--primary);
         color: var(--white);
         margin-top: 32px;
-        width: 300px;
+        width: 100%;
+        max-width: 300px;
         padding: 15px;
         border-radius: 48px;
         border: none;

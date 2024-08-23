@@ -37,7 +37,7 @@ const submitHandler = async (createForm: Props) => {
 
       <div class="form">
 
-        <FormKit type="form" id="email-create" #default="{ value, state }"
+        <FormKit type="form" id="support-form" #default="{ value, state }"
           @submit="submitHandler">
 
           <FormKit type="group" name="support">
