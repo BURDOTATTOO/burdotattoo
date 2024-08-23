@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import SubTitle from '~/components/atoms/subtitle-description/index.vue'
 import ServiceCards from '~/components/organisms/service-cards/index.vue'
-import Billboard from '~/components/organisms/billboard-1/index.vue'
-import ModalMoreInfo from '~/components/organisms/modal-more-info/index.vue'
+import Billboard2 from '~/components/organisms/billboards/billboard-2/index.vue'
+import ModalPromo from '~/components/organisms/modals/modal-promo/index.vue'
 
 // Icons
 import PremiumSvg from '~/components/icons/PremiumSvg.vue'
@@ -78,7 +78,7 @@ const serviceCards = [
 
 <template>
 
-  <Billboard :data="billboardData" />
+  <Billboard2 :data="billboardData" />
 
   <SubTitle
     marginTop
@@ -87,6 +87,6 @@ const serviceCards = [
 
   <ServiceCards :data="serviceCards" />
 
-  <ModalMoreInfo v-if="isModalOpen" :toggleModal="toggleModal"/>
+  <ModalPromo v-if="isModalOpen" :toggleModal="toggleModal"/>
 
 </template>

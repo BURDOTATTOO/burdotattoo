@@ -1,7 +1,7 @@
 <script lang="ts" setup>
-import './billboard.scss'
+import './billboard-1.scss'
 import ButtonsGlowOn from '~/components/atoms/buttons/glow-on/index.vue'
-import ModalMoreInfo from '~/components/organisms/modal-more-info/index.vue'
+import ModalPromo from '~/components/organisms/modals/modal-promo/index.vue'
 import SvgsBillboard from '~/components/icons/web-dev.vue'
 import AnimateText from '~/components/atoms/animated-colorful-text/index.vue'
 
@@ -14,7 +14,7 @@ const toggleModal = () => {
 </script>
 
 <template>
-  <section class="billboard">
+  <section class="billboard-1">
 
     <div class="details">
       <h1 class="title">¡Obtén una página web profesional con Hosting
@@ -24,7 +24,7 @@ const toggleModal = () => {
       
       <ButtonsGlowOn
         class="learn-more"
-        text="¡Aprender más!" 
+        text="¡Obtener promo!" 
         :active="true" 
         @click="toggleModal"
       />
@@ -32,6 +32,6 @@ const toggleModal = () => {
 
     <SvgsBillboard aria-label="imagen soluciones creativas de diseño gráfico"/>
 
-    <ModalMoreInfo v-if="isModalOpen" :toggleModal="toggleModal"/>
+    <ModalPromo v-if="isModalOpen" :toggleModal="toggleModal"/>
   </section>
 </template>

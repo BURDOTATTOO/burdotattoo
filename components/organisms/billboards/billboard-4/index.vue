@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import './billboard-3.scss'
+import './billboard-4.scss'
 import AnimatedShowText from '@/components/atoms/animated-show-text/index.vue'
 
 type Props = {
@@ -15,7 +15,7 @@ const { data } = defineProps<Props>()
 </script>
 
 <template>
-  <section class="billboard-3">
+  <section class="billboard-4">
 
     <div class="details">
 

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import './billboard-1.scss'
+import './billboard-2.scss'
 
 type Props = {
   data: {
@@ -11,11 +11,10 @@ type Props = {
 
 const { data } = defineProps<Props>()
 
-console.log(data.text)
 </script>
 
 <template>
-  <section class="billboard-1">
+  <section class="billboard-2">
 
     <NuxtPicture
       class="desktop-only"

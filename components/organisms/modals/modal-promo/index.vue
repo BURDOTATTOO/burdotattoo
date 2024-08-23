@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import './more-info.scss'
+import './modal-promo.scss'
 import { ref } from 'vue'
 import Loading from '~/components/atoms/loading/dual-spinner/index.vue'
 import CrossSvg from '~/components/icons/CrossSvg.vue'
@@ -8,7 +8,6 @@ import CrossSvg from '~/components/icons/CrossSvg.vue'
 const name = ref('')
 const email = ref('')
 const phone = ref('')
-const message = ref('')
 
 const isModalOpen = ref(false)
 const isResponseError = ref(false)
@@ -17,9 +16,8 @@ const isSuccess = ref(false)
 const isFormSubmitting = ref(false)
 const isLoading = ref(false)
 
-const isForgotPasswordOpen = ref(false)
 
-type CreateFormTypes = {
+type Props = {
   email: string
   password: string
   confirmPassword: string
@@ -29,11 +27,11 @@ const { toggleModal } = defineProps<{
   toggleModal: () => void
 }>()
 
-const submitHandler = async (createForm: CreateFormTypes) => {
+const submitHandler = async (createForm: Props) => {
   isLoading.value = true
   await new Promise(resolve => setTimeout(resolve, 3000))
   isLoading.value = false
-  // toggleModal()
+  toggleModal()
 }
 
 </script>
@@ -51,7 +49,7 @@ const submitHandler = async (createForm: CreateFormTypes) => {
 
         <h2 class="modal-description"><span>¡Aprovecha esta promoción </span> ahora!</h2>
 
-        <FormKit v-if="!isForgotPasswordOpen" type="form" id="email-create" #default="{ value, state }"
+        <FormKit type="form" id="email-create" #default="{ value, state }"
           @submit="submitHandler">
           <FormKit type="group" name="email">
 
@@ -75,14 +73,8 @@ const submitHandler = async (createForm: CreateFormTypes) => {
                 placeholder="Teléfono" />
             </div>
 
-            <div class="form-group">
-              <label for="message">Mensaje</label>
-              <FormKit type="textarea" name="message" placeholder="Mensaje" maxLength="85" v-model="message"
-                validation="required" />
-            </div>
-
             <button :class="['btn-submit', { 'btn-disabled': !state.valid }]" type="submit">
-              <span>Siguiente</span>
+              <span>Quiero mi promo</span>
             </button>
 
           </FormKit>

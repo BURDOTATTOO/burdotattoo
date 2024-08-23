@@ -8,18 +8,18 @@ import InstagramSvg from '~/components/icons/social/InstagramSvg.vue'
 
 const currentYear = ref(new Date().getFullYear())
 
-const links = ref([
+const links = [
   { label: 'Diseño web', to: '/' },
   { label: 'Desarrollo web', to: '/' },
   { label: 'SEO', to: '/' },
   { label: 'Marketing digital', to: '/' },
-])
+]
 
-const socialLinks = ref([
+const socialLinks = [
   { icon: FacebookSvg, to: 'https://facebook.com' },
   { icon: TwitterSvg, to: 'https://twitter.com' },
   { icon: InstagramSvg, to: 'https://instagram.com' },
-])
+]
 
 </script>
 

@@ -24,9 +24,12 @@ onMounted(() => {
 
 <template>
   <Loading v-if="loading" />
-  <article v-else>
+
+  <div v-else>
     <Header />
-    <NuxtPage />
+    <article>
+      <NuxtPage />
+    </article>
     <Footer />
-  </article>
+  </div>
 </template>

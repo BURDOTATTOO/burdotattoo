@@ -1,7 +1,6 @@
 <template>
 
-  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 512 512"
-    xml:space="preserve">
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 512 512">
 
     <g id="5151e0c8492e5103c096af88a50059a5">
 

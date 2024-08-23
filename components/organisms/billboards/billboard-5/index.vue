@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import './billboard-4.scss'
+import './billboard-5.scss'
 
 </script>
 
 <template>
-  <section class="billboard-4">
+  <section class="billboard-5">
 
     <NuxtPicture 
       class="image"

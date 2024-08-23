@@ -50,7 +50,7 @@ const servicesLinks = [
 const supportLinks = [
   {
     title: 'Contacta con soporte',
-    link: '/',
+    link: '/contacta-soporte',
     icon: SupportSvg,
     iconAlt: 'Contacta con soporte'
   },

@@ -1,11 +1,12 @@
 <script lang="ts" setup>
-import './billboard-2.scss'
+import './billboard-3.scss'
+
 import AnimatedColorfulText from '~/components/atoms/animated-colorful-text/index.vue'
 
 </script>
 
 <template>
-  <section class="billboard-2">
+  <section class="billboard-3">
 
     <NuxtPicture 
       src="/images/diseno-web.webp" 
