@@ -4,7 +4,6 @@ import './title-description.scss'
 type Props = {
   title: string
   description?: string
-  marginTop?: boolean
 }
 
 const { title, description } = defineProps<Props>()
