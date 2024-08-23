@@ -2,49 +2,46 @@
 import { ref } from 'vue'
 import './footer.scss'
 import LogoSvg from '~/public/logo.vue'
-
+import FacebookSvg from '~/components/icons/social/FacebookSvg.vue'
+import TwitterSvg from '~/components/icons/social/TwitterSvg.vue'
+import InstagramSvg from '~/components/icons/social/InstagramSvg.vue'
 const currentYear = ref(new Date().getFullYear())
+
+const links = ref([
+  { label: 'Diseño web', to: '/' },
+  { label: 'Desarrollo web', to: '/' },
+  { label: 'SEO', to: '/' },
+  { label: 'Marketing digital', to: '/' },
+])
+
+const socialLinks = ref([
+  { icon: FacebookSvg, to: 'https://facebook.com' },
+  { icon: TwitterSvg, to: 'https://twitter.com' },
+  { icon: InstagramSvg, to: 'https://instagram.com' },
+])
+
 </script>
 
 <template>
-  <footer class="footer-container">
+  <footer class="content">
 
-    <div class="content">
+    <LogoSvg class="logo" />
+    <h2 class="title">Vanguardia.tech</h2>
 
-      <div class="item">
-        <LogoSvg />
-      </div>
+    <ul class="social-links">
+      <li class="item" v-for="socialLink in socialLinks" :key="socialLink.to">
+        <NuxtLink :to="socialLink.to">
+          <component :is="socialLink.icon" />
+        </NuxtLink>
+      </li>
+    </ul>
 
-      <div class="item">
-        <h4>Links rápidos</h4>
-        <ul>
-          <li>
-            <NuxtLink to="/">Inicio</NuxtLink>
-          </li>
-          <li>
-            <NuxtLink to="/">Nosotros</NuxtLink>
-          </li>
-          <li>
-            <NuxtLink to="/">Contácto</NuxtLink>
-          </li>
-          <li>
-            <NuxtLink to="/">Vault</NuxtLink>
-          </li>
-        </ul>
-      </div>
+    <ul class="links">
+      <li v-for="link in links" :key="link.to">
+        <NuxtLink :to="link.to">{{ link.label }}</NuxtLink>
+      </li>
+    </ul>
 
-      <div class="item">
-        <h4>Síguenos</h4>
-        <ul class="social-links">
-          <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
-          <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
-          <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      <p>&copy; {{ currentYear }} Vanguardia.tech. Todos los derechos reservados.</p>
-    </div>
+    <p class="copyright">&copy; {{ currentYear }} Vanguardia.tech. Todos los derechos reservados.</p>
   </footer>
 </template>
