@@ -2,6 +2,8 @@
 import './more-info.scss'
 import { ref } from 'vue'
 import Loading from '~/components/atoms/loading/dual-spinner/index.vue'
+import CrossSvg from '~/components/icons/CrossSvg.vue'
+
 
 const name = ref('')
 const email = ref('')
@@ -29,7 +31,7 @@ const { toggleModal } = defineProps<{
 
 const submitHandler = async (createForm: CreateFormTypes) => {
   isLoading.value = true
-  await new Promise(resolve => setTimeout(resolve, 3000))  
+  await new Promise(resolve => setTimeout(resolve, 3000))
   isLoading.value = false
   // toggleModal()
 }
@@ -37,65 +39,45 @@ const submitHandler = async (createForm: CreateFormTypes) => {
 </script>
 
 <template>
-  <section class="modal-wrapper">
-    <div class="create-modal-inner">
-      <div @click="toggleModal" class="btn-close">&times;</div>
+  <section class="modal">
+    <div class="modal-inner">
+      <div @click="toggleModal" class="btn-close">
+        <CrossSvg />
+      </div>
 
       <Loading v-if="isLoading" />
 
-      <div class="create-form">
+      <div class="form">
 
         <h2 class="modal-description"><span>¡Aprovecha esta promoción </span> ahora!</h2>
 
         <FormKit v-if="!isForgotPasswordOpen" type="form" id="email-create" #default="{ value, state }"
           @submit="submitHandler">
-
           <FormKit type="group" name="email">
 
             <div class="form-group">
               <label for="name">Nombre</label>
-              <FormKit
-                type="text"
-                placeholder="Nombre"
-                maxLength="30"
-                minLength="3"
-                v-model="name"
-                name="name"
+              <FormKit type="text" placeholder="Nombre" maxLength="30" minLength="3" v-model="name" name="name"
                 validation="required" />
             </div>
 
             <div class="form-group">
               <label for="email">Email</label>
-              <FormKit
-                type="email"
-                placeholder="joe@email.com"
-                v-model="email"
-                name="email"
+              <FormKit type="email" placeholder="joe@email.com" v-model="email" name="email"
                 validation="required|email" />
             </div>
 
             <div class="form-group">
               <label for="tel">Teléfono</label>
-              <FormKit
-                maxLength="10"
-                minLength="10"
-                inputmode="numeric"
-                name="phone"
+              <FormKit maxLength="10" minLength="10" inputmode="numeric" name="phone"
                 oninput="this.value = this.value.replace(/\D/g, '')"
-                :validation="[['matches', /^.{10,10}$/], ['required']]"
-                v-model.number="phone"
-                type="text"
+                :validation="[['matches', /^.{10,10}$/], ['required']]" v-model.number="phone" type="text"
                 placeholder="Teléfono" />
             </div>
 
             <div class="form-group">
               <label for="message">Mensaje</label>
-              <FormKit
-                type="textarea"
-                name="message"
-                placeholder="Mensaje"
-                maxLength="85"  
-                v-model="message"
+              <FormKit type="textarea" name="message" placeholder="Mensaje" maxLength="85" v-model="message"
                 validation="required" />
             </div>
 

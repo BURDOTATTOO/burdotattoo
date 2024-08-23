@@ -5,6 +5,7 @@ import LogoSvg from '~/public/logo.vue'
 import FacebookSvg from '~/components/icons/social/FacebookSvg.vue'
 import TwitterSvg from '~/components/icons/social/TwitterSvg.vue'
 import InstagramSvg from '~/components/icons/social/InstagramSvg.vue'
+
 const currentYear = ref(new Date().getFullYear())
 
 const links = ref([
