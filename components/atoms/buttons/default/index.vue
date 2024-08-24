@@ -4,21 +4,22 @@ import './regular.scss'
 type ButtonProps = {
   text: string
   link?: string
-  onClick?: () => void
+  external?: string
 }
 
 const router = useRouter()
 
-const { text, link, onClick } = defineProps<ButtonProps>()
+const { text, link, external } = defineProps<ButtonProps>()
 
 const handleClick = () => {
   if (link) {
     router.push(link)
   }
 
-  if (onClick) {
-    onClick()
+  if (external) {
+    window.open(external, '_blank')
   }
+
 }
 </script>
 

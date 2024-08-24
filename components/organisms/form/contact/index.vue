@@ -40,6 +40,7 @@ const submitHandler = async (createForm: Props) => {
         <FormKit type="form" id="support-form" #default="{ value, state }"
           @submit="submitHandler">
 
+          
           <FormKit type="group" name="support">
 
             <div class="form-group-inline">

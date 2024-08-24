@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Billboard from '~/components/organisms/billboards/billboard-1/index.vue'
+import Billboard from '~/components/organisms/billboards/billboard-7/index.vue'
 import SubTitle from '~/components/atoms/subtitle-description/index.vue'
 import BrandDescription from '~/components/organisms/brand-description/index.vue'
 import ServiceCards from '~/components/organisms/service-cards/index.vue'
@@ -62,7 +62,7 @@ const serviceCards = [
 
   <SubTitle
     marginTop
-    title="Nuestros Planes"
+    title="Burdo Tattoo"
     description="Agencia Colombiana de marketing que ofrece soluciones efectivas y personalizadas a empresas de cualquier tamaño." />
 
   <ServiceCards :data="serviceCards" />

@@ -5,15 +5,20 @@ type GlowOnProps = {
   text: string
   active?: boolean
   link?: string
+  external?: boolean
 }
 
 const router = useRouter()
 
-const { text, active, link } = defineProps<GlowOnProps>()
+const { text, active, link, external } = defineProps<GlowOnProps>() 
 
 const handleClick = () => {
   if (link) {
-    router.push(link)
+    if (external) {
+      window.open(link, '_blank')
+    } else {
+      router.push(link)
+    }
   }
 }
 </script>
