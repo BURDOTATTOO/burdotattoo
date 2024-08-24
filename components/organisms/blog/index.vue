@@ -577,10 +577,10 @@ const blogListData = [
 
         <div class="image" >
           <NuxtPicture
-          :src="post.img" 
-          sizes="100vw sm:300px" 
-          format="webp"
-          :alt="post.alt" />
+            :src="post.img" 
+            sizes="100vw xs:370px" 
+            format="webp"
+            :alt="post.alt" />
         </div>
 
         <h2 class="title">{{ post.title }}</h2>
