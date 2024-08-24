@@ -20,9 +20,7 @@ const { data } = defineProps<IconTitleProps>()
 
     <div class="card" v-for="(item, index) in data" :key="index">
 
-      <div class="image">
-        <component :is="item.icon" :aria-label="item.iconAlt"/>
-      </div>
+      <component class="image" :is="item.icon" :aria-label="item.iconAlt"/>
 
       <div class="details">
         <h3 class="title">

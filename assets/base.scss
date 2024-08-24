@@ -41,8 +41,11 @@
   --box-shadow-softer: 0px 11px 22px -5px rgba(255, 255, 255, 0.24);
   --box-shadow-base: 0 0 10px rgba(255, 255, 255, 0.3);
 
-  --box-shadow-card-black: 0 3px 10px rgba(142, 109, 109, 0.2);
   --box-shadow-card-white: 0 3px 10px rgba(255, 255, 255, 0.2);
+  --box-shadow-card-black: 0 3px 10px rgba(142, 109, 109, 0.2);
+
+  --box-shadow-img-white: 0 0 10px rgba(255, 255, 255, 0.26);
+  --box-shadow-img-black: 0 0 10px rgrgba(0, 0, 0, 0.2);
 
   --border: rgb(235, 235, 235);
   --background-modal: rgba(0, 0, 0, 0.5);
@@ -72,7 +75,7 @@
   --shadow: var(--box-shadow);
   --shadow-base: var(--box-shadow-soft);
   --shadow-card: var( --box-shadow-card-black);
-
+  --shadow-img: var(--box-shadow-card-black);
 }
 
 :root[data-color-scheme="dark"] {
@@ -95,9 +98,7 @@
   --shadow: var(--box-shadow-softer);
   --shadow-base: var(--shadow-base);
   --shadow-card: var( --box-shadow-card-white);
-
-  // --color-nav-bg: var(--text-dark-1);
-  // --text-logo: var(--white);
+  --shadow-img: var(--box-shadow-img-white);
 }
 
 *,

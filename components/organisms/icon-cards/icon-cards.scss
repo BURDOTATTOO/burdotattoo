@@ -21,11 +21,8 @@
 
     .image {
       margin: 24px auto;
-
-      svg {
-        height: 150px;
-        width: auto;
-      }
+      height: 130px;
+      width: auto;
     }
 
     .details {
@@ -58,7 +55,6 @@
   }
 
   @media (max-width: 756px) {
-    margin-top: 40px;
     grid-template-columns: 1fr;
   }
 }

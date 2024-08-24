@@ -55,10 +55,10 @@ const supportLinks = [
     iconAlt: 'Contacta con soporte'
   },
   {
-    title: 'Anuncios',
-    link: '/',
+    title: 'Blog',
+    link: '/blog',
     icon: AnnouncementsSvg,
-    iconAlt: 'Anuncios'
+    iconAlt: 'Blog'
   },
   {
     title: 'Sugerencias',

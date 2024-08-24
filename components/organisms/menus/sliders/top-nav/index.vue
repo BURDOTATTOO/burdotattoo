@@ -54,10 +54,10 @@ const navLinks = [
     iconAlt: 'Sugerencias'
   },
   {
-    title: 'Anuncios',
-    link: '/',
+    title: 'Blog',
+    link: '/blog',
     icon: AnnouncementsSvg,
-    iconAlt: 'Anuncios'
+    iconAlt: 'Blog'
   }
 ]
 

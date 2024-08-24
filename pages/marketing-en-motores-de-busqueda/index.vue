@@ -192,7 +192,6 @@ const serviceCards = [
     title="¿Cómo Mejorar el rendimiento de tu sitio web y hacerlo más atractivo para los motores de búsqueda?"
   />
 
-
   <PostDescription
     text="La optimización en motores de búsqueda (SEO) es fundamental para mejorar la visibilidad y el posicionamiento de tu sitio web en las páginas de resultados de los buscadores (SERPs). Mediante técnicas avanzadas de optimización técnica, refinamiento de contenido y creación estratégica de enlaces, el SEO no solo aumenta el tráfico orgánico, sino que también fortalece la presencia online de tu negocio." 
     text1="Nuestros expertos en SEO analizan los algoritmos de los motores de búsqueda y los patrones de comportamiento de los usuarios para optimizar los sitios web, alineándolos con palabras clave relevantes y consultas de los usuarios. Esto permite atraer tráfico dirigido y maximizar las tasas de conversión. Los servicios de SEO incluyen optimización on-page, que abarca la investigación de palabras clave, la optimización de metaetiquetas y la mejora del contenido, así como optimización off-page, que incluye la construcción de enlaces y la integración con redes sociales."

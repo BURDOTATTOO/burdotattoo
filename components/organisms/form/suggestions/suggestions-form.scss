@@ -29,7 +29,7 @@
 
       .form-group-inline {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         gap: 24px;
 
         @media screen and (max-width: 758px) {
@@ -40,7 +40,7 @@
 
       .form-group {
         position: relative;
-        margin: 20px 0;
+        margin: 20px 0 28px;
         width: 100%;
 
         label {

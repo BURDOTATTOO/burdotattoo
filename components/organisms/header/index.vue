@@ -2,10 +2,11 @@
 import './header.scss'
 import { ref } from 'vue'
 import { setDarkMode } from '~/utils/utils'
-import DropdownMenu from '~/components/menus/dropdown/desktop/index.vue'
+
+import SliderTopNav from '~/components/organisms/menus/sliders/top-nav/index.vue'
+import Dropdown from '~/components/organisms/menus/dropdown/desktop/index.vue'
 import SunSvg from '~/components/icons/header/SunSvg.vue'
 import MoonSvg from '~/components/icons/header/MoonSvg.vue'
-import SliderTopNav from '~/components/menus/sliders/top-nav/index.vue'
 import ButtonsGlowOn from '~/components/atoms/buttons/glow-on/index.vue'
 import Logo from '~/public/logo.vue'
 
@@ -49,7 +50,7 @@ const toggleSliderTopNav = () => {
           <SunSvg v-else class="icon moon" />
         </div>
 
-        <DropdownMenu class="desktop-only" />
+        <Dropdown class="desktop-only" />
         <ButtonsGlowOn text="Contacto" class="contact-button desktop-only" aria-label="Ir a la sección de contacto" />
 
         <div class="hamburger-menu mobile-only" @click="toggleSliderTopNav" aria-label="Abrir menú de navegación">
