@@ -1,13 +1,11 @@
 <script lang="ts" setup>
-import './modal-promo.scss'
+import './suggestions-form.scss'
 import { ref } from 'vue'
 import Loading from '~/components/atoms/loading/loading-1/index.vue'
-import CrossSvg from '~/components/icons/CrossSvg.vue'
-
 
 const name = ref('')
 const email = ref('')
-const phone = ref('')
+const message = ref('')
 
 const isModalOpen = ref(false)
 const isResponseError = ref(false)
@@ -23,39 +21,31 @@ type Props = {
   confirmPassword: string
 }
 
-const { toggleModal } = defineProps<{
-  toggleModal: () => void
-}>()
-
 const submitHandler = async (createForm: Props) => {
   isLoading.value = true
   await new Promise(resolve => setTimeout(resolve, 3000))
   isLoading.value = false
-  toggleModal()
 }
 
 </script>
 
 <template>
-  <section class="modal-promo">
+  <section class="suggestions-form">
     <div class="modal-inner">
-      <div @click="toggleModal" class="btn-close">
-        <CrossSvg />
-      </div>
 
       <Loading v-if="isLoading" />
 
       <div class="form">
 
-        <h2 class="modal-description"><span>¡Aprovecha esta promoción </span> ahora!</h2>
-
-        <FormKit type="form" id="promo-form" #default="{ value, state }"
+        <FormKit type="form" id="support-form" #default="{ value, state }"
           @submit="submitHandler">
 
-          <FormKit type="group" name="promo">
-            <div class="form-group">
+          <FormKit type="group" name="support">
+
+            <div class="form-group-inline">
+              <div class="form-group">
               <label for="name">Nombre</label>
-              <FormKit type="text" placeholder="Nombre" maxLength="30" minLength="3" v-model="name" name="name"
+              <FormKit type="text" placeholder="Juan Perez" maxLength="30" minLength="3" v-model="name" name="name"
                 validation="required" />
             </div>
 
@@ -64,17 +54,21 @@ const submitHandler = async (createForm: Props) => {
               <FormKit type="email" placeholder="joe@email.com" v-model="email" name="email"
                 validation="required|email" />
             </div>
+            </div>
 
             <div class="form-group">
-              <label for="tel">Teléfono</label>
-              <FormKit maxLength="10" minLength="10" inputmode="numeric" name="phone"
-                oninput="this.value = this.value.replace(/\D/g, '')"
-                :validation="[['matches', /^.{10,10}$/], ['required']]" v-model.number="phone" type="text"
-                placeholder="Teléfono" />
+              <label for="message">Mensaje</label>
+              <FormKit
+                type="textarea"
+                name="message"
+                placeholder="Escribe tu sugerencia"
+                maxLength="85"
+                v-model="message"
+                validation="required" />
             </div>
 
             <button :class="['btn-submit', { 'btn-disabled': !state.valid }]" type="submit">
-              <span>Quiero mi promo</span>
+              <span>Solicitar Soporte</span>
             </button>
           </FormKit>
 

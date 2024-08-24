@@ -24,13 +24,15 @@ const { data } = defineProps<IconTitleProps>()
         <component :is="item.icon" :aria-label="item.iconAlt"/>
       </div>
 
-      <h3 class="title">
+      <div class="details">
+        <h3 class="title">
         {{ item.title }}
-      </h3>
+        </h3>
 
-      <span class="description">
-        {{ item.description }}
-      </span>
+        <span class="description">
+          {{ item.description }}
+        </span>
+      </div>
 
     </div>
     

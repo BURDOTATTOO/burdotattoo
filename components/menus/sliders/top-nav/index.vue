@@ -49,7 +49,7 @@ const navLinks = [
   },
   {
     title: 'Sugerencias',
-    link: '/',
+    link: '/sugerencias',
     icon: SuggestionsSvg,
     iconAlt: 'Sugerencias'
   },

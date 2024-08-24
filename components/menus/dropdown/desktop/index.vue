@@ -62,7 +62,7 @@ const supportLinks = [
   },
   {
     title: 'Sugerencias',
-    link: '/',
+    link: '/sugerencias',
     icon: SuggestionsSvg,
     iconAlt: 'Sugerencias'
   }

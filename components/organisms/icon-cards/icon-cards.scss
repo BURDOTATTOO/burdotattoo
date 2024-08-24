@@ -8,12 +8,9 @@
   max-width: var(--tablet-width);
  
   .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-rows: auto 1fr;
     gap: 4px;
-    padding-top: 40px;
     text-align: center;
     color: var(--heading);
     flex-direction: column;
@@ -23,24 +20,32 @@
     border-radius: .4rem;
 
     .image {
-      display: flex;
-      margin: 0 auto;
-      max-width: 120px;
+      margin: 24px auto;
+
+      svg {
+        height: 150px;
+        width: auto;
+      }
     }
 
-    .title {
-      font-size: 1.2rem;
-      font-weight: 600;
-      line-height: 1.8rem;
-      letter-spacing: 1px;
-      padding: 0 .6rem;
-    }
+    .details {
+      padding: 0 20px 24px;
 
-    .description {
-      font-size: 1rem;
-      letter-spacing: 0.08px;
-      line-height: 1.7rem;
-      padding: 1rem .6rem;
+      .title {
+        font-size: 1.2rem;
+        font-weight: 600;
+        line-height: 1.8rem;
+        letter-spacing: 1px;
+        padding: 0 .6rem;
+      }
+
+      .description {
+        font-size: 1rem;
+        letter-spacing: 0.08px;
+        line-height: 1.7rem;
+        padding: 1rem .6rem;
+      }
+
     }
   }
 

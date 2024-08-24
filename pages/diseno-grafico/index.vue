@@ -3,6 +3,7 @@ import Subtitle from '~/components/atoms/subtitle-description/index.vue'
 import Services from '~/components/organisms/services-list/index.vue'
 import Billboard3 from '~/components/organisms/billboards/billboard-3/index.vue'
 import Billboard4 from '~/components/organisms/billboards/billboard-4/index.vue'
+import Billboard5 from '~/components/organisms/billboards/billboard-5/index.vue'
 
 useSeoMeta({
   title: 'Diseño Gráfico Profesional en Colombia - Identidad Corporativa y Más',
@@ -72,7 +73,6 @@ const billboard3Data = {
   words: ['Hermosas', 'Geniales', 'Increíbles']
 }
 
-
 </script>
 
 <template>
@@ -88,4 +88,5 @@ const billboard3Data = {
 
   <Billboard4 :data="billboard3Data" />
 
+  <Billboard5 />
 </template>
