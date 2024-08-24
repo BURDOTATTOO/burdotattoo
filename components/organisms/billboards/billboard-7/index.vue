@@ -28,10 +28,6 @@ const toggleModal = () => {
       <Button text="TATTOO" external="https://www.burdotattoo.com/TATTOOSHOP.html" />
 
       <Button text="PIERCING" external="https://www.burdotattoo.com/piercing.html" />
-
-      <Button text="TATTOO!" external="https://www.burdotattoo.com/TATTOOSHOP.html" />
-
-      
     </div>
 
     <SvgsBillboard aria-label="imagen soluciones creativas de diseño gráfico"/>
